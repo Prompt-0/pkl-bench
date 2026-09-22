@@ -1,0 +1,11 @@
+season_id,season_name,year,start_date,end_date,teams_count,format_type,champion_team_id,champion_team_name,runner_up_team_id,runner_up_team_name,rule_era
+1,"Pro Kabaddi League Season 1, 2014",2014,2014-07-26,2014-08-31,8,Double Round-Robin + Semi-Finals & Final,3,Jaipur Pink Panthers,5,U Mumba,"Inaugural PKL Rules (30s raid clock, 3rd empty raid do-or-die, bonus line active >=6 defenders)"
+2,"Pro Kabaddi League Season 2, 2015",2015,2015-07-18,2015-08-23,8,Double Round-Robin + Semi-Finals & Final,5,U Mumba,1,Bengaluru Bulls,Introduction of Super Tackle (2 pts when <=3 defenders tackle raider)
+3,"Pro Kabaddi League Season 3, 2016",2016,2016-01-30,2016-03-05,8,Double Round-Robin + Semi-Finals & Final,6,Patna Pirates,5,U Mumba,Bi-annual edition (Winter 2016)
+4,"Pro Kabaddi League Season 4, 2016",2016,2016-06-25,2016-07-31,8,Double Round-Robin + Semi-Finals & Final,6,Patna Pirates,3,Jaipur Pink Panthers,Bi-annual edition (Summer 2016)
+5,"Pro Kabaddi League Season 5, 2017",2017,2017-07-28,2017-10-28,12,"Zonal System (Zone A & Zone B, 22 matches/team) + Super Playoffs",6,Patna Pirates,28,Gujarat Fortune Giants,Expansion from 8 to 12 franchises; introduction of Zonal division
+6,"Pro Kabaddi League Season 6, 2018",2018,2018-10-05,2019-01-05,12,"Zonal System (Zone A & Zone B, 22 matches/team) + Super Playoffs",1,Bengaluru Bulls,28,Gujarat Fortune Giants,Zonal System season 2
+7,"Pro Kabaddi League Season 7, 2019",2019,2019-07-20,2019-10-19,12,Single Table Double Round-Robin (22 matches/team) + Top 6 Playoffs,4,Bengal Warriors,2,Dabang Delhi K.C.,Reversion to single unified table; top 6 qualify for playoffs
+8,"Pro Kabaddi League Season 8, 2021-22",2021,2021-12-22,2022-02-25,12,Single Table Bio-Bubble (Bengaluru Hub) + Top 6 Playoffs,2,Dabang Delhi K.C.,6,Patna Pirates,Post-COVID single-venue bio-bubble hub
+9,"Pro Kabaddi League Season 9, 2022",2022,2022-10-07,2022-12-17,12,Single Table Multi-City Caravan + Top 6 Playoffs,3,Jaipur Pink Panthers,7,Puneri Paltan,"Multi-city hub return (Bengaluru, Pune, Hyderabad, Mumbai)"
+10,"Pro Kabaddi League Season 10, 2023-24",2023,2023-12-02,2024-03-01,12,Full 12-City Caravan Format + Top 6 Playoffs,7,Puneri Paltan,29,Haryana Steelers,Decennial 10th season; return to full 12 home-city caravan

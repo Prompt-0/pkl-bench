@@ -1,0 +1,188 @@
+{
+  "$schema": "https://frictionlessdata.io/schemas/data-package.json",
+  "name": "pkl-bench",
+  "title": "PKL-Bench: The Pro Kabaddi League Research Benchmark Dataset",
+  "description": "A comprehensive, research-grade, multi-tier benchmark dataset and evaluation harness covering 10 complete seasons (2014-2024) of the Pro Kabaddi League (PKL), containing 1,060 matches, 26,760 player boxscores, and 103,176 granular play-by-play raid events.",
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "homepage": "https://github.com/pkl-bench/pkl-bench",
+  "keywords": [
+    "kabaddi",
+    "pro-kabaddi-league",
+    "sports-analytics",
+    "machine-learning",
+    "benchmark-dataset",
+    "play-by-play",
+    "win-probability",
+    "reinforcement-learning"
+  ],
+  "contributors": [
+    {
+      "title": "Antigravity Research Group",
+      "role": "author"
+    }
+  ],
+  "resources": [
+    {
+      "name": "seasons",
+      "path": "metadata/seasons.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {"name": "season_id", "type": "integer", "description": "PKL Season identifier (1-10)"},
+          {"name": "season_name", "type": "string", "description": "Official season title and year"},
+          {"name": "year", "type": "integer", "description": "Calendar year in which season started"},
+          {"name": "start_date", "type": "date", "description": "Opening fixture date (YYYY-MM-DD)"},
+          {"name": "end_date", "type": "date", "description": "Grand final fixture date (YYYY-MM-DD)"},
+          {"name": "teams_count", "type": "integer", "description": "Number of participating franchises"},
+          {"name": "format_type", "type": "string", "description": "Tournament competition structure"},
+          {"name": "champion_team_id", "type": "integer", "description": "Team ID of tournament champion"},
+          {"name": "champion_team_name", "type": "string", "description": "Franchise name of champion"},
+          {"name": "runner_up_team_id", "type": "integer", "description": "Team ID of tournament runner-up"},
+          {"name": "runner_up_team_name", "type": "string", "description": "Franchise name of runner-up"},
+          {"name": "rule_era", "type": "string", "description": "Key rule innovations or structural characteristics"}
+        ],
+        "primaryKey": "season_id"
+      }
+    },
+    {
+      "name": "teams",
+      "path": "metadata/teams.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {"name": "team_id", "type": "integer", "description": "Standard PKL team identifier"},
+          {"name": "team_name", "type": "string", "description": "Full franchise legal/commercial name"},
+          {"name": "short_name", "type": "string", "description": "Broadcast display name"},
+          {"name": "team_code", "type": "string", "description": "3-letter team acronym"},
+          {"name": "home_city", "type": "string", "description": "Franchise home metropolitan base"},
+          {"name": "first_season", "type": "integer", "description": "PKL debut season (1 or 5)"}
+        ],
+        "primaryKey": "team_id"
+      }
+    },
+    {
+      "name": "venues",
+      "path": "metadata/venues.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {"name": "venue_id", "type": "integer", "description": "Standard stadium identifier"},
+          {"name": "venue_name", "type": "string", "description": "Official stadium name"},
+          {"name": "city", "type": "string", "description": "Metropolitan location"},
+          {"name": "matches_hosted", "type": "integer", "description": "Total PKL matches hosted (S1-S10)"}
+        ],
+        "primaryKey": "venue_id"
+      }
+    },
+    {
+      "name": "matches",
+      "path": "matches/matches.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {"name": "match_id", "type": "integer", "description": "Unique match identifier"},
+          {"name": "season_id", "type": "integer", "description": "PKL season identifier (1-10)"},
+          {"name": "match_number", "type": "string", "description": "Match sequence code or playoff name"},
+          {"name": "match_date", "type": "string", "description": "Fixture date"},
+          {"name": "stage", "type": "string", "description": "Competition stage (League, Eliminator, Semi-Final, Final)"},
+          {"name": "venue_id", "type": "integer", "description": "Venue identifier"},
+          {"name": "venue_name", "type": "string", "description": "Stadium venue name"},
+          {"name": "team1_id", "type": "integer", "description": "Designated home / first team ID"},
+          {"name": "team1_name", "type": "string", "description": "Team 1 franchise name"},
+          {"name": "team2_id", "type": "integer", "description": "Designated away / second team ID"},
+          {"name": "team2_name", "type": "string", "description": "Team 2 franchise name"},
+          {"name": "toss_winner_id", "type": "integer", "description": "Team ID winning the coin toss"},
+          {"name": "toss_selection", "type": "string", "description": "Toss selection (court or raid)"},
+          {"name": "team1_score", "type": "integer", "description": "Final score achieved by Team 1"},
+          {"name": "team2_score", "type": "integer", "description": "Final score achieved by Team 2"},
+          {"name": "winner_id", "type": "integer", "description": "Winning team ID (null if tied)"},
+          {"name": "winning_team_name", "type": "string", "description": "Winning franchise name ('Tie' if drawn)"},
+          {"name": "score_margin", "type": "integer", "description": "Absolute point differential |team1 - team2|"},
+          {"name": "is_tie", "type": "boolean", "description": "True if match ended in regulation tie"},
+          {"name": "team1_raid_points", "type": "integer", "description": "Total raid points scored by Team 1"},
+          {"name": "team1_tackle_points", "type": "integer", "description": "Total tackle points scored by Team 1"},
+          {"name": "team1_all_out_points", "type": "integer", "description": "All-out bonus points scored by Team 1"},
+          {"name": "team1_extra_points", "type": "integer", "description": "Technical/extra points awarded to Team 1"},
+          {"name": "team2_raid_points", "type": "integer", "description": "Total raid points scored by Team 2"},
+          {"name": "team2_tackle_points", "type": "integer", "description": "Total tackle points scored by Team 2"},
+          {"name": "team2_all_out_points", "type": "integer", "description": "All-out bonus points scored by Team 2"},
+          {"name": "team2_extra_points", "type": "integer", "description": "Technical/extra points awarded to Team 2"}
+        ],
+        "primaryKey": "match_id"
+      }
+    },
+    {
+      "name": "player_match_stats",
+      "path": "player_matches/player_match_stats.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {"name": "match_id", "type": "integer", "description": "Match identifier"},
+          {"name": "season_id", "type": "integer", "description": "Season identifier"},
+          {"name": "team_id", "type": "integer", "description": "Player franchise team ID"},
+          {"name": "player_id", "type": "integer", "description": "Master player identifier"},
+          {"name": "player_name", "type": "string", "description": "Player full name"},
+          {"name": "jersey_no", "type": "string", "description": "Squad jersey shirt number"},
+          {"name": "role", "type": "string", "description": "Tactical designation (Raider, Defender, All-Rounder)"},
+          {"name": "played", "type": "boolean", "description": "True if player stepped onto mat"},
+          {"name": "starter", "type": "boolean", "description": "True if player was in starting 7 lineup"},
+          {"name": "captain", "type": "boolean", "description": "True if player captained the team"},
+          {"name": "total_points", "type": "integer", "description": "Total match points accumulated"},
+          {"name": "raid_points_total", "type": "integer", "description": "Total raid points"},
+          {"name": "raid_touch_points", "type": "integer", "description": "Points from defender physical touches"},
+          {"name": "raid_bonus_points", "type": "integer", "description": "Points from crossing the bonus line"},
+          {"name": "raids_total", "type": "integer", "description": "Total raids attempted"},
+          {"name": "raids_successful", "type": "integer", "description": "Successful raids yielding points"},
+          {"name": "raids_unsuccessful", "type": "integer", "description": "Raids resulting in raider dismissal"},
+          {"name": "raids_empty", "type": "integer", "description": "Raids resulting in 0 points without dismissal"},
+          {"name": "super_raids", "type": "integer", "description": "Raids yielding >= 3 points"},
+          {"name": "tackle_points_total", "type": "integer", "description": "Total defensive tackle points"},
+          {"name": "tackles_total", "type": "integer", "description": "Total tackle initiations"},
+          {"name": "tackles_successful", "type": "integer", "description": "Tackles pinning raider successfully"},
+          {"name": "super_tackles", "type": "integer", "description": "Tackles executed with <= 3 defenders on mat"},
+          {"name": "super_10", "type": "boolean", "description": "Achievement of >= 10 raid points"},
+          {"name": "high_5", "type": "boolean", "description": "Achievement of >= 5 tackle points"}
+        ]
+      }
+    },
+    {
+      "name": "raids_pbp",
+      "path": "raids_pbp/raids_pbp.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {"name": "match_id", "type": "integer", "description": "Match identifier"},
+          {"name": "season_id", "type": "integer", "description": "Season identifier (1-10)"},
+          {"name": "raid_sequence_no", "type": "integer", "description": "Chronological raid number within match"},
+          {"name": "half", "type": "integer", "description": "Match half (1 or 2)"},
+          {"name": "clock", "type": "string", "description": "Clock time MM:SS"},
+          {"name": "clock_seconds_remaining", "type": "integer", "description": "Total match seconds remaining (0-2400)"},
+          {"name": "raiding_team_id", "type": "integer", "description": "Team conducting the raid"},
+          {"name": "defending_team_id", "type": "integer", "description": "Team defending court"},
+          {"name": "raider_id", "type": "integer", "description": "Attacking raider player ID"},
+          {"name": "raider_name", "type": "string", "description": "Attacking raider name"},
+          {"name": "is_do_or_die", "type": "boolean", "description": "True if 3rd consecutive raid requiring a point"},
+          {"name": "outcome_category", "type": "string", "description": "Categorical raid outcome (EMPTY_RAID, SUCCESSFUL_RAID, UNSUCCESSFUL_RAID, SUPER_RAID, SUPER_TACKLE)"},
+          {"name": "raid_points", "type": "integer", "description": "Points earned by raiding team"},
+          {"name": "raid_touch_points", "type": "integer", "description": "Touch points earned"},
+          {"name": "raid_bonus_points", "type": "integer", "description": "Bonus points earned"},
+          {"name": "defending_points", "type": "integer", "description": "Points earned by defending team"},
+          {"name": "is_super_raid", "type": "boolean", "description": "True if raid yielded >= 3 points"},
+          {"name": "is_super_tackle", "type": "boolean", "description": "True if defense executed tackle with <= 3 defenders"},
+          {"name": "primary_defender_id", "type": "integer", "description": "Defender executing tackle (if tackled)"},
+          {"name": "primary_defender_name", "type": "string", "description": "Defender name"},
+          {"name": "team1_score_after", "type": "integer", "description": "Cumulative score of Team 1 after this raid"},
+          {"name": "team2_score_after", "type": "integer", "description": "Cumulative score of Team 2 after this raid"},
+          {"name": "event_text", "type": "string", "description": "Official descriptive commentary string"}
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,806 @@
+player_id,player_name,role,first_season,latest_season,career_matches,career_raid_points,career_tackle_points,career_total_points,career_super_raids,career_super_10s,career_high_5s,career_super_tackles
+197,Pardeep Narwal,Raider,2,10,171,1690,9,1699,61,85,0,0
+143,Maninder Singh,Defender,1,10,143,1428,51,1479,43,72,3,0
+318,Pawan Kumar,Defender,3,10,131,1159,64,1223,30,60,2,5
+41,Deepak Niwas Hooda,Raider,1,9,157,1022,130,1152,17,35,5,1
+81,Rahul Chaudhari,Raider,1,10,153,1038,97,1135,10,42,3,1
+2296,Naveen Kumar,Raider,6,10,91,1005,15,1020,11,63,0,1
+757,Sachin,Raider,5,10,128,952,54,1006,14,36,1,6
+2024,Arjun Deshwal,Raider,6,10,90,933,5,938,21,52,0,0
+26,Ajay Thakur,Raider,1,8,120,772,78,850,8,28,7,0
+366,Vikash Khandola,Defender,4,10,124,800,22,822,24,30,0,0
+326,Rohit Kumar,Defender,3,9,100,683,47,730,8,26,1,1
+106,Shrikant Jadhav,Defender,3,10,141,679,35,714,18,16,0,5
+763,Manjeet,Defender,6,10,108,633,70,703,16,19,0,3
+2026,Siddharth Desai,Raider,6,10,80,693,9,702,25,34,0,0
+94,Rishank Devadiga,Raider,1,8,123,624,76,700,16,11,1,1
+142,Sandeep Narwal,Defender,1,9,156,283,359,642,2,1,16,5
+58,Kashiling Adake,Raider,1,6,92,552,85,637,8,15,3,1
+29,Anup Kumar,Raider,1,6,91,527,102,629,4,13,2,4
+388,Monu Goyat,Raider,4,9,98,584,41,625,10,23,0,2
+69,Manjeet Chhillar,All Rounder,1,8,131,225,392,617,0,2,27,3
+36,Chandran Ranjit,Raider,1,10,112,534,35,569,15,10,0,1
+320,Nitin Tomar,All Rounder,3,9,92,490,38,528,9,14,1,2
+4944,Bharat,Raider,8,10,64,497,23,520,17,23,0,0
+12,Jang Kun Lee,Raider,1,7,107,471,47,518,2,9,0,0
+3241,Surender Gill,Raider,7,10,65,487,23,510,19,20,0,3
+111,Sukesh Hegde,Raider,1,9,122,475,35,510,10,1,0,0
+4960,Aslam Inamdar,Raider,8,10,63,449,58,507,9,12,1,3
+155,Prashanth Kumar Rai,Defender,1,9,130,492,13,505,7,12,0,1
+4947,Ashu Malik,Raider,8,10,68,468,29,497,15,20,1,7
+259,Fazel Atrachali,Raider,2,10,184,8,483,491,0,0,29,10
+3097,Ajinkya Pawar,Raider,6,10,92,454,30,484,6,11,0,6
+4022,Mohit Goyat,Raider,8,10,60,401,74,475,6,12,1,8
+3023,Rohit Gulia,All Rounder,6,10,90,451,16,467,10,12,0,0
+3053,V Ajith Kumar,Raider,7,10,79,460,5,465,11,15,0,1
+2028,Abhishek Singh,Raider,6,10,78,445,12,457,9,19,0,0
+219,K Prapanjan,All Rounder,2,10,127,449,7,456,8,10,0,0
+52,Jasvir Singh,Defender,1,6,77,380,67,447,3,7,2,2
+5093,Narender,Raider,9,10,44,429,15,444,8,26,0,1
+3081,Vijay,Raider,6,10,91,382,44,426,9,11,0,2
+322,Surjeet,Defender,3,10,148,19,404,423,1,0,34,11
+3032,Guman Singh,Raider,7,10,58,400,7,407,12,20,0,1
+251,Meraj Sheykh,All Rounder,2,7,100,350,54,404,8,6,0,1
+86,Rajesh Narwal,All Rounder,1,9,98,285,115,400,1,4,1,1
+160,Ran Singh,All Rounder,1,10,155,106,278,384,0,0,6,11
+3966,Rakesh,Raider,8,10,59,374,8,382,9,17,0,2
+3054,Vinay,Raider,7,10,76,372,7,379,14,9,0,0
+211,Deepak Narwal,Raider,2,8,97,353,13,366,4,10,0,0
+161,Girish Maruti Ernak,Defender,1,10,150,10,340,350,1,0,23,5
+368,Sunil Kumar,Defender,4,10,137,9,336,345,1,0,20,12
+124,Wazir Singh,All Rounder,1,6,47,278,59,337,3,9,3,2
+163,Mahendra Ganesh Rajput,Defender,1,9,108,294,36,330,10,4,0,1
+293,Nilesh Salunke,Defender,3,7,84,315,15,330,8,5,0,2
+290,Sandeep Dhull,Defender,3,10,117,2,322,324,0,0,20,5
+5124,Parteek Dahiya,All-Rounder,9,10,38,308,16,324,13,17,0,1
+157,Ravinder Pahal,Defender,1,9,124,14,308,322,0,0,20,3
+357,Parvesh Bhainswal,Raider,4,10,140,4,310,314,0,0,19,24
+4925,Mohammadreza Chiyaneh,All Rounder,8,10,68,37,272,309,2,0,27,15
+156,Pawan Kumar Kadian,Raider,1,8,85,282,25,307,3,5,0,0
+3233,Pankaj Mohite,Raider,7,10,58,280,26,306,8,8,0,2
+261,Rohit Baliyan,Raider,2,7,71,275,29,304,5,3,0,0
+3088,Nitesh Kumar,Defender,6,10,109,4,298,302,0,0,18,10
+769,Mahender Singh,Defender,5,10,125,3,292,295,0,0,17,22
+85,Rajesh Mondal,Raider,1,6,93,260,34,294,1,1,0,0
+3176,Mohammad Nabibakhsh,All Rounder,7,10,78,215,75,290,6,2,1,5
+212,Amit Hooda,Defender,2,9,104,11,268,279,0,0,14,8
+88,Rakesh Kumar,,1,5,56,186,87,273,0,3,2,1
+4183,Meetu,Raider,8,10,58,267,6,273,5,8,0,1
+42,Dharmaraj Cheralathan,Defender,1,8,123,43,224,267,0,0,10,2
+3240,Sumit,Defender,7,10,89,11,254,265,0,0,20,14
+389,Ajay Kumar,Raider,4,8,68,260,2,262,5,6,0,0
+3083,Vishal Bhardwaj,All Rounder,6,10,93,6,246,252,0,0,16,15
+146,Surender Nada,Defender,1,9,104,24,227,251,0,0,16,10
+71,Mohit Chhillar,Defender,1,7,109,7,242,249,0,0,16,4
+3228,Saurabh Nandal,Defender,7,10,92,2,246,248,0,0,11,13
+3028,Ashish,Raider,7,10,61,184,64,248,5,4,0,4
+105,Shabeer Bappu,Defender,1,7,76,213,34,247,0,5,1,1
+54,Jeeva Kumar,Defender,1,8,135,1,239,240,0,0,5,8
+92,Ravi Dalal,,1,5,45,173,52,225,0,3,2,0
+3236,Sagar,Defender,7,10,70,2,223,225,0,0,20,21
+240,Ravi Kumar,Defender,2,10,150,1,219,220,0,0,9,6
+772,More G B,Raider,5,9,73,157,59,216,2,3,1,2
+3086,Surender Singh,Defender,6,10,96,7,208,215,1,0,5,10
+194,Joginder Narwal,Defender,2,9,109,5,207,212,0,0,2,3
+118,Surjeet Narwal,,1,4,31,160,52,212,0,7,2,0
+66,Mahesh Goud,Raider,1,6,68,165,46,211,3,0,1,3
+4959,Akash Shinde,Raider,8,10,38,204,5,209,7,7,0,1
+3038,Neeraj Narwal,Raider,7,10,59,175,31,206,7,3,0,3
+75,Nitin Madane,,1,5,47,165,38,203,0,6,2,0
+174,Deepak Kumar Dahiya,Defender,1,6,60,181,20,201,3,2,0,0
+489,Abozar Mighani,Defender,5,9,88,2,197,199,0,0,7,5
+3128,Sonu,Raider,7,10,46,185,14,199,9,6,0,1
+2290,Rajnish,Raider,6,10,36,190,8,198,6,8,0,0
+204,Rakesh Narwal,Raider,2,10,73,186,12,198,5,4,0,2
+4184,Jaideep,Defender,8,10,66,4,188,192,0,0,15,17
+3106,Sunil,Defender - Right Corner,6,10,91,1,187,188,0,0,10,3
+579,Jaideep,Defender,5,9,89,0,187,187,0,0,12,6
+2357,Naveen,Raider,6,8,48,160,25,185,5,2,0,2
+123,Vishal Mane,Defender,1,9,135,1,183,184,0,0,7,3
+119,Surjeet Singh,Raider,3,6,50,176,8,184,2,6,0,0
+252,Kuldeep Singh,Defender,2,6,66,59,124,183,1,0,6,8
+202,Ashish Kumar,Defender,2,10,112,50,129,179,0,0,3,4
+3082,Monu,Raider,6,10,81,90,84,174,2,0,1,6
+3107,Neeraj Kumar,Defender,7,10,80,2,172,174,0,0,9,6
+107,Shrikant Tewthia,All Rounder,1,8,81,78,94,172,1,1,2,6
+5185,Nitin Kumar,Right Raider,10,10,20,169,0,169,4,8,0,0
+3239,Ashu Singh,Defender,7,10,87,6,160,166,0,0,4,14
+567,Mohsen Maghsoudlou,Raider,5,9,80,111,55,166,2,1,0,4
+3159,Vishal,All Rounder,6,10,74,2,163,165,0,0,6,2
+264,Selvamani K,Defender,2,10,61,155,7,162,4,2,0,0
+4954,Mohit,Defender,8,10,67,5,156,161,1,0,9,13
+3574,Ankush,Defender - Left Corner,9,10,46,0,159,159,0,0,17,12
+3103,Shubham Shinde,Defender - Right corner,6,10,84,8,151,159,0,0,5,8
+3000,Sombir,Defender,6,10,74,4,153,157,0,0,11,16
+4965,Sahil Gulia,Defender,8,10,63,0,156,156,0,0,8,9
+234,Surender Singh,Defender,2,7,54,146,9,155,1,2,0,0
+300,Abolfazel Maghsodlo,Raider,3,8,60,147,8,155,1,0,0,1
+660,Bhavani Rajput,Raider,5,10,71,151,3,154,3,1,0,0
+249,Hadi Oshtorak,All Rounder,2,8,110,25,127,152,0,0,3,5
+482,Farhad Milaghardan,Defender,5,7,65,73,79,152,0,1,1,0
+3065,Nitin Rawal,Defender,6,9,59,77,72,149,3,0,3,4
+5252,Amirmohammad Zafardanesh,All-Rounder,10,10,20,141,7,148,2,6,0,0
+3964,Rinku,Defender,8,10,50,0,147,147,0,0,9,19
+3161,Himanshu,Defender,7,10,54,90,53,143,3,0,1,6
+3965,MANJEET,Raider,8,10,45,125,18,143,4,1,0,4
+376,Athul M S,Raider,4,8,55,140,1,141,0,0,0,0
+4769,Sahul Kumar,All-Rounder,8,10,63,1,140,141,0,0,5,10
+4192,Abinesh Nadarajan,Defender - Right Cover,8,10,61,5,135,140,0,0,7,9
+242,Tushar Patil,Raider,2,6,67,135,4,139,3,0,0,0
+4949,Krishan,Defender,8,10,66,0,139,139,0,0,8,10
+3095,Adarsh T,Defender - Left Corner,6,9,57,107,31,138,3,1,0,3
+4186,Rahul Sethpal,Defender - Right Corner,8,10,56,15,123,138,0,0,9,23
+4972,Aman,Defender – Left Corner,8,10,60,2,135,137,0,0,4,7
+141,Sunil Jaipal,,1,5,42,87,50,137,0,0,0,3
+190,Sonu Narwal,,2,4,36,133,0,133,0,1,0,0
+5002,Jai Bhagwan,Raider,9,10,32,122,10,132,6,1,0,3
+2322,Ankit Beniwal,Raider,6,8,29,116,16,132,2,4,0,0
+3084,Rinku Narwal,Defender,6,9,62,2,127,129,0,0,5,2
+522,Dong Geon Lee,Raider,5,9,55,127,2,129,1,2,0,1
+73,Nilesh Shinde,,1,5,69,18,109,127,0,0,5,1
+191,C. Arun,Defender,2,8,107,5,121,126,0,0,3,6
+4108,Shivam Patare,Left Raider,10,10,23,116,4,120,3,3,0,1
+248,Sandeep,Defender - Left Corner,2,9,46,11,107,118,0,0,8,2
+4179,Sushil,Raider,9,10,21,117,0,117,5,4,0,0
+764,Vinod Kumar,Raider,5,9,55,63,47,110,2,0,2,5
+207,Sunil Kumar,All Rounder,2,6,69,4,104,108,0,0,2,1
+4193,Sudhakar M,Raider,10,10,19,103,2,105,2,3,0,1
+3014,M. Abishek,Defender,7,10,61,0,104,104,0,0,3,3
+46,Gurvinder Singh,All Rounder,1,7,60,82,21,103,1,1,0,0
+621,Baldev Singh,Defender - Right Corner,6,9,58,3,100,103,0,0,7,0
+4222,Rohit Tomar,Raider,8,9,23,85,18,103,1,1,1,3
+324,Darshan,Raider,3,7,49,91,11,102,2,1,0,3
+3046,Rakesh Gowda,Raider,7,8,25,87,15,102,1,1,0,0
+5022,Reza Mirbagheri,Defender,9,10,38,4,96,100,0,0,4,10
+165,Sachin Shingade,Defender,1,6,89,0,100,100,0,0,4,1
+96,Rohit Rana,All Rounder,1,6,84,2,98,100,0,0,4,0
+179,Vikas Kale,Defender,2,7,79,0,99,99,0,0,4,0
+3115,Amit Sheoran,Defender,6,10,52,1,97,98,0,0,5,3
+217,Rohit Kumar Choudary,Raider,2,6,45,93,3,96,0,1,0,0
+311,Anil Kumar,Defender - Left Cover,3,9,77,4,92,96,0,0,0,0
+3234,Sanket Sawant,Defender,7,10,74,0,95,95,0,0,0,3
+121,Vikas Jaglan,Raider,5,10,64,50,43,93,2,0,0,1
+5128,Gaurav Khatri,Defender - Right Corner,9,10,40,4,89,93,0,0,4,4
+3138,Harendra Kumar,Defender,7,10,77,2,90,92,0,0,2,5
+5163,Gagana Gowda,Right Raider,10,10,13,92,0,92,4,3,0,0
+67,Mahipal Narwal,,1,5,40,57,35,92,0,1,0,0
+5032,Mohit,Defender - Left Corner,9,10,42,0,91,91,0,0,3,7
+5282,Sandeep Kumar,Raider,10,10,20,86,1,87,0,1,0,0
+109,Somvir Shekhar,,1,5,61,1,86,87,0,0,4,1
+2041,Gurdeep,All Rounder,7,10,60,2,85,87,0,0,3,8
+791,Nitin Rawal,,5,5,22,65,20,85,4,2,0,1
+3154,Sachin Narwal,All Rounder,7,10,39,81,3,84,2,0,0,0
+5114,Vaibhav Garje,Defender - Right Cover,9,10,40,2,82,84,0,0,4,4
+164,Bajirao Hodage,Defender,1,6,64,0,84,84,0,0,2,0
+34,Bhupender Singh,All Rounder,2,6,67,71,12,83,3,0,1,0
+4964,Mohit,Defender,8,10,59,5,78,83,0,0,1,3
+2023,Ruturaj Koravi,Defender,6,8,50,0,82,82,0,0,1,3
+51,Jasmer Singh Gulia,,1,6,51,8,74,82,0,0,5,1
+218,Sachin Kumar,Defender,5,7,51,26,55,81,0,0,3,0
+4939,Pardeep Kumar,Raider,8,9,22,76,4,80,3,1,0,0
+347,Sagar B. Krishna,All Rounder,4,8,76,2,78,80,0,0,5,3
+3104,Sumit Singh,Defender,6,7,27,69,9,78,0,0,0,0
+358,Vishal Bharadwaj,,4,5,25,1,77,78,0,0,5,3
+55,Jitesh Joshi,,1,2,21,53,24,77,0,0,0,0
+5144,Yogesh,Defender - Right Corner,10,10,23,3,74,77,0,0,5,6
+70,Manoj Kumar,,1,5,66,25,51,76,0,0,2,2
+162,D. Suresh Kumar,,1,5,59,0,75,75,0,0,2,2
+5046,Visvanath V,All-Rounder,9,10,29,51,20,71,1,0,0,4
+3126,Amit,All Rounder,6,8,53,2,67,69,0,0,2,2
+4963,Himanshu Singh,Raider,8,10,31,62,7,69,3,1,0,1
+268,Vineet Sharma,Raider,2,7,46,42,26,68,0,0,0,1
+79,Pravin Niwale,,1,3,18,62,6,68,0,1,0,0
+732,Kuldeep Singh,All Rounder,5,7,43,1,67,68,0,0,3,1
+5169,Ankit,All-Rounder,10,10,23,0,66,66,0,0,5,5
+613,Sunil Siddhgavali,Raider,5,8,50,5,61,66,0,0,5,1
+4970,Shivam,Raider,8,10,25,60,6,66,0,1,0,2
+390,Jawahar,,4,7,49,9,56,65,0,0,2,3
+745,Vijay,,5,5,23,27,37,64,1,0,1,3
+4757,Vishwas S,Raider,8,10,24,62,2,64,1,0,0,0
+4956,Deepak Singh,Defender,8,10,30,4,59,63,0,0,4,3
+365,Akshay Jadhav,Raider,4,6,38,37,25,62,0,0,2,2
+387,Vinod Kumar,Raider,4,7,32,52,9,61,0,0,0,0
+5138,Akshit,Left Raider,10,10,10,61,0,61,2,1,0,0
+724,Darshan J.,Defender,5,8,37,1,59,60,0,0,1,1
+3094,Ravindra Ramesh Kumawat,Defender,6,8,21,52,7,59,2,0,0,0
+733,Surinder Singh,,5,5,22,0,58,58,0,0,3,0
+3175,Mohammad Esmaeil Maghsoudlou,Raider,7,9,28,41,16,57,0,0,0,1
+3110,Amit Kumar,,6,7,21,28,27,55,1,0,1,0
+5197,Robin Chaudhary,Right Raider,10,10,17,52,0,52,0,0,0,0
+3343,Sajin C,All-Rounder,8,10,41,0,52,52,0,0,1,6
+168,Mangesh Bhagat,,1,1,8,27,25,52,0,0,1,0
+231,Amit Rathi,,2,5,25,46,6,52,0,0,0,0
+3151,Manoj Gowda,All Rounder,8,9,21,44,8,52,2,0,0,1
+4848,Mayur Kadam,Defender,8,10,45,0,52,52,0,0,2,1
+5018,Heidarali Ekrami,Raider,9,10,22,49,2,51,2,0,0,1
+2025,Ajinkya Kapre,All Rounder,7,9,25,44,7,51,2,0,0,0
+3227,Ankit,Defender,7,9,38,2,48,50,0,0,1,9
+5117,Pranay Rane,Raider,9,10,23,49,1,50,0,1,0,0
+4723,Rohit,All Rounder,8,10,20,39,10,49,2,0,0,2
+5121,Anil Kumar,Raider,9,10,21,43,6,49,1,0,0,1
+795,Monu,,5,5,24,19,30,49,1,0,1,1
+5157,Prafull Zaware,Left Raider,10,10,19,43,5,48,0,0,0,0
+5141,Ashish,Defender - Left Corner,10,10,19,0,48,48,0,0,4,2
+158,Rakesh Singh Kumar,,1,5,51,1,46,47,0,0,2,1
+725,Nitesh Kumar,,5,5,22,0,47,47,0,0,4,1
+3593,Sourav Gulia,Defender,8,10,26,0,47,47,0,0,3,0
+5160,Sombir,Defender - Left Corner,10,10,15,3,44,47,0,0,4,3
+2297,Arkam Shaikh,All-Rounder,6,10,30,3,43,46,0,0,1,0
+4928,Amirhossein Bastami,Defender,9,10,31,2,44,46,0,0,2,3
+576,Anand Patil,Raider,5,6,26,46,0,46,2,0,0,0
+232,Sachin V.,Defender - Left Corner,2,8,34,14,31,45,0,0,1,1
+245,Yogesh Hudda,Raider,2,6,30,35,10,45,0,0,0,0
+3058,Suraj Desai,All Rounder,7,7,12,44,1,45,1,1,0,0
+215,Vinod Kumar,Defender,3,6,28,0,44,44,0,0,0,0
+5118,Mahipal,Raider,9,10,12,43,1,44,1,1,0,0
+4191,Sanjeevi S,All- Rounder,10,10,16,38,6,44,2,0,0,1
+108,Shyam Kumar Sah,,1,3,39,17,27,44,0,0,1,0
+773,Satpal,Defender,5,6,24,5,38,43,0,0,1,2
+3011,Jadhav Shahaji,Defender,7,10,38,0,43,43,0,0,3,0
+167,Preetam Chhillar,,1,5,76,15,27,42,1,0,0,0
+4978,Balaji D,All Rounder,8,10,38,0,42,42,0,0,0,1
+5039,Shankar Gadai,All-Rounder,9,10,34,12,30,42,0,0,0,0
+5095,Vinay,Raider,9,9,15,38,4,42,1,0,0,1
+3101,Ponparthiban Subramanian,Defender-Right Cover,6,10,34,0,40,40,0,0,3,0
+3100,Parveen,Defender - Left Cover,6,9,40,3,37,40,0,0,1,0
+778,Narender,,6,7,28,0,40,40,0,0,2,0
+3031,Galla Raju,Raider,8,8,12,34,6,40,1,0,0,0
+44,Gangadhari Mallesh,All Rounder,1,6,42,19,21,40,0,0,0,0
+361,Sombir,,4,5,27,0,39,39,0,0,2,6
+3004,Akash Choudhary,Defender,7,10,24,0,39,39,0,0,1,1
+5187,Mohit,Defender - Right Corner,10,10,14,3,36,39,0,0,1,5
+173,Suresu Kumar,,1,5,34,31,8,39,0,0,0,0
+4228,Shubham Kumar,Defender - Left Cover,8,9,32,1,37,38,0,0,0,4
+686,Rohit Gulia,,5,5,21,35,3,38,0,0,0,0
+5116,Aditya Shinde,Raider,9,10,18,37,0,37,1,1,0,0
+728,Manish,Defender,5,6,43,0,37,37,0,0,0,5
+84,Rajaguru Subramanian,Defender,1,7,48,1,35,36,0,0,0,0
+5174,Ajit Pawar,Defender - Left Cover,10,10,19,6,30,36,1,0,2,4
+718,R. Sriram,All Rounder,5,7,16,35,1,36,0,0,0,0
+185,Vijin Thangadurai,Defender,2,9,81,0,36,36,0,0,0,1
+5113,Abhishek KS,Defender - Left Cover,9,10,31,0,35,35,0,0,1,5
+61,Kuldeep Singh,,1,5,23,0,35,35,0,0,3,1
+5153,Vishal Chahal,Right Raider,10,10,10,34,1,35,2,1,0,0
+762,Vikas,,5,5,20,30,5,35,0,0,0,1
+5254,Milad Jabbari,Defender,10,10,13,2,33,35,0,0,2,7
+3076,Santhapanaselvam,All Rounder,6,10,30,0,34,34,0,0,0,2
+768,Vijay Kumar,Defender,5,9,46,6,28,34,0,0,0,6
+3133,Amit Kumar,,6,6,17,12,21,33,1,0,1,0
+536,Ziaur Rahman,Defender,5,6,41,0,32,32,0,0,1,2
+371,Amit Nagar,Defender,4,8,24,23,9,32,0,0,0,0
+150,Parmod Narwal,,1,5,51,21,11,32,0,0,0,0
+28,Amit Singh Chhillar,,1,5,40,1,31,32,0,0,1,0
+5162,Hitesh,Defender - Right Corner,10,10,17,0,31,31,0,0,3,5
+611,Sidharth,,5,5,21,4,27,31,0,0,1,3
+152,D. Gopu,Defender,1,6,35,4,27,31,0,0,1,1
+98,Sachin Khambe,,1,2,22,5,26,31,0,0,2,0
+784,Viraj Vishnu Landge,Defender,5,9,39,0,30,30,0,0,0,0
+3970,Himanshu Narwal,Raider,9,10,9,30,0,30,0,0,0,0
+3045,Mayur Shivtarkar,All Rounder,6,7,29,4,26,30,0,0,0,0
+4675,Akash Pikalmunde,Raider,8,9,10,28,2,30,0,1,0,0
+56,Kalimuthu Balamahendran,,1,3,24,18,12,30,0,0,0,0
+2316,Azad singh,,6,7,13,27,2,29,1,0,0,0
+172,Vinoth Kumar,Defender,1,7,34,29,0,29,0,0,0,0
+171,Pradeep Kumar,,1,2,13,24,5,29,0,1,0,0
+301,Hadi Tajik,All Rounder,3,8,52,5,24,29,0,0,0,1
+722,D. Pradap,,5,5,16,9,20,29,0,0,0,1
+5102,Naveen Kundu,Defender - Left Corner,9,10,18,0,29,29,0,0,2,1
+309,Manpreet Singh,,3,3,13,24,5,29,0,0,0,0
+5134,Aditya S. Shinde,Defender - Left Corner,10,10,16,7,21,28,0,0,0,0
+272,Umesh Mhatre,,3,5,30,19,9,28,0,0,0,0
+3235,Sushant Sail,Raider,7,8,14,24,4,28,1,0,0,0
+16,Waleed Al Hasani,,1,3,19,14,14,28,0,0,1,0
+4795,K Hanumanthu,All-rounder,9,9,8,24,4,28,0,1,0,0
+274,Krushna Madane,Defender,3,7,19,1,27,28,0,0,1,0
+3089,Pankaj,All Rounder,6,8,15,0,28,28,0,0,2,0
+3019,Mohit Sehrawat,Defender,7,8,28,5,22,27,0,0,1,0
+5137,Parteek,Defender - Left Cover,10,10,13,0,27,27,0,0,1,4
+644,Anand Surendra Tomar,Raider,6,9,9,26,1,27,1,0,0,0
+519,Young Chang Ko,Defender,5,7,48,0,26,26,0,0,1,0
+734,Vikas,,5,5,22,0,26,26,0,0,0,2
+3029,Banty,Raider,7,7,15,22,3,25,0,0,0,0
+5146,Vishal Tate,Right Raider,10,10,3,24,1,25,2,1,0,0
+5196,Vikrant,Defender-Left Cover,10,10,18,0,25,25,0,0,0,1
+5037,Kiran Magar,Defender - Left Corner,9,10,25,0,25,25,0,0,0,3
+147,Prashant Chavan,,1,4,44,1,24,25,0,0,0,0
+267,Amit Kumar,Defender,2,7,22,10,15,25,0,0,0,0
+386,Anil Kumar,Raider,4,6,23,1,24,25,0,0,0,0
+195,Ashish Chhokar,Defender,2,6,20,21,4,25,1,0,0,0
+14,Tae Deok Eom,,1,6,51,14,10,24,0,0,0,0
+2298,Armaan,,6,7,10,22,2,24,2,1,0,0
+372,Harish Naik,,5,5,15,24,0,24,0,1,0,0
+275,Deepak Kumar,,3,5,31,9,15,24,0,0,0,1
+3226,Sumit,Defender,7,10,21,0,24,24,0,0,1,0
+233,Manoj Dhull,Defender,2,6,36,0,24,24,0,0,0,0
+5078,Harsh Lad,Defender - Left Corner,9,10,12,0,23,23,0,0,1,2
+648,Ajit Singh,,5,5,16,23,0,23,1,0,0,0
+5101,Monu Hooda,Defender - Right Corner,9,10,22,0,23,23,0,0,1,1
+5155,Nitin Singh,Raider,10,10,9,20,3,23,0,0,0,1
+3085,D. Pradap,All Rounder,6,6,13,9,13,22,0,0,0,0
+796,Rinku Narwal,,5,5,24,1,21,22,0,0,1,4
+771,Suresh Kumar,,5,5,19,22,0,22,0,0,0,0
+314,Somvir,,3,4,17,1,21,22,0,0,0,0
+288,Rahul Kumar,,3,5,40,0,22,22,0,0,0,1
+4957,Manish,Defender,8,10,29,1,20,21,0,0,0,4
+299,Sandeep,Defender,3,9,44,0,21,21,0,0,0,0
+3091,Harish Naik,All Rounder,6,6,7,21,0,21,0,0,0,0
+3099,Ankit,Defender,6,9,24,1,20,21,0,0,0,0
+87,Raju Lal Choudhary,All Rounder,1,7,30,0,21,21,0,0,0,0
+3090,Rakshith,All Rounder,6,10,14,21,0,21,1,0,0,0
+5042,Lucky Sharma,Defender - Right Corner,9,10,28,0,21,21,0,0,1,3
+5158,Omkar Patil,Right Raider,10,10,10,19,1,20,3,0,0,0
+3070,Brijendra Singh Choudhary,All Rounder,8,8,6,15,5,20,1,0,0,0
+3052,Sushil Gulia,Raider,7,8,7,19,1,20,2,0,0,0
+5159,Bittu,Defender - Right Corner,10,10,11,0,20,20,0,0,1,2
+4836,Ankit,Defender - Left Corner,10,10,11,2,18,20,0,0,1,0
+3177,Mohammad Taghi Paein Mahali,Defender,7,8,11,16,4,20,1,0,0,0
+4962,Aashish,Defender,8,10,16,1,18,19,0,0,0,2
+38,Dadaso Balaso Awad,,1,2,13,5,14,19,0,0,0,0
+5096,Vijay Kumar,Defender - Left Corner,9,10,19,0,19,19,0,0,0,2
+182,Dinesh Kumar,,2,2,8,19,0,19,0,0,0,0
+4693,Manuj,Defender,8,10,21,0,19,19,0,0,0,1
+5145,Nitin,Raider,10,10,9,17,2,19,1,0,0,0
+277,Anil Shriram Nimbolkar,,3,3,8,15,4,19,0,1,0,0
+5020,Mohammadreza Kaboudrahangi,Defender,10,10,6,2,17,19,0,0,1,6
+3039,Nitin Panwar,All Rounder,8,10,15,4,15,19,0,0,0,2
+3973,Durgesh Kumar,Raider,9,9,10,16,3,19,1,0,0,0
+3910,Gokulakannan M,Defender - Right Cover,10,10,13,0,19,19,0,0,2,0
+3969,Prince D,Defender,8,9,23,3,15,18,0,0,0,3
+2257,Victor Obiero,Defender,6,8,9,15,3,18,0,0,0,0
+4923,Hamid Nader,All Rounder,8,10,20,5,13,18,0,0,1,1
+5319,Mohit,Defender-Right Cover,10,10,20,0,18,18,0,0,0,0
+2291,Amit Kumar,All Rounder,7,7,6,16,2,18,0,0,0,0
+3111,Ajeet,Defender,7,8,16,0,17,17,0,0,0,0
+3021,Pavan TR,Defender,7,8,25,0,17,17,0,0,0,2
+3156,Sourabh Tanaji Patil,All Rounder,7,7,3,17,0,17,0,1,0,0
+2307,Kamal Singh,,6,7,10,13,4,17,0,0,0,0
+5148,Abhijeet Malik,Raider,10,10,5,16,1,17,1,0,0,0
+5091,Ranjit Naik,Raider,9,9,7,15,2,17,0,0,0,0
+5107,Anuj Kumar,Raider,9,10,6,17,0,17,1,0,0,0
+696,M. Thivakaran,,5,5,12,14,2,16,0,0,0,0
+665,Pankaj,,5,5,17,0,16,16,0,0,0,0
+726,Babu M,Defender - Left Cover,5,10,14,0,16,16,0,0,0,1
+4106,Tejas Patil,All-Rounder,9,10,7,16,0,16,0,1,0,0
+647,Gulveer Singh,All Rounder,5,10,14,11,5,16,0,0,0,1
+667,Elangeshwaran R,,5,5,13,12,4,16,1,0,0,2
+5251,Alireza Mirzaeian,Raider,10,10,9,15,1,16,0,0,0,0
+4873,Akshay,Raider,8,10,15,0,16,16,0,0,0,2
+3793,Jaskirat Singh,Left Cover – Defender,10,10,14,0,16,16,0,0,0,1
+243,Sanjay Kumar,,2,4,8,15,1,16,0,0,0,0
+360,Sanket Chavan,,4,5,15,0,15,15,0,0,0,0
+4966,Muhammed Shihas,Defender,8,9,13,3,12,15,0,0,2,3
+4032,Shivansh Thakur,Defender - Right Cover,9,10,13,3,12,15,0,0,1,2
+676,Santhapanaselvam,,5,5,10,0,15,15,0,0,0,0
+97,Rupesh Tomar,,1,5,26,5,10,15,0,0,0,0
+313,Virender Wazir Singh,,3,5,19,14,1,15,1,0,0,0
+238,Isac Antony,,2,3,15,11,4,15,0,0,0,0
+200,Mohammad Maghsoudlou,,2,5,49,14,1,15,0,0,0,0
+159,Samarjeet Singh,,1,3,26,3,12,15,0,0,0,1
+32,Balbir Singh,,1,2,12,10,5,15,0,0,0,0
+5094,Jatin,Raider,10,10,6,13,1,14,0,0,0,0
+2274,C Manoj Kumar,,6,6,12,10,4,14,0,0,0,0
+837,Rakshith,,5,5,12,12,2,14,0,0,0,0
+3179,Emad Sedaghatnia,Raider,7,8,3,14,0,14,1,0,0,0
+5324,Rohit Kumar,Defender - Left Cover,10,10,4,1,13,14,0,0,1,0
+4961,Shubham Shelke,Raider,8,10,11,14,0,14,0,0,0,0
+2325,Anand,,6,7,8,14,0,14,1,0,0,0
+5161,Mukilan Shanmugam,Defender - Left Cover,10,10,9,0,14,14,0,0,1,3
+4224,Arpit Saroha,Defender - Right Corner,9,10,11,0,14,14,0,0,1,3
+391,S Mahalingam,,4,4,12,0,14,14,0,0,0,0
+5055,Manish Gulia,Raider,9,9,4,13,1,14,1,0,0,0
+3174,Daniel Odhiambo,All Rounder,8,10,5,13,0,13,0,0,0,0
+3001,Amit,Defender,6,8,24,0,13,13,0,0,0,0
+5051,Darpan,Defender,10,10,9,0,13,13,0,0,0,0
+2306,Lalit chaudhary,,6,7,10,6,7,13,0,0,0,0
+637,Neeraj Kumar,,5,5,18,0,13,13,0,0,0,1
+180,Kedar Lal,,2,3,12,12,1,13,0,0,0,0
+170,Swapnil Dilip Shinde,,1,5,27,0,13,13,0,0,0,0
+4948,Deepak,Defender,8,9,13,0,13,13,0,0,1,2
+5111,Nitin,Defender - Right Cover,9,10,13,2,11,13,0,0,1,3
+5164,Shivam Chaudhary,Left Raider,10,10,8,11,2,13,0,0,0,1
+3472,Rathan K,Raider,8,9,9,9,4,13,1,0,0,1
+181,Deepak Dhull,,2,4,14,1,12,13,0,0,1,0
+101,Santhosh B.S,,5,5,18,3,9,12,1,0,0,1
+710,N. Renjith,,5,5,15,0,12,12,0,0,0,2
+5225,Ghanshyam Magar,Raider,10,10,5,11,1,12,0,0,0,0
+786,Parvesh,,6,6,6,7,5,12,0,0,0,0
+3102,Sandeep,,6,7,6,7,5,12,0,0,0,0
+5130,Sachin,Raider,9,9,9,12,0,12,0,0,0,0
+5142,Himmat Antil,Defender - Left Cover,10,10,8,0,12,12,0,0,0,0
+235,Vijendra Singh,,2,3,9,1,10,11,0,0,0,0
+222,G. S. Manikandan,,2,3,23,0,11,11,0,0,0,0
+5129,Saurabh,Raider,9,9,2,11,0,11,0,1,0,0
+3027,Ankush,Raider,7,9,12,10,1,11,0,0,0,0
+5104,Sunny Sehrawat,Defender - Right Cover,9,10,13,0,11,11,0,0,1,1
+735,Vishal,,5,5,8,2,9,11,0,0,1,3
+4935,Aslam Thambi,Raider,9,10,8,11,0,11,1,0,0,0
+736,Yatharth,,5,5,12,0,11,11,0,0,0,1
+5103,Harsh,Defender - Left Cover,9,10,7,0,11,11,0,0,0,0
+5092,Thiyagarajan Yuvaraj,Defender,9,10,12,0,11,11,0,0,1,1
+5200,Rohit Yadav,Left Raider,10,10,5,11,0,11,1,0,0,0
+5100,Ashish Narwal,Raider,9,9,7,10,0,10,0,0,0,0
+4968,Kamlesh,Raider,8,9,6,10,0,10,0,0,0,0
+10,Simon Kibura,,1,4,38,9,1,10,0,0,0,0
+4798,Abdul Insamam,All-Rounder,9,9,7,10,0,10,0,0,0,0
+68,Mandeep Kumar,,1,1,7,5,5,10,0,0,0,0
+5108,Badal Singh,Defender - Left Corner,9,10,19,0,10,10,0,0,0,1
+4801,Ankit,Raider,8,8,4,7,2,9,0,0,0,0
+184,Deepak Kumar,,2,3,8,0,9,9,0,0,1,0
+3062,Palle Mallikarjun,Raider,7,7,5,7,2,9,0,0,0,0
+765,Anil Kumar,Defender,5,6,7,1,8,9,0,0,1,0
+363,Sumit Singh,,4,5,14,7,2,9,0,0,0,0
+292,Ravinder Kumar,Defender,6,6,8,0,9,9,0,0,0,0
+3056,Ajit Singh,Raider,6,6,6,9,0,9,0,0,0,0
+661,Tapas Pal,,5,5,15,0,9,9,0,0,0,0
+2278,Bhanu Pratap Tomar,,6,6,6,9,0,9,0,0,0,0
+605,Shubham Ashok Palkar,Raider,5,6,14,9,0,9,0,0,0,0
+13,Seong Ryeol Kim,,1,5,28,3,6,9,0,0,0,0
+3221,Chand Singh,Defender,7,7,12,1,8,9,0,0,0,0
+4750,Kapil,Defender - Right Cover,9,9,7,0,9,9,0,0,0,0
+4157,Lovepreet Singh,Raider,9,9,3,7,2,9,0,0,0,0
+3238,Navneet,Raider,7,10,7,9,0,9,0,0,0,0
+694,Deepak Yadav,Defender,5,7,15,0,8,8,0,0,0,1
+2315,Bhuvneshwar Gaur,Raider,6,8,7,8,0,8,0,0,0,0
+5180,Masanamuthu Lakshnanan,Right Raider,10,10,4,8,0,8,0,0,0,0
+3096,Ajay,,6,7,18,2,6,8,0,0,0,0
+3237,Aakash Arsul,Defender,7,8,7,0,8,8,0,0,1,0
+285,Anil Kashinath Patil,,3,3,9,8,0,8,0,0,0,0
+689,Mohan Raman G,,5,5,13,8,0,8,0,0,0,0
+3178,Saeid Ghaffari,Defender,7,7,9,0,8,8,0,0,0,0
+5143,Manu,Left Raider,10,10,11,7,1,8,0,0,0,0
+4,Ehsan Zamani Fard,,1,1,8,4,4,8,0,0,0,0
+3225,Harmanjit Singh,Raider,7,9,8,8,0,8,0,0,0,0
+244,Ravi V.,,2,3,3,8,0,8,0,0,0,0
+2266,Mahesh Maruti Magdum,,6,6,4,7,0,7,0,0,0,0
+76,Nitin More,,1,3,22,0,7,7,0,0,0,0
+80,Punit Kumar Teotia,,1,1,4,3,4,7,0,0,0,0
+3527,Jagdeep,Right Raider,10,10,2,6,1,7,0,0,0,0
+4849,Sudhakar Krishant,Defender - Left Cover,9,9,9,0,7,7,0,0,0,1
+4933,James Kamweti,Raider,8,9,5,6,1,7,0,0,0,0
+5120,R Guhan,Raider,9,10,7,7,0,7,0,0,0,0
+3153,Omkar R. More,All-Rounder,10,10,10,0,7,7,0,0,0,0
+3098,Aman Kadian,,6,7,5,6,1,7,0,0,0,0
+4058,Sager Kumar,All-rounder,9,9,1,0,7,7,0,0,1,0
+278,Gnanasekaran M,,3,3,10,5,2,7,0,0,0,0
+599,Lokesh Kaushik,,6,7,8,5,2,7,0,0,0,0
+246,Harvinder Singh,,2,2,7,0,7,7,0,0,0,0
+3162,Karamvir,Defender,7,8,12,1,6,7,0,0,0,0
+5109,Mohit Pahal,Defender - Left Corner,9,9,3,1,6,7,0,0,0,2
+53,Jeeva Gopal,,1,5,32,0,7,7,0,0,0,2
+2336,Anuj Kumar,,6,6,6,1,5,6,0,0,0,0
+5151,Dadaso Pujari,Defender - Right Corner,10,10,5,0,6,6,0,0,0,1
+5256,Vahid RezaEimehr,Defender,10,10,5,0,6,6,0,0,0,2
+5213,Sanjay,Defender-Right Cover,10,10,6,0,6,6,0,0,1,0
+4917,Govind Gurjar,All-Rounder,9,9,2,1,5,6,0,0,0,0
+380,Vikash Kumar,,4,4,7,6,0,6,0,0,0,0
+738,Rahul Choudhary,,5,5,9,5,1,6,0,0,0,0
+23,Dovlet Boshimov,,1,1,2,4,2,6,0,0,0,0
+5097,Parshant Kumar,Raider,9,10,2,6,0,6,0,0,0,0
+5139,Arulnanthababu,Defender - Right Corner,10,10,3,0,6,6,0,0,1,0
+178,Parveen M. Jangra,,2,2,7,1,5,6,0,0,0,0
+3152,Nitin Panwar,Raider,8,9,5,6,0,6,0,0,0,0
+266,David Mosambayi,Raider,2,6,37,6,0,6,0,0,0,0
+578,Mayur Shivtarkar,,5,5,7,5,1,6,0,0,0,0
+5090,Naveen Sharma,Defender,9,10,13,1,5,6,0,0,0,1
+3025,Sahil Surender,Defender,8,9,11,0,6,6,0,0,0,0
+3075,Purna Singh,Raider,7,9,10,6,0,6,0,0,0,0
+19,Wajid Ali,,1,1,4,4,1,5,0,0,0,0
+72,Navneet Gautam,,1,5,47,1,4,5,0,0,0,0
+21,Sinotharan Kanesharajah,,1,4,30,5,0,5,0,0,0,0
+3146,Amit Kumar,All Rounder,7,7,3,5,0,5,0,0,0,0
+3594,Sahil,Raider,8,8,6,5,0,5,0,0,0,0
+741,Vikash,,5,5,7,0,5,5,0,0,0,0
+4971,Aman,Raider,8,9,4,4,1,5,0,0,0,0
+4195,Sakthivel R,Defender - Right Corner,9,9,7,0,5,5,0,0,0,0
+751,Gurvinder Singh,,5,5,8,0,5,5,0,0,0,0
+2021,Anand V,Raider,6,8,6,5,0,5,0,0,0,0
+608,Prateek,,6,6,6,3,2,5,0,0,0,0
+5173,Jitender Yadav,All-rounder,10,10,4,0,5,5,0,0,0,1
+260,Vijay Malik,,2,2,12,5,0,5,0,0,0,0
+5106,Devank,Raider,9,10,6,5,0,5,0,0,0,0
+236,T. Prasad,,2,3,18,0,5,5,0,0,0,0
+5136,Dipak Arjun Shinde,Defender - Right Corner,10,10,11,0,5,5,0,0,0,2
+283,Jagdeesha K.K.,,3,3,9,0,5,5,0,0,0,0
+208,Varinder Singh,,2,2,15,0,5,5,0,0,0,0
+4036,Nitin Chandel,Defender - Right Corner,9,10,11,0,5,5,0,0,0,1
+370,Ravindra Ramesh Kumavat,,4,5,13,4,1,5,0,0,0,0
+2314,Dharmender,,6,6,4,5,0,5,1,0,0,0
+169,Sagar Khatale,,1,2,12,0,4,4,0,0,0,0
+3135,Avinash AR,All Rounder,7,7,1,4,0,4,0,0,0,0
+5115,Suyog Gaikar,Raider,9,10,4,4,0,4,0,0,0,0
+223,Rajeev Kumar,,2,2,8,0,4,4,0,0,0,0
+3222,Balram,All Rounder,7,8,5,3,1,4,0,0,0,0
+3230,Elavarasan,Defender,7,8,4,0,4,4,0,0,0,0
+5154,Ronak,Defender - Right Cover,10,10,5,0,4,4,0,0,0,1
+45,Gurpreet Singh,,1,2,18,2,2,4,0,0,0,0
+4977,Ankit,Defender,8,9,6,0,4,4,0,0,0,0
+629,Narender Hooda,All Rounder,9,10,16,0,4,4,0,0,0,0
+730,Rohit,,5,5,11,4,0,4,0,0,0,0
+89,Ram Kumar Sah,,1,4,13,3,1,4,0,0,0,0
+5156,Nitesh Kumar,Defender - Left Corner,10,10,9,0,4,4,0,0,0,1
+2328,Sudhanshu Tyagi,,6,6,13,0,4,4,0,0,0,0
+4941,Mohammad Malak,Defender,8,8,5,0,4,4,0,0,0,0
+113,Sunil Hanumanthappa,,1,1,5,2,2,4,0,0,0,0
+2262,Md Masud Karim,Raider,6,6,3,3,0,3,0,0,0,0
+640,Sanoj Kumar,,5,5,5,2,1,3,0,0,0,0
+3036,Mohit,Raider,8,8,1,3,0,3,0,0,0,0
+3180,Amirhossein Mohammad Maleki,Raider,8,10,2,3,0,3,0,0,0,0
+5150,Vaibhav Kamble,Defender - Left Corner,10,10,2,0,3,3,0,0,0,1
+4967,Palla Ramakrishna,Defender,8,9,3,1,2,3,0,0,0,0
+4754,Ratan G,Raider,10,10,3,3,0,3,0,0,0,0
+145,Md. Aruduzzaman Munshi,,1,4,19,2,1,3,0,0,0,0
+154,Gurchet Singh,,1,1,4,1,2,3,0,0,0,0
+3059,Jashandeep Singh,Raider,8,8,2,3,0,3,0,0,0,0
+384,Ravinder Kumar,,4,5,7,2,1,3,0,0,0,0
+5052,Alankar Patil,Defender - Right Corner,9,9,3,0,3,3,0,0,0,0
+4198,K. Abhimanyu,All-Rounder,9,9,6,2,1,3,0,0,0,0
+690,E Subash,,5,5,6,0,3,3,0,0,0,1
+5003,Md. Arif Rabbani,Defender - Left Corner,9,9,2,0,3,3,0,0,0,1
+776,Muruthu M,,5,5,3,0,3,3,0,0,0,0
+5110,Mohit,Defender - Left Cover,9,10,7,0,3,3,0,0,0,0
+712,Rohit Kumar,,5,5,20,2,1,3,0,0,0,0
+790,Satish,,5,5,11,0,3,3,0,0,0,0
+2318,Arun Kumar HN,,6,7,5,3,0,3,0,0,0,0
+792,Tushar Bhoir,Defender,5,6,13,0,3,3,0,0,0,1
+5152,Tushar Dattaray Adhavade,Defender - Right Cover,10,10,6,0,3,3,0,0,0,0
+746,Vikrant,,5,5,11,3,0,3,0,0,0,0
+5105,Ashish,Defender - Left Corner,9,10,10,0,3,3,0,0,0,1
+2302,Mithin Kumar,,6,6,3,3,0,3,0,0,0,0
+4804,Kapil Gurjar,Defender - Right Cover,10,10,3,0,3,3,0,0,0,1
+250,Hyunil Park,,2,2,9,2,1,3,0,0,0,0
+4929,Soleiman Pahlevani,Defender,8,9,7,0,3,3,0,0,0,1
+3473,Prathap S,Raider,8,8,3,3,0,3,0,0,0,0
+3208,Ravinder,All Rounder,7,7,5,0,3,3,0,0,0,0
+743,Maninder Singh,Raider,8,9,3,3,0,3,0,0,0,0
+3229,Vikas Chhillar,Raider,7,7,2,3,0,3,0,0,0,0
+5305,Ram Adghale,,10,10,3,0,2,2,0,0,0,0
+5053,Rakesh Ram,Defender - Right Cover,9,9,8,1,1,2,0,0,0,0
+279,Shashank Wankhede,,4,5,14,0,2,2,0,0,0,0
+2320,Mohit Balyan,,6,7,2,0,2,2,0,0,0,0
+708,N. Shiva Ramakrishna,,6,6,1,0,2,2,0,0,0,0
+2313,Gaurav Kumar,,6,7,3,2,0,2,0,0,0,0
+698,Vishav Chaudhary,Defender - Left Cover,6,8,2,2,0,2,0,0,0,0
+3148,Tapas Pal,All Rounder,6,8,4,0,2,2,0,0,0,0
+392,Kuldeep,,5,5,18,0,2,2,0,0,0,0
+221,Anoop E.V.,,2,3,3,0,2,2,0,0,0,0
+227,Vinod Paulyas,,2,4,6,2,0,2,0,0,0,0
+5098,Rajnesh,Defender - Right Cover,9,9,5,0,2,2,0,0,0,1
+316,Nirbhay Narwal,,3,3,2,1,1,2,0,0,0,0
+308,Sushil Vijay Bhosale,,3,4,7,0,2,2,0,0,0,0
+2282,Yashwant Bishnoi,,6,7,3,2,0,2,0,0,0,0
+4021,Vikash D,Defender,8,8,4,0,2,2,0,0,0,0
+5167,Akash Prasher,All-Rounder,10,10,3,2,0,2,0,0,0,0
+4844,Ravindra Chouhan,Defender-Right Corner,10,10,2,0,2,2,0,0,0,0
+206,Aman Kumar,,2,2,4,0,2,2,0,0,0,0
+225,Sandeep Tomar,,2,2,6,2,0,2,0,0,0,0
+263,Jay Bahadur Bohara,,2,4,22,2,0,2,0,0,0,0
+3167,Manish,Defender,7,8,4,0,2,2,0,0,0,0
+241,Ravit Kumar,,2,3,8,1,1,2,0,0,0,0
+205,Sandeep Malik,,2,3,2,0,2,2,0,0,0,0
+3073,Hemant Chauhan,,7,7,4,1,1,2,0,0,0,0
+3169,Satywan,Defender,7,9,4,0,2,2,0,0,0,0
+5191,Saurav Parthe,Left Raider,10,10,4,2,0,2,0,0,0,0
+3747,Gaurav Kumar,Defender,8,8,6,0,2,2,0,0,0,1
+3224,Sumit,Defender,7,8,3,0,2,2,0,0,0,0
+3301,Rohit Banne,Defender,8,8,6,0,2,2,0,0,0,1
+22,Wei Yang,,1,3,14,0,2,2,0,0,0,0
+5248,Zheng-Wei Chen,Raider,10,10,2,2,0,2,0,0,0,0
+5262,Kunal,Left Raider,10,10,1,2,0,2,0,0,0,0
+11,Dong Ju Hong,,1,5,27,2,0,2,0,0,0,0
+5171,Himanshu Choudhary,Defender - Left Corner,10,10,2,0,1,1,0,0,0,0
+5226,Hasan Balbool,Raider,10,10,2,1,0,1,0,0,0,0
+3201,Asiri Alawathge,Raider,8,8,2,1,0,1,0,0,0,0
+5182,Rahul Kumar,,10,10,1,1,0,1,0,0,0,0
+5165,Ishwar,Defender-Right Corner,10,10,1,1,0,1,0,0,0,0
+4932,Hyunsu Park,Raider,8,8,2,1,0,1,0,0,0,0
+2351,Vikram Kandola,,6,7,4,0,1,1,0,0,0,0
+3220,Naveen Narwal,Defender,7,7,3,0,1,1,0,0,0,0
+3158,Aman,Defender,7,7,2,0,1,1,0,0,0,0
+4945,Rohit Kumar,Defender,8,8,2,0,1,1,0,0,0,0
+3087,E Subash,All Rounder,6,6,2,0,1,1,0,0,0,0
+705,Ajvender Singh,,5,5,3,0,1,1,0,0,0,0
+513,Yong Joo Ok,,5,5,1,1,0,1,0,0,0,0
+737,Ajay,All Rounder,5,8,4,1,0,1,0,0,0,0
+3093,Aashish Nagar,Defender - Right Corner,6,8,5,0,1,1,0,0,0,0
+74,Nithesh B R,,6,6,2,0,1,1,0,0,0,0
+2345,Anil,,6,7,2,1,0,1,0,0,0,0
+4936,Mohammad Nosrati,Raider,8,8,2,0,1,1,0,0,0,0
+4958,Rohit,Raider,8,8,1,1,0,1,0,0,0,0
+4969,Prince,Defender,8,8,3,0,1,1,0,0,0,0
+210,Sunny,,4,4,14,1,0,1,0,0,0,0
+373,Parveen Narwal,,4,4,3,1,0,1,0,0,0,0
+5132,Priyank Chandel,Defender,9,9,3,0,1,1,0,0,0,0
+774,Munish,,5,5,10,1,0,1,0,0,0,0
+580,Vishnu Uthaman,,5,5,7,0,1,1,0,0,0,0
+5122,Rohan Singh,All-Rounder,9,10,2,1,0,1,0,0,0,0
+5019,Mohammad Ghorbani,Raider,9,9,1,0,1,1,0,0,0,0
+307,Ravinandan G.M.,,3,3,2,0,1,1,0,0,0,0
+296,Navjot Singh,,3,3,4,0,1,1,0,0,0,0
+317,Hardeep Duhan,,3,3,1,0,1,1,0,0,0,0
+201,Adinath Gavali,,2,2,1,0,1,1,0,0,0,0
+237,Amit Kumar,,2,2,1,0,1,1,0,0,0,0
+4926,Samuel Wafula,All-Rounder,10,10,7,1,0,1,0,0,0,0
+20,Wasim Sajjad,,1,2,25,0,1,1,0,0,0,0
+9,Takamitsu Kono,,1,5,2,1,0,1,0,0,0,0
+30,Arbinda Khuntia,,1,1,2,0,1,1,0,0,0,0
+239,Jishnu,,2,2,4,0,1,1,0,0,0,0
+193,Rohit Kumar Prajapat,,2,3,7,0,1,1,0,0,0,0
+199,Kazuhiro Takano,,2,4,12,1,0,1,0,0,0,0
+224,Inderpal Bishnoi,,2,2,2,1,0,1,0,0,0,0
+4600,Lavish,Defender-Right Cover,10,10,1,0,1,1,0,0,0,0
+335,Phonchoo Tin,All Rounder,4,7,10,1,0,1,0,0,0,0
+367,Nitin Kumar,,4,4,1,1,0,1,0,0,0,0
+364,Ajay Singh,,4,4,3,0,1,1,0,0,0,0
+312,Sanju,,3,3,7,0,1,1,0,0,0,0
+4141,D MahindraPrasad,Defender - Left Corner,9,9,1,1,0,1,0,0,0,0
+315,Parvesh Attri,,3,3,1,1,0,1,0,0,0,0
+554,Mohammad Hossain,All Rounder,7,7,0,0,0,0,0,0,0,0
+3129,Sunil Manik Dubile,All Rounder,7,7,3,0,0,0,0,0,0,0
+2263,Milinda Chathuranga,Raider,7,7,1,0,0,0,0,0,0,0
+3002,Subhash Narwal,Defender,7,7,0,0,0,0,0,0,0,0
+3007,Mahendra Choudhary,Defender,7,7,0,0,0,0,0,0,0,0
+3170,Amit,Defender,7,7,4,0,0,0,0,0,0,0
+43,Dharmendra Singh,Defender,7,7,0,0,0,0,0,0,0,0
+3223,Mohit,Defender,7,8,1,0,0,0,0,0,0,0
+3037,Siva Ganesh Reddy,Raider,7,7,2,0,0,0,0,0,0,0
+2264,Amir Dhumal,All Rounder,7,7,0,0,0,0,0,0,0,0
+3105,Sumit Kumar,,6,7,2,0,0,0,0,0,0,0
+589,Lal Mohar Yadav,Raider,6,9,0,0,0,0,0,0,0,0
+3092,Ameares Mondal,,6,6,2,0,0,0,0,0,0,0
+2260,Ranidu Chamara,Defender,6,6,0,0,0,0,0,0,0,0
+591,Bajrang,,6,6,0,0,0,0,0,0,0,0
+3005,Pratik Patil,Defender,7,7,1,0,0,0,0,0,0,0
+3074,Naveen,,7,7,1,0,0,0,0,0,0,0
+4973,Davinder Singh,Defender - Right Cover,8,8,0,0,0,0,0,0,0,0
+4921,Anwar Baba,All Rounder,8,8,1,0,0,0,0,0,0,0
+3715,Ashok,Raider,8,8,0,0,0,0,0,0,0,0
+3789,Baljinder Singh,Defender,8,8,2,0,0,0,0,0,0,0
+4927,Abe Tetsuro,Defender,8,8,0,0,0,0,0,0,0,0
+5027,Helvic Wanjala,All-Rounder,10,10,0,0,0,0,0,0,0,0
+48,Hitesh Patel,,1,1,0,0,0,0,0,0,0,0
+5194,Hardeep,Defender - Right Cover,10,10,0,0,0,0,0,0,0,0
+3181,Milad Sheibak,Defender,7,7,1,0,0,0,0,0,0,0
+348,Mahender Reddy,,6,6,1,0,0,0,0,0,0,0
+2347,Deepak,,6,6,1,0,0,0,0,0,0,0
+2277,Abhinandan Chandel,,6,6,0,0,0,0,0,0,0,0
+2337,Amit Singh,Defender,6,6,0,0,0,0,0,0,0,0
+4911,Amit Chauhan,Left Raider,8,8,1,0,0,0,0,0,0,0
+332,Ogak Haggai Odhiambo,All Rounder,6,6,0,0,0,0,0,0,0,0
+4803,Rajesh Gurjar,Defender - Left Corner,8,8,0,0,0,0,0,0,0,0
+2040,Anil,,6,6,0,0,0,0,0,0,0,0
+4953,Sonu Singh,Raider,8,8,2,0,0,0,0,0,0,0
+4975,Sunder,Defender,8,8,1,0,0,0,0,0,0,0
+3116,Harsh Vardhan,Defender,7,7,8,0,0,0,0,0,0,0
+5260,Akshaykumar Soni,Raider,10,10,0,0,0,0,0,0,0,0
+5220,Chai-Ming Chang,Raider,10,10,1,0,0,0,0,0,0,0
+33,Bhabesh Kumar,,1,1,0,0,0,0,0,0,0,0
+47,Haresh Jalmi,,1,1,0,0,0,0,0,0,0,0
+5,Farhad Kamal Gharibi,,1,1,2,0,0,0,0,0,0,0
+610,Shiv Om,,5,5,9,0,0,0,0,0,0,0
+575,Sultan Dange,,5,5,14,0,0,0,0,0,0,0
+797,Vikash Khatri,,5,5,8,0,0,0,0,0,0,0
+729,Rajesh Manokaran,,5,5,5,0,0,0,0,0,0,0
+727,Sandeep Malik,,5,5,5,0,0,0,0,0,0,0
+780,Mugilan,,5,5,3,0,0,0,0,0,0,0
+607,Pandranki Prasad,,5,5,1,0,0,0,0,0,0,0
+516,Jae Min Lee,,5,5,8,0,0,0,0,0,0,0
+622,Parveen Birwal,,5,5,1,0,0,0,0,0,0,0
+609,Chethan S,,5,5,1,0,0,0,0,0,0,0
+777,Pardeep Kandola,,5,5,11,0,0,0,0,0,0,0
+794,Amit Sheoran,,5,5,11,0,0,0,0,0,0,0
+713,Wei Hung Lin,All Rounder,6,6,0,0,0,0,0,0,0,0
+323,Mahendra Singh Dhaka,,5,5,3,0,0,0,0,0,0,0
+632,Arvind Kumar,,5,5,1,0,0,0,0,0,0,0
+675,Ankit Sangwan,,5,5,0,0,0,0,0,0,0,0
+2272,Jawahar Vivek,All Rounder,6,6,1,0,0,0,0,0,0,0
+2295,Anil,,6,6,2,0,0,0,0,0,0,0
+766,Virender Singh,,5,5,3,0,0,0,0,0,0,0
+669,Vipin Malik,,5,5,2,0,0,0,0,0,0,0
+4950,Vinay Kumar,Defender,8,9,1,0,0,0,0,0,0,0
+5033,Shivam Chaudhary,Defender - Right Cover,9,9,2,0,0,0,0,0,0,0
+4671,Rohit Singh,Raider,8,8,0,0,0,0,0,0,0,0
+2335,Vimal Raj V,,6,6,4,0,0,0,0,0,0,0
+511,Gyung Tae Kim,All Rounder,6,6,1,0,0,0,0,0,0,0
+447,Patrick Muvai,Raider,6,6,0,0,0,0,0,0,0,0
+634,K. Jayaseelan,,6,6,1,0,0,0,0,0,0,0
+339,Nicholas George Mottram,,4,4,1,0,0,0,0,0,0,0
+5004,Md. Liton Ali,Defender - Right Corner,9,10,0,0,0,0,0,0,0,0
+374,Suyog Rajapkar,,4,4,1,0,0,0,0,0,0,0
+515,Dong Gyu Kim,All Rounder,5,7,14,0,0,0,0,0,0,0
+744,Sunil,,5,5,4,0,0,0,0,0,0,0
+369,Dalbir,,4,4,8,0,0,0,0,0,0,0
+302,Khomsan Thongkham,Raider,4,6,16,0,0,0,0,0,0,0
+4020,Monu,Defender - Right Corner,9,9,0,0,0,0,0,0,0,0
+344,Md. Tuhin Tarafder,,4,4,13,0,0,0,0,0,0,0
+5021,Reza Katoulinezhad,All-Rounder,9,9,0,0,0,0,0,0,0,0
+5123,Suraj Panwar,Raider,9,10,1,0,0,0,0,0,0,0
+614,T. Prabhakaran,,5,5,6,0,0,0,0,0,0,0
+377,Yogesh Subhash Sawant,,4,4,4,0,0,0,0,0,0,0
+5023,Woosan Ko,Defender - Left Cover,9,9,0,0,0,0,0,0,0,0
+5064,Rahul Dhanawade,All-rounder,9,9,1,0,0,0,0,0,0,0
+3189,Nehal Desai,All-Rounder,9,9,1,0,0,0,0,0,0,0
+5074,Sumit,,9,9,0,0,0,0,0,0,0,0
+5057,Akshay Jaywant Bodake,Raider,9,9,0,0,0,0,0,0,0,0
+271,Narendar Kumar,,3,3,3,0,0,0,0,0,0,0
+273,Satish Kumar,,3,3,2,0,0,0,0,0,0,0
+5112,Rupesh,Raider,9,10,1,0,0,0,0,0,0,0
+321,Manjeet Kandola,,3,3,2,0,0,0,0,0,0,0
+295,Felix Odhiambo Opana,,3,3,15,0,0,0,0,0,0,0
+310,Lo Chia Wei,,3,4,25,0,0,0,0,0,0,0
+303,Satish Kumar,,3,3,6,0,0,0,0,0,0,0
+5012,Thanushan Laxmamohan,All-Rounder,9,9,0,0,0,0,0,0,0,0
+333,Muhammad Rizwan,,4,4,1,0,0,0,0,0,0,0
+375,Manjeet,,4,4,9,0,0,0,0,0,0,0
+342,Md. Zakir Hossain,,4,5,19,0,0,0,0,0,0,0
+638,Kamal Kishor,Raider,5,6,15,0,0,0,0,0,0,0
+721,Abhishek N,,5,5,7,0,0,0,0,0,0,0
+602,Amaresh Mondal,,5,5,17,0,0,0,0,0,0,0
+645,Sujit  Maharana,,5,5,4,0,0,0,0,0,0,0
+601,Ankit Malik,,5,5,11,0,0,0,0,0,0,0
+514,Chan Sik Park,,5,5,2,0,0,0,0,0,0,0
+258,Sulieman Kabir,,5,5,4,0,0,0,0,0,0,0
+620,C Kalai Arasan,Defender,5,6,4,0,0,0,0,0,0,0
+230,Onkar Jadhav,,2,2,2,0,0,0,0,0,0,0
+229,Vinod Atyalkar,,2,2,2,0,0,0,0,0,0,0
+228,Gopalappa Thimarayappa,,2,2,2,0,0,0,0,0,0,0
+186,Sandeep Kumar,,2,2,1,0,0,0,0,0,0,0
+4974,Sawin,Raider,9,9,0,0,0,0,0,0,0,0
+5099,Yash Hooda,Defender - Right Corner,9,9,0,0,0,0,0,0,0,0
+5119,Sachin,Raider,9,9,1,0,0,0,0,0,0,0
+4937,Nageshor Tharu,Raider,9,9,0,0,0,0,0,0,0,0
+5126,Marimuthu Kamaraj,Defender - Left Cover,9,9,0,0,0,0,0,0,0,0
+5054,Navneet,Defender,9,9,1,0,0,0,0,0,0,0
+5016,Gholamabbas Korouki,All-Rounder,9,9,0,0,0,0,0,0,0,0
+192,Vaibhav Kale,,2,2,1,0,0,0,0,0,0,0
+183,Chaminda R. S. M.,,2,4,16,0,0,0,0,0,0,0
+5133,Maharudra Garje,Right Raider,10,10,4,0,0,0,0,0,0,0
+5247,Yuvraj Pandeya,Defender,10,10,0,0,0,0,0,0,0,0
+270,Jasmer Singh,,2,2,4,0,0,0,0,0,0,0
+188,Akhil Ashokan,,2,2,3,0,0,0,0,0,0,0
+209,Abhinandan Kumar,,2,2,1,0,0,0,0,0,0,0
+257,Muhammad Tariq,,2,2,1,0,0,0,0,0,0,0
+196,C. Karnan,,2,2,3,0,0,0,0,0,0,0
+265,Yosuke Sasaki,,2,3,13,0,0,0,0,0,0,0
+254,Michal Spiczko,,2,3,25,0,0,0,0,0,0,0
+220,Avnish Kumar,,2,2,3,0,0,0,0,0,0,0
+198,Hwangi A. H. N.,,2,2,10,0,0,0,0,0,0,0
+247,Anil Singh,,2,2,2,0,0,0,0,0,0,0
+187,Manoj Kumar Gora,,2,2,3,0,0,0,0,0,0,0
+226,Jawahar Vivek,,2,3,7,0,0,0,0,0,0,0
+5224,Felix Li,Defender,10,10,0,0,0,0,0,0,0,0
+18,Nasir Ali,,2,2,3,0,0,0,0,0,0,0
+269,Arvind Baliyan,,2,2,5,0,0,0,0,0,0,0
+262,Vir Singh Yadav,,2,2,3,0,0,0,0,0,0,0
+216,Pradeep Kumar,,2,2,4,0,0,0,0,0,0,0
+3,I Ketut Ariana,,1,4,27,0,0,0,0,0,0,0
+117,Suresh Pathapalem,,1,1,2,0,0,0,0,0,0,0
+166,Vijendar Singh,,1,1,8,0,0,0,0,0,0,0
+122,Vilam Singh,,1,1,1,0,0,0,0,0,0,0
+144,Gokul Shitole,,1,2,4,0,0,0,0,0,0,0
+1,Mohammad Ziaur Rahman,,1,1,2,0,0,0,0,0,0,0
+103,Sarun Das,,1,1,0,0,0,0,0,0,0,0
+24,Michael Adam Dubery,,1,1,0,0,0,0,0,0,0,0
+5149,Abinand Subhash,Defender,10,10,1,0,0,0,0,0,0,0
+4031,Nitin R,Right Raider,10,10,4,0,0,0,0,0,0,0
+7,Mostafa Noudehi,,1,1,0,0,0,0,0,0,0,0
+148,Sunil Subhash Lande,,1,1,4,0,0,0,0,0,0,0
+151,Vikas Tomar,,1,2,9,0,0,0,0,0,0,0
+15,Sanjay Shrestha,Defender,1,7,41,0,0,0,0,0,0,0
+8,Masayuki Shimokawa,,1,3,20,0,0,0,0,0,0,0
+59,Kiran Parmar,,1,1,0,0,0,0,0,0,0,0
+153,Vijender Singh,,1,1,0,0,0,0,0,0,0,0
+114,Sunil Kumar,,1,1,1,0,0,0,0,0,0,0
+49,Irfan Khan,,1,1,2,0,0,0,0,0,0,0
+6,Jaber Hemati Chonehkhan,,1,1,1,0,0,0,0,0,0,0
+120,V. Satyanarayana,,1,1,3,0,0,0,0,0,0,0
+149,Kiran A,,1,1,4,0,0,0,0,0,0,0
+77,Parveen Kumar,,1,1,8,0,0,0,0,0,0,0
+17,Atif Waheed,,1,1,3,0,0,0,0,0,0,0
+99,Sanjay Sharma,,1,1,0,0,0,0,0,0,0,0
+5035,Akshay Bharat,All-Rounder,10,10,4,0,0,0,0,0,0,0
+5184,Sathish Kannan,Right Raider,10,10,3,0,0,0,0,0,0,0
+5188,Gaurav Dahiya,Defender - Left Corner,10,10,1,0,0,0,0,0,0,0
+5193,Ahmed Enamdar,All-Rounder,10,10,1,0,0,0,0,0,0,0
+495,Piotr Pamulak,Raider,10,10,0,0,0,0,0,0,0,0
+4039,Kunal Mehta,Raider,10,10,2,0,0,0,0,0,0,0
+5135,Shreyas Umbardand,Defender - Left Cover,10,10,1,0,0,0,0,0,0,0
