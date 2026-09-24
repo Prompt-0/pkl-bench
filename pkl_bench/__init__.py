@@ -4,7 +4,7 @@ Covering 10 seasons (2014-2024), 1,060 matches, and 103,176 play-by-play raid ev
 """
 
 __version__ = "1.0.0"
-__author__ = "Antigravity Research Group"
+__author__ = "Ritesh"
 
 from .loader import (
     load_seasons,

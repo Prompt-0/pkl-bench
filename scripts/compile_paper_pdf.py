@@ -125,7 +125,7 @@ def build_pdf():
 
     # Title & Metadata
     elements.append(Paragraph("PKL-Bench: A Multi-Tier Benchmark Dataset and Evaluation Suite for Asymmetric Game Dynamics in the Pro Kabaddi League", title_style))
-    elements.append(Paragraph("<b>Antigravity Research Group</b><br/><code>research@antigravity.ai</code> | <a href='https://github.com/pkl-bench/pkl-bench'>https://github.com/pkl-bench/pkl-bench</a>", author_style))
+    elements.append(Paragraph("<b>Ritesh</b><br/><code>193809232+Prompt-0@users.noreply.github.com</code> | <a href='https://github.com/Prompt-0/pkl-bench'>https://github.com/Prompt-0/pkl-bench</a>", author_style))
     elements.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#BDC3C7'), spaceBefore=2, spaceAfter=12))
 
     # Abstract
@@ -274,7 +274,7 @@ def build_pdf():
         "By releasing this resource under <b>CC-BY-4.0</b> with reproducible baselines and strict temporal splits, we provide the computational "
         "research community with a fertile testbed for asymmetric game theory, multi-agent reinforcement learning, and calibrated sports analytics.<br/><br/>"
         "The complete dataset, Python SDK (<code>pip install -e .</code>), CLI evaluation harness, and documentation are available at: "
-        "<b>https://github.com/pkl-bench/pkl-bench</b>.",
+        "<b>https://github.com/Prompt-0/pkl-bench</b>.",
         body_style
     ))
 

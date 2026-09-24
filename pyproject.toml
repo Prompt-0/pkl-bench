@@ -7,7 +7,7 @@ name = "pkl-bench"
 version = "1.0.0"
 description = "PKL-Bench: The Pro Kabaddi League Research Benchmark Dataset & Analytics Suite"
 readme = "README.md"
-authors = [{ name = "Antigravity Research Group" }]
+authors = [{ name = "Ritesh" }]
 license = { text = "CC-BY-4.0" }
 requires-python = ">=3.9"
 classifiers = [

@@ -18,8 +18,8 @@ Engineered according to FAIR principles (Findable, Accessible, Interoperable, Re
 ### 1. Installation
 ```bash
 # Clone the repository
-git clone https://github.com/pkl-bench/pkl-bench.git
-cd pkl-benchmark
+git clone https://github.com/Prompt-0/pkl-bench.git
+cd pkl-bench
 
 # Install package and dependencies
 pip install -e .
@@ -153,12 +153,12 @@ pkl-benchmark/
 If you use PKL-Bench in your research, please cite:
 
 ```bibtex
-@misc{pkl_bench_2024,
-  author = {Antigravity Research Group},
-  title = {PKL-Bench: The Pro Kabaddi League Research Benchmark Dataset and Evaluation Harness},
-  year = {2024},
+@misc{pkl_bench_2026,
+  author = {Ritesh},
+  title = {PKL-Bench: The Pro Kabaddi League Research Benchmark Dataset and Evaluation Suite},
+  year = {2026},
   publisher = {GitHub},
-  howpublished = {\url{https://github.com/pkl-bench/pkl-bench}},
+  howpublished = {\url{https://github.com/Prompt-0/pkl-bench}},
   note = {10 Seasons (2014-2024), 1,060 Matches, 103,176 Play-by-Play Raids}
 }
 ```

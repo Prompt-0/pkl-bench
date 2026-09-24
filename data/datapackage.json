@@ -5,7 +5,7 @@
   "description": "A comprehensive, research-grade, multi-tier benchmark dataset and evaluation harness covering 10 complete seasons (2014-2024) of the Pro Kabaddi League (PKL), containing 1,060 matches, 26,760 player boxscores, and 103,176 granular play-by-play raid events.",
   "version": "1.0.0",
   "license": "CC-BY-4.0",
-  "homepage": "https://github.com/pkl-bench/pkl-bench",
+  "homepage": "https://github.com/Prompt-0/pkl-bench",
   "keywords": [
     "kabaddi",
     "pro-kabaddi-league",
@@ -18,7 +18,7 @@
   ],
   "contributors": [
     {
-      "title": "Antigravity Research Group",
+      "title": "Ritesh",
       "role": "author"
     }
   ],
