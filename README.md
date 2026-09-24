@@ -155,13 +155,13 @@ pkl-benchmark/
 If you use PKL-Bench in your research, please cite:
 
 ```bibtex
-@misc{pkl_bench_2026,
-  author = {Ritesh},
+@misc{dobhal2026pklbench,
+  author = {Dobhal, Ritesh},
   title = {PKL-Bench: The Pro Kabaddi League Research Benchmark Dataset and Evaluation Suite},
   year = {2026},
   publisher = {GitHub},
   howpublished = {\url{https://github.com/Prompt-0/pkl-bench}},
-  note = {10 Seasons (2014-2024), 1,060 Matches, 103,176 Play-by-Play Raids}
+  note = {University of Delhi. 10 Seasons (2014-2024), 1,060 Matches, 103,176 Play-by-Play Raids}
 }
 ```
 

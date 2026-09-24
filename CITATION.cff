@@ -1,7 +1,9 @@
 cff-version: 1.2.0
 message: "If you use PKL-Bench in your research, please cite it as below."
 authors:
-  - name: "Ritesh"
+  - family-names: "Dobhal"
+    given-names: "Ritesh"
+    affiliation: "University of Delhi, Delhi, India"
 title: "PKL-Bench: The Pro Kabaddi League Research Benchmark Dataset and Evaluation Suite"
 version: 1.0.0
 date-released: 2026-09-24

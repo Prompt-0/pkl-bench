@@ -3,7 +3,8 @@
   "description": "PKL-Bench is the first comprehensive, research-grade, multi-tier benchmark dataset and evaluation harness for professional Kabaddi. Spanning all 10 complete seasons (2014-2024) of the Pro Kabaddi League (PKL), PKL-Bench harmonizes 1,060 matches, 26,760 player boxscores, and 103,176 discrete raid events into a standardized 5-tier relational schema distributed in both Apache Parquet and Frictionless CSV formats.",
   "creators": [
     {
-      "name": "Ritesh"
+      "name": "Dobhal, Ritesh",
+      "affiliation": "University of Delhi, Delhi, India"
     }
   ],
   "license": "CC-BY-4.0",

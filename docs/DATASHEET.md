@@ -10,7 +10,7 @@ Following the framework proposed by Timnit Gebru et al. (*Datasheets for Dataset
 **PKL-Bench** was created to address the acute lack of standardized, granular, research-grade benchmark datasets for contact and invasion team sports from non-Western origins, specifically **Kabaddi**. While sports analytics has flourished in association football (SoccerNet, StatsBomb), basketball (NBA Play-by-Play), and cricket (Cricsheet), professional Kabaddi—despite being watched by over 230 million viewers annually—has lacked a unified, open, play-by-play benchmark dataset with rigorous evaluation protocols. PKL-Bench standardizes 10 full seasons of the Pro Kabaddi League (2014–2024), providing 1,060 matches, 26,760 player boxscores, and 103,176 granular, timestamped raid events.
 
 ### Who created the dataset and on whose behalf?
-The dataset was engineered, harmonized, and verified by **Ritesh** (GitHub: [\texttt{Prompt-0}](https://github.com/Prompt-0)) for the global sports analytics, machine learning, and sequential decision-making / reinforcement learning research communities.
+The dataset was engineered, harmonized, and verified by **Ritesh Dobhal** (University of Delhi; GitHub: [\texttt{Prompt-0}](https://github.com/Prompt-0)) for the global sports analytics, machine learning, and sequential decision-making / reinforcement learning research communities.
 
 ### Who funded the creation of the dataset?
 Open scientific research initiative; self-funded under open-science principles.
@@ -110,5 +110,5 @@ Users are free to share and adapt the material for any purpose, including commer
 ## 7. Maintenance
 
 ### Who is supporting and maintaining the dataset?
-Ritesh (GitHub: [Prompt-0/pkl-bench](https://github.com/Prompt-0/pkl-bench)). Updates will be issued following subsequent PKL seasons (Season 11+).
+Ritesh Dobhal (University of Delhi; GitHub: [Prompt-0/pkl-bench](https://github.com/Prompt-0/pkl-bench)). Updates will be issued following subsequent PKL seasons (Season 11+).
 Issues and errata can be reported via GitHub Issues.
