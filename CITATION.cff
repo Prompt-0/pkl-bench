@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use PKL-Bench in your research, please cite it as below."
+authors:
+  - name: "Antigravity Research Group"
+    affiliation: "Antigravity AI"
+title: "PKL-Bench: The Pro Kabaddi League Research Benchmark Dataset and Evaluation Suite"
+version: 1.0.0
+date-released: 2026-09-24
+url: "https://github.com/pkl-bench/pkl-bench"
+license: CC-BY-4.0
+keywords:
+  - "kabaddi"
+  - "sports analytics"
+  - "machine learning"
+  - "benchmark dataset"
+  - "pursuit-evasion"
+  - "reinforcement learning"
+  - "pro kabaddi league"

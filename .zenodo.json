@@ -1,0 +1,23 @@
+{
+  "title": "PKL-Bench: The Pro Kabaddi League Research Benchmark Dataset and Evaluation Suite",
+  "description": "PKL-Bench is the first comprehensive, research-grade, multi-tier benchmark dataset and evaluation harness for professional Kabaddi. Spanning all 10 complete seasons (2014-2024) of the Pro Kabaddi League (PKL), PKL-Bench harmonizes 1,060 matches, 26,760 player boxscores, and 103,176 discrete raid events into a standardized 5-tier relational schema distributed in both Apache Parquet and Frictionless CSV formats.",
+  "creators": [
+    {
+      "name": "Antigravity Research Group",
+      "affiliation": "Antigravity AI"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "Kabaddi",
+    "Sports Analytics",
+    "Machine Learning",
+    "Benchmark Dataset",
+    "Markov Decision Process",
+    "Pursuit-Evasion Game",
+    "Pro Kabaddi League"
+  ],
+  "access_right": "open",
+  "upload_type": "dataset",
+  "version": "1.0.0"
+}
