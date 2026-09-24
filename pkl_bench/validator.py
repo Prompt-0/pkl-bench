@@ -2,7 +2,7 @@
 Comprehensive dataset integrity, constraint validation, and score conservation auditing.
 """
 
-from typing import Dict, Any, List, Tuple
+from typing import Dict, Any, List, Tuple, Optional
 import pandas as pd
 import numpy as np
 from pathlib import Path
