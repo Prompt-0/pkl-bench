@@ -1,0 +1,2 @@
+ruleset_id,description,match_duration_minutes,half_duration_minutes,players_on_court,substitutes_allowed,raid_duration_seconds,do_or_die_threshold,bonus_line_min_defenders,super_tackle_max_defenders,super_tackle_points,super_raid_min_points,all_out_extra_points,technical_point_value,tiebreaker_format
+RS_STANDARD_PKL,Standard Pro Kabaddi League match regulations,40,20,7,5,30,3,6,3,2,3,2,1,5-5 raids (golden raid in knockout)

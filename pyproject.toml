@@ -42,3 +42,6 @@ pkl-bench = "pkl_bench.cli:main"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["pkl_bench*"]
+
+[tool.setuptools.package-data]
+pkl_bench = ["data/**/*", "py.typed"]

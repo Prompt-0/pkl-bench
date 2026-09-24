@@ -5,7 +5,7 @@ Official Benchmark Baselines for PKL-Bench.
 from .raid_outcome import RaidOutcomeBaseline, run_raid_outcome_benchmark
 from .win_probability import WinProbabilityBaseline, run_win_probability_benchmark
 from .match_winner import KabaddiEloBaseline, run_match_winner_benchmark
-from .player_impact import calculate_player_impact_metrics
+from .player_impact import calculate_player_impact_metrics, calculate_expected_points_added
 
 __all__ = [
     "RaidOutcomeBaseline",
@@ -15,4 +15,5 @@ __all__ = [
     "KabaddiEloBaseline",
     "run_match_winner_benchmark",
     "calculate_player_impact_metrics",
+    "calculate_expected_points_added",
 ]

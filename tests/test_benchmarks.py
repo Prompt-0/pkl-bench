@@ -51,3 +51,22 @@ def test_kabaddi_elo():
     r2_after = elo.get_rating(2)
     assert r1_after > 1500.0
     assert r2_after < 1500.0
+
+
+def test_player_impact_metrics():
+    from pkl_bench.baselines.player_impact import calculate_player_impact_metrics, calculate_expected_points_added
+    df_impact = calculate_player_impact_metrics(season=1)
+    assert not df_impact.empty
+    assert "true_raider_impact" in df_impact.columns
+    assert "true_defender_impact" in df_impact.columns
+
+    # Test EPA computation on S1 raids
+    from pkl_bench.loader import load_raids
+    raids_s1 = load_raids(season=1)
+    df_epa = calculate_expected_points_added(raids_s1, min_raids=10)
+    assert not df_epa.empty
+    assert "cumulative_epa" in df_epa.columns
+    assert "epa_per_raid" in df_epa.columns
+    # Check that highest cumulative EPA is positive
+    assert df_epa["cumulative_epa"].iloc[0] > 0
+

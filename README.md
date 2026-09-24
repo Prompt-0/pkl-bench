@@ -1,15 +1,15 @@
 # PKL-Bench: The Pro Kabaddi League Research Benchmark Dataset
 
+[![CI](https://github.com/Prompt-0/pkl-bench/actions/workflows/ci.yml/badge.svg)](https://github.com/Prompt-0/pkl-bench/actions/workflows/ci.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Data Format: Parquet & CSV](https://img.shields.io/badge/Format-Parquet%20%7C%20CSV-green.svg)](https://frictionlessdata.io/)
-[![Dataset Tests: 16/16 Passed](https://img.shields.io/badge/Tests-16%2F16%20Passed-brightgreen.svg)]()
-[![Matches: 1060](https://img.shields.io/badge/Matches-1%2C060-orange.svg)]()
-[![Raids: 103k](https://img.shields.io/badge/Raid%20Events-103%2C176-red.svg)]()
+[![Dataset Tests: 17/17 Passed](https://img.shields.io/badge/Tests-17%2F17%20Passed-brightgreen.svg)]()
+[![Paper: PDF](https://img.shields.io/badge/Paper-IEEE%20PDF-red.svg)](paper/pkl_bench_paper.pdf)
 
 **PKL-Bench** is the definitive, research-grade, multi-tier benchmark dataset and evaluation harness for professional Kabaddi analytics and machine learning. Covering **10 complete seasons** (2014–2024) of the **Pro Kabaddi League (PKL)**, PKL-Bench provides **1,060 matches**, **26,760 individual player boxscores**, and **103,176 granular, timestamped play-by-play raid events**.
 
-Engineered according to FAIR principles (Findable, Accessible, Interoperable, Reusable), PKL-Bench includes formal [Datasheets for Datasets](docs/DATASHEET.md), a [Mathematical Methodology Guide](docs/METHODOLOGY.md), a [Domain Guide](docs/KABADDI_DOMAIN_GUIDE.md), and strict **leakage-free temporal splits** with verified baselines.
+Engineered according to FAIR principles (Findable, Accessible, Interoperable, Reusable), PKL-Bench includes a formal [Academic Paper (PDF)](paper/pkl_bench_paper.pdf), [Datasheets for Datasets](docs/DATASHEET.md), a [Mathematical Methodology Guide](docs/METHODOLOGY.md), a [Domain Guide](docs/KABADDI_DOMAIN_GUIDE.md), and strict **leakage-free temporal splits** with verified baselines.
 
 ---
 
@@ -81,6 +81,8 @@ All baselines are evaluated strictly on the **out-of-sample Season 10 test set**
 | | **Calibrated GBDT** | **Brier: 0.1991** | **ECE: 0.1561** | **Log-Loss: 0.5827** |
 | **Task 3: Pre-Match Outcome & Spread** | Random Guess | Accuracy: 0.5000 | Brier: 0.2500 | ROC-AUC: 0.5000 |
 | | **Dynamic Kabaddi Elo** | **Accuracy: 0.7059** | **Brier: 0.1968** | **ROC-AUC: 0.7707** (MAE: 9.23) |
+| **Task 4: Player Valuation & Impact** | Raw Total Points | Naive Cumulative | Top Volume: Pardeep Narwal (1,690 pts) | Top Defender: Fazel Atrachali (486 pts) |
+| | **Expected Points Added (EPA)** | **State-Conditioned** | **Top Cumulative: Pardeep Narwal (+633.4 EPA)** | **Top Rate: Pawan Sehrawat (0.251 EPA/raid)** |
 
 ---
 

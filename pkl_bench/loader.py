@@ -8,13 +8,22 @@ from pathlib import Path
 from typing import Optional, Tuple, Dict, Any, List, Union
 import pandas as pd
 
-# Default data location relative to this file or standard installation path
-PACKAGE_ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_DATA_DIR = PACKAGE_ROOT / "data"
+PACKAGE_DIR = Path(__file__).resolve().parent
+REPO_ROOT = PACKAGE_DIR.parent
+
+
+def _get_default_data_dir() -> Path:
+    pkg_data = PACKAGE_DIR / "data"
+    if (pkg_data / "matches" / "matches.parquet").exists():
+        return pkg_data
+    repo_data = REPO_ROOT / "data"
+    if (repo_data / "matches" / "matches.parquet").exists():
+        return repo_data
+    return pkg_data
 
 
 def _resolve_file(rel_path: str, format_pref: str = "parquet", data_dir: Optional[Path] = None) -> Path:
-    base = Path(data_dir) if data_dir else DEFAULT_DATA_DIR
+    base = Path(data_dir) if data_dir else _get_default_data_dir()
     target = base / f"{rel_path}.{format_pref}"
     if not target.exists():
         fallback_fmt = "csv" if format_pref == "parquet" else "parquet"
@@ -117,7 +126,7 @@ def load_raids(
 
 def get_splits_info(data_dir: Optional[Path] = None) -> Dict[str, Any]:
     """Load the official benchmark split configuration dictionary."""
-    base = Path(data_dir) if data_dir else DEFAULT_DATA_DIR
+    base = Path(data_dir) if data_dir else _get_default_data_dir()
     splits_path = base / "benchmark_splits" / "splits.json"
     with open(splits_path, "r", encoding="utf-8") as f:
         return json.load(f)

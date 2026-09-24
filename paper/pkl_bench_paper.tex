@@ -69,9 +69,11 @@ S_t = \langle \Delta_t, \tau_t, h_t, N_{def, t}, D_t, B_t, r_t, \mathcal{D}_t \r
 \end{equation}
 where $\Delta_t = \text{Score}_{attack, t} - \text{Score}_{defense, t}$ is the score differential, $\tau_t \in [0, 1200]$ is the clock seconds remaining in the current half, $h_t \in \{1, 2\}$ is the match half, $N_{def, t} \in \{1, \dots, 7\}$ is the number of active defenders, $D_t \in \{0, 1\}$ is the binary Do-or-Die indicator, $B_t = \mathbb{I}(N_{def, t} \ge 6)$ is the bonus line eligibility flag, $r_t \in \mathcal{P}$ is the raider identity, and $\mathcal{D}_t \subset \mathcal{P}$ ($|\mathcal{D}_t| = N_{def, t}$) is the active defensive squad.
 
-The discrete raid outcome $y_t \in \mathcal{Y}$ belongs to:
 \begin{equation}
-\mathcal{Y} = \{\text{EMPTY}, \text{SUCCESSFUL\_TOUCH}, \text{BONUS\_ONLY}, \text{SUPER\_RAID}, \text{UNSUCCESSFUL\_TACKLE}, \text{SUPER\_TACKLE}\}
+\begin{aligned}
+\mathcal{Y} = \{ & \text{EMPTY}, \text{SUCCESSFUL\_TOUCH}, \text{BONUS\_ONLY}, \\
+& \text{SUPER\_RAID}, \text{UNSUCCESSFUL\_TACKLE}, \text{SUPER\_TACKLE} \}
+\end{aligned}
 \end{equation}
 
 \begin{figure}[t]
@@ -105,6 +107,7 @@ PKL-Bench structures data into five relational tiers:
 \small
 \caption{\textbf{PKL-Bench Dataset Tier Statistics Across Seasons 1--10.}}
 \label{tab:dataset_summary}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{llrrr}
 \toprule
 \textbf{Tier} & \textbf{Entity} & \textbf{Instance Count} & \textbf{Parquet Size} & \textbf{CSV Size} \\
@@ -119,7 +122,8 @@ Tier 4 & Play-by-Play Raid Events & 103,176 & 1.31 MB & 12.29 MB \\
 \midrule
 \textbf{Total} & \textbf{Complete Corpus} & \textbf{131,849} & \textbf{1.70 MB} & \textbf{15.10 MB} \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 \subsection{Score Conservation Theorem and Verification}
@@ -152,9 +156,9 @@ Splits are mutually disjoint ($Train \cap Val = \emptyset$, $Train \cap Test = \
 \subsection{Task Definitions}
 \begin{itemize}
     \item \textbf{Task 1: Discrete Raid Outcome Prediction}: Multi-class classification predicting $y_t \in \mathcal{Y}$ from pre-raid state features. Evaluated by Multiclass Log-Loss and Macro-F1.
-    \item \textbf{Task 2: Dynamic In-Game Win Probability Modeling}: Estimating $P(\text{Team 1 Wins} \mid S_t)$ at every raid $t$. Evaluated by Brier Score \cite{brier1950verification} and Expected Calibration Error (ECE) \cite{guo2017calibration}.
-    \item \textbf{Task 3: Pre-Match Outcome \& Spread Forecasting}: Predicting winner and point spread prior to the coin toss. Evaluated by Accuracy, ROC-AUC, and Margin MAE.
-    \item \textbf{Task 4: Player Valuation}: Context-adjusted True Raider Impact (TRI) and True Defender Impact (TDI) penalizing negative-value dismissals.
+    \item \textbf{Task 2: Dynamic Win Probability}: Estimating win probability $P(W_1 \mid S_t)$ at every raid $t$. Evaluated by Brier Score \cite{brier1950verification} and Expected Calibration Error (ECE) \cite{guo2017calibration}.
+    \item \textbf{Task 3: Match Forecasting}: Predicting match winner and point spread prior to coin toss. Evaluated by Accuracy, ROC-AUC, and Margin MAE.
+    \item \textbf{Task 4: Player Valuation}: Context-conditioned Expected Points Added (EPA) and True Raider Impact (TRI).
 \end{itemize}
 
 \begin{figure}[t]
@@ -180,6 +184,7 @@ Table~\ref{tab:leaderboard} presents baseline benchmark results evaluated on the
 \small
 \caption{\textbf{Official PKL-Bench Baseline Leaderboard (Evaluated on Season 10 Test Set).}}
 \label{tab:leaderboard}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{llccc}
 \toprule
 \textbf{Task} & \textbf{Model} & \textbf{Primary Metric} & \textbf{Secondary Metric} & \textbf{Tertiary Metric} \\
@@ -193,8 +198,12 @@ Table~\ref{tab:leaderboard} presents baseline benchmark results evaluated on the
 \midrule
 \textbf{Task 3: Match Forecasting} & Random Baseline & Accuracy: 0.5000 & Brier: 0.2500 & ROC-AUC: 0.5000 \\
 & \textbf{Dynamic Kabaddi Elo} & \textbf{Accuracy: 0.7059} & \textbf{Brier: 0.1968} & \textbf{ROC-AUC: 0.7707} \\
+\midrule
+\textbf{Task 4: Player Valuation} & Raw Total Points & Top Volume: P. Narwal (1,690) & Top Tackle: F. Atrachali (486) & Naive \\
+& \textbf{Expected Points Added} & \textbf{Top Cum.: P. Narwal (+633.4)} & \textbf{Top Rate: P. Sehrawat (0.251)} & \textbf{State-Conditioned} \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 \textbf{Key Insights}:

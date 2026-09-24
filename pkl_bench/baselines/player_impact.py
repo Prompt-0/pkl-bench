@@ -59,3 +59,36 @@ def calculate_player_impact_metrics(season: Optional[int] = None) -> pd.DataFram
     grouped["true_defender_impact"] = np.round(tdi, 3)
 
     return grouped.sort_values("total_points", ascending=False).reset_index(drop=True)
+
+
+def calculate_expected_points_added(df_raids: Optional[pd.DataFrame] = None, min_raids: int = 50) -> pd.DataFrame:
+    """
+    Computes context-conditioned Expected Points Added (EPA) for every raider:
+    EPA_t = Actual Raid Points_t - E[Points | Do-or-Die, Half]
+    Aggregates Cumulative EPA and EPA per Raid.
+    """
+    if df_raids is None:
+        df_raids = load_raids()
+
+    # Calculate baseline expectation across state partitions
+    state_means = df_raids.groupby(["is_do_or_die", "half"])["raid_points"].mean().to_dict()
+
+    df = df_raids.copy()
+    df["expected_points"] = df.apply(
+        lambda r: state_means.get((r["is_do_or_die"], r["half"]), 0.5), axis=1
+    )
+    df["epa"] = df["raid_points"] - df["expected_points"]
+
+    raider_epa = df.groupby(["raider_id", "raider_name"]).agg(
+        total_raids=("raid_sequence_no", "count"),
+        total_raid_points=("raid_points", "sum"),
+        cumulative_epa=("epa", "sum"),
+        epa_per_raid=("epa", "mean")
+    ).reset_index()
+
+    raider_epa = raider_epa[raider_epa["total_raids"] >= min_raids]
+    raider_epa["cumulative_epa"] = np.round(raider_epa["cumulative_epa"], 2)
+    raider_epa["epa_per_raid"] = np.round(raider_epa["epa_per_raid"], 4)
+
+    return raider_epa.sort_values("cumulative_epa", ascending=False).reset_index(drop=True)
+

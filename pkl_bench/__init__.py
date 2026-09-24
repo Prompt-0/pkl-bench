@@ -32,6 +32,11 @@ from .validator import (
     audit_score_conservation,
 )
 
+from .baselines import (
+    calculate_player_impact_metrics,
+    calculate_expected_points_added,
+)
+
 __all__ = [
     "load_seasons",
     "load_teams",
@@ -48,6 +53,8 @@ __all__ = [
     "multiclass_log_loss",
     "classification_report_dict",
     "expected_points_added",
+    "calculate_player_impact_metrics",
+    "calculate_expected_points_added",
     "validate_dataset_integrity",
     "audit_score_conservation",
 ]
