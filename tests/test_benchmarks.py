@@ -88,6 +88,8 @@ def test_player_impact_metrics():
     assert df_epa["cumulative_epa"].iloc[0] > 0
 
 
+from pkl_bench.loader import load_matches, load_raids
+from pkl_bench.baselines.raid_outcome import prepare_raid_features
 def test_raid_outcome_leakage():
     # Ensure that score_diff is calculated using score_before, not score_after
     df_matches = load_matches()

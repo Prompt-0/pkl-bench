@@ -1,6 +1,6 @@
 """
 PKL-Bench: The Pro Kabaddi League Research Benchmark Dataset & Analytics Suite
-Covering 10 seasons (2014-2024), 1,060 matches, and 103,176 play-by-play raid events.
+Covering 10 seasons (2014-2024), 1,060 matches, and 90,644 play-by-play raid events.
 """
 
 __version__ = "1.0.0"

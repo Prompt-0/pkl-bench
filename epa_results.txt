@@ -1,0 +1,8 @@
+   raider_id      raider_name  ...  cumulative_epa  epa_per_raid
+0        197   Pardeep Narwal  ...          431.22        0.1902
+1        318   Pawan Sehrawat  ...          310.71        0.2290
+2        143   Maninder Singh  ...          291.31        0.1756
+3       2296     Naveen Kumar  ...          175.90        0.1575
+4       2026  Siddharth Desai  ...          155.58        0.2219
+
+[5 rows x 6 columns]

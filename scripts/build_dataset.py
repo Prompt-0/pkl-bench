@@ -14,8 +14,9 @@ from typing import Any, Dict, List, Optional
 import numpy as np
 import pandas as pd
 
-BASE_RAW_DIR = "/usr/local/lib/python3.14/site-packages/kabaddiPy"
-DATA_DIR = Path("/root/code/active/pkl-benchmark/data")
+import kabaddiPy
+BASE_RAW_DIR = Path(kabaddiPy.__file__).parent
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
 SEASON_DIR_MAP = {
     1: "Season_PKL_Season_1_2014",
@@ -212,8 +213,9 @@ RULESETS = [
 def parse_clock_to_seconds(clock_str: Optional[str], half: int, season_id: int) -> int:
     """
     Converts clock MM:SS string and half to total match seconds remaining (0 to 2400).
-    In Seasons 1-5, the clock counts UP (elapsed time).
-    In Seasons 6-10, the clock counts DOWN (remaining time).
+    - Seasons 1-4: Clock counts UP (elapsed time) continuously 00:00 to 40:00.
+    - Season 5: Clock counts DOWN per half.
+    - Seasons 6-10: Clock counts DOWN per half.
     """
     if not clock_str or not isinstance(clock_str, str) or ":" not in clock_str:
         return 1200 if half == 1 else 0
@@ -223,14 +225,15 @@ def parse_clock_to_seconds(clock_str: Optional[str], half: int, season_id: int) 
         seconds = int(parts[1])
         val = minutes * 60 + seconds
         
-        # Clamp to 1200 (sometimes goes slightly over like 20:01)
-        val = min(1200, val)
-        
-        if season_id <= 5:
-            # val is elapsed time, so remaining is 1200 - val
+        if season_id <= 4:
+            # val is elapsed time from 0 to 2400
+            if val >= 1200:
+                val -= 1200
+            val = min(1200, val)
             half_sec_remaining = 1200 - val
         else:
-            # val is remaining time
+            # Seasons 5-10: val is remaining time per half
+            val = min(1200, val)
             half_sec_remaining = val
             
         if half == 1:

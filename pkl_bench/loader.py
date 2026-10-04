@@ -112,7 +112,7 @@ def load_raids(
     data_dir: Optional[Path] = None
 ) -> pd.DataFrame:
     """
-    Load discrete play-by-play raid events (103,176 entries).
+    Load discrete play-by-play raid events (90,644 entries).
     """
     df = _load_df("raids_pbp/raids_pbp", format_pref, data_dir)
     if season is not None:

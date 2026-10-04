@@ -71,13 +71,13 @@ The dataset is structured across five relational tiers, distributed in both **Ap
 
 ## 🏆 Official Benchmark Leaderboard (Test Set: Season 10)
 
-All baselines are evaluated strictly on the **out-of-sample Season 10 test set** (136 matches, 12,094 raids) without temporal lookahead leakage.
+All baselines are evaluated strictly on the **out-of-sample Season 10 test set** (136 matches, 11,821 raids) without temporal lookahead leakage.
 
 | Benchmark Task | Model | Primary Metric | Secondary Metric | Third Metric |
 | :--- | :--- | :--- | :--- | :--- |
 | **Task 1: Raid Outcome Prediction** | Majority Class | Accuracy: 0.4770 | Macro-F1: 0.1292 | Log-Loss: 18.8520 |
 | | Multinomial Logistic | Accuracy: 0.5188 | Macro-F1: 0.2274 | Log-Loss: 1.0626 |
-| | **HistGradientBoosting** | **Accuracy: 0.4580** | **Macro-F1: 0.2484** | **Log-Loss: 0.9597** |
+| | **HistGradientBoosting** | **Accuracy: 0.4515** | **Macro-F1: 0.2484** | **Log-Loss: 0.9597** |
 | **Task 2: In-Game Win Probability** | Logistic Leverage | Brier: 0.2270 | ECE: 0.1882 | Log-Loss: 0.6446 |
 | | **Calibrated GBDT** | **Brier: 0.1991** | **ECE: 0.1561** | **Log-Loss: 0.5827** |
 | **Task 3: Pre-Match Outcome & Spread** | Random Guess | Accuracy: 0.5000 | Brier: 0.2500 | ROC-AUC: 0.5000 |
@@ -91,9 +91,9 @@ All baselines are evaluated strictly on the **out-of-sample Season 10 test set**
 
 Random $k$-fold cross-validation in sports causes severe **data leakage** because player rosters, franchise form, and tactical trends persist across games. PKL-Bench enforces a strict chronological partition:
 
-- **Train Set (Seasons 1–8, 2014–2022)**: 787 matches | 66,692 raid events (74.2%)
-- **Validation Set (Season 9, 2022)**: 137 matches | 11,858 raid events (12.9%)
-- **Test Set (Season 10, 2023–2024)**: 136 matches | 12,094 raid events (12.8%)
+- **Train Set (Seasons 1–8, 2014–2022)**: 787 matches | 67,181 raid events (74.2%)
+- **Validation Set (Season 9, 2022)**: 137 matches | 11,642 raid events (12.9%)
+- **Test Set (Season 10, 2023–2024)**: 136 matches | 11,821 raid events (12.8%)
 - **Disjointness Guarantee**: $\text{Train} \cap \text{Val} = \emptyset$, $\text{Train} \cap \text{Test} = \emptyset$, $\text{Val} \cap \text{Test} = \emptyset$.
 
 Explicit match IDs are codified in `data/benchmark_splits/splits.json`.

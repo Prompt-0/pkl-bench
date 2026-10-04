@@ -90,6 +90,6 @@ If you use PKL-Bench in academic publications, please cite:
   year = {2026},
   publisher = {GitHub},
   howpublished = {\url{https://github.com/Prompt-0/pkl-bench}},
-  note = {University of Delhi. ORCID: 0009-0009-2773-4972. 10 Seasons (2014-2024), 1,060 Matches, 103,176 Play-by-Play Raids}
+  note = {University of Delhi. ORCID: 0009-0009-2773-4972. 10 Seasons (2014-2024), 1,060 Matches, 90,644 Play-by-Play Raids}
 }
 ```
