@@ -75,13 +75,13 @@ All baselines are evaluated strictly on the **out-of-sample Season 10 test set**
 
 | Benchmark Task | Model | Primary Metric | Secondary Metric | Third Metric |
 | :--- | :--- | :--- | :--- | :--- |
-| **Task 1: Raid Outcome Prediction** | Majority Class | Accuracy: 0.4770 | Macro-F1: 0.1292 | Log-Loss: 18.8520 |
-| | Multinomial Logistic | Accuracy: 0.5188 | Macro-F1: 0.2274 | Log-Loss: 1.0626 |
-| | **HistGradientBoosting** | **Accuracy: 0.4555** | **Macro-F1: 0.2484** | **Log-Loss: 1.1408** |
+| **Task 1: Raid Outcome Prediction** | Majority Class | Accuracy: 0.3852 | Macro-F1: 0.1112 | Log-Loss: 22.1580 |
+| | Multinomial Logistic | Accuracy: 0.4434 | Macro-F1: 0.1918 | Log-Loss: 1.1492 |
+| | **HistGradientBoosting** | **Accuracy: 0.4555** | **Macro-F1: 0.2171** | **Log-Loss: 1.1408** |
 | **Task 2: In-Game Win Probability** | Logistic Leverage | Brier: 0.2287 | ECE: 0.0905 | Log-Loss: 0.6491 |
 | | **Calibrated GBDT** | **Brier: 0.1804** | **ECE: 0.1241** | **Log-Loss: 0.5423** |
 | **Task 3: Pre-Match Outcome & Spread** | Random Guess | Accuracy: 0.5000 | Brier: 0.2500 | ROC-AUC: 0.5000 |
-| | **Dynamic Kabaddi Elo** | **Accuracy: 0.7059** | **Brier: 0.1968** | **ROC-AUC: 0.7874** (MAE: 9.23) |
+| | **Dynamic Kabaddi Elo** | **Accuracy: 0.6960** | **Brier: 0.1864** | **ROC-AUC: 0.7874** (MAE: 9.22) |
 | **Task 4: Player Valuation & Impact** | Raw Total Points | Naive Cumulative | Top Volume: Pardeep Narwal (1,690 pts) | Top Defender: Fazel Atrachali (486 pts) |
 | | **Expected Points Added (EPA)** | **State-Conditioned** | **Top Cumulative: Pardeep Narwal (+455.60 EPA)** | **Top Rate: Pawan Sehrawat (0.190 EPA/raid)** |
 
@@ -94,7 +94,7 @@ Random $k$-fold cross-validation in sports causes severe **data leakage** becaus
 - **Train Set (Seasons 1–8, 2014–2022)**: 787 matches | 67,181 raid events (74.2%)
 - **Validation Set (Season 9, 2022)**: 137 matches | 11,642 raid events (12.9%)
 - **Test Set (Season 10, 2023–2024)**: 136 matches | 11,821 raid events (12.8%)
-- **Disjointness Guarantee**: $\text{Train} \cap \text{Val} = \emptyset$, $\text{Train} \cap \text{Test} = \emptyset$, $\text{Val} \cap \text{Test} = \emptyset$.
+- **Disjointness Guarantee**: $\mathrm{Train} \cap \mathrm{Val} = \emptyset$, $\mathrm{Train} \cap \mathrm{Test} = \emptyset$, $\mathrm{Val} \cap \mathrm{Test} = \emptyset$.
 
 Explicit match IDs are codified in `data/benchmark_splits/splits.json`.
 
@@ -158,7 +158,7 @@ If you use PKL-Bench in your research, please cite:
 
 ```bibtex
 @misc{dobhal2026pklbench,
-  author = {Dobhal, Ritesh},
+  author = {Dobhal, Ritesh and Lalwani, Bhaskar and Mukherjee, Aniruddha},
   title = {PKL-Bench: The Pro Kabaddi League Research Benchmark Dataset and Evaluation Suite},
   year = {2026},
   publisher = {GitHub},

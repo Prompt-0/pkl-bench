@@ -152,7 +152,7 @@ Random cross-validation creates severe data leakage in sports because player ros
     \item \textbf{Validation Set (Season 9, 2022)}: 137 matches (12.9\%), 11,642 raid events.
     \item \textbf{Test Set (Season 10, 2023--2024)}: 136 matches (12.8\%), 11,821 raid events.
 \end{itemize}
-Splits are mutually disjoint ($\text{Train} \cap \text{Val} = \emptyset$, $\text{Train} \cap \text{Test} = \emptyset$, $\text{Val} \cap \text{Test} = \emptyset$).
+Splits are mutually disjoint ($\mathrm{Train} \cap \mathrm{Val} = \emptyset$, $\mathrm{Train} \cap \mathrm{Test} = \emptyset$, $\mathrm{Val} \cap \mathrm{Test} = \emptyset$).
 
 \subsection{Task Definitions}
 \begin{itemize}
@@ -190,15 +190,15 @@ Table~\ref{tab:leaderboard} presents baseline benchmark results evaluated on the
 \toprule
 \textbf{Task} & \textbf{Model} & \textbf{Primary Metric} & \textbf{Secondary Metric} & \textbf{Tertiary Metric} \\
 \midrule
-\textbf{Task 1: Raid Outcome} & Majority Class & Accuracy: 0.4770 & Macro-F1: 0.1292 & Log-Loss: 18.8520 \\
-& Multinomial Logistic & Accuracy: 0.5188 & Macro-F1: 0.2274 & Log-Loss: 1.0626 \\
-& \textbf{HistGradientBoosting} & \textbf{Accuracy: 0.4555} & \textbf{Macro-F1: 0.2484} & \textbf{Log-Loss: 1.1408} \\
+\textbf{Task 1: Raid Outcome} & Majority Class & Accuracy: 0.3852 & Macro-F1: 0.1112 & Log-Loss: 22.1580 \\
+& Multinomial Logistic & Accuracy: 0.4434 & Macro-F1: 0.1918 & Log-Loss: 1.1492 \\
+& \textbf{HistGradientBoosting} & \textbf{Accuracy: 0.4555} & \textbf{Macro-F1: 0.2171} & \textbf{Log-Loss: 1.1408} \\
 \midrule
 \textbf{Task 2: Win Probability} & Logistic Leverage & Brier: 0.2287 & ECE: 0.0905 & Log-Loss: 0.6491 \\
 & \textbf{Calibrated GBDT} & \textbf{Brier: 0.1804} & \textbf{ECE: 0.1241} & \textbf{Log-Loss: 0.5423} \\
 \midrule
 \textbf{Task 3: Match Forecasting} & Random Baseline & Accuracy: 0.5000 & Brier: 0.2500 & ROC-AUC: 0.5000 \\
-& \textbf{Dynamic Kabaddi Elo} & \textbf{Accuracy: 0.7059} & \textbf{Brier: 0.1968} & \textbf{ROC-AUC: 0.7874} \\
+& \textbf{Dynamic Kabaddi Elo} & \textbf{Accuracy: 0.6960} & \textbf{Brier: 0.1864} & \textbf{ROC-AUC: 0.7874 (MAE: 9.22)} \\
 \midrule
 \textbf{Task 4: Player Valuation} & Raw Total Points & Top Volume: P. Narwal (1,690) & Top Tackle: F. Atrachali (486) & Naive \\
 & \textbf{Expected Points Added} & \textbf{Top Cum.: P. Narwal (+455.60)} & \textbf{Top Rate: P. Sehrawat (0.190)} & \textbf{State-Conditioned} \\
@@ -209,13 +209,13 @@ Table~\ref{tab:leaderboard} presents baseline benchmark results evaluated on the
 
 \textbf{Key Insights}:
 \begin{itemize}
-    \item On Task 1, Gradient Boosting achieves a log-loss of 1.1408 over Logistic Regression, driven by non-linear decision trees capturing the interaction between Do-or-Die flags and clock urgency.
+    \item On Task 1, Gradient Boosting achieves a log-loss of 1.1408, outperforming Logistic Regression (1.1492), driven by non-linear decision trees capturing the interaction between Do-or-Die flags and clock urgency.
     \item On Task 2, Calibrated GBDT sacrifices some expected calibration error (ECE 0.1241 vs 0.0905) while substantially improving the Brier score from 0.2287 to 0.1804, producing reliable probability outputs (Figure~\ref{fig:win_prob}).
-    \item On Task 3, Dynamic Kabaddi Elo with margin-of-victory scaling achieves 70.6\% accuracy and 0.7874 ROC-AUC on out-of-sample matches, confirming that franchise strength exhibits meaningful temporal autocorrelation across 10 seasons (Figure~\ref{fig:elo}).
+    \item On Task 3, Dynamic Kabaddi Elo with margin-of-victory scaling achieves 69.6\% accuracy and 0.7874 ROC-AUC on out-of-sample matches, confirming that franchise strength exhibits meaningful temporal autocorrelation across 10 seasons (Figure~\ref{fig:elo}).
 \end{itemize}
 
 \section{Conclusion \& Open Research Directions}
-PKL-Bench establishes the first standardized, mathematically verified benchmark dataset for professional Kabaddi, spanning 10 complete seasons and 90,644 raid events. By releasing this resource under GPL-2.0 with reproducible baselines and strict temporal splits, we provide the computational research community with a fertile testbed for asymmetric game theory, multi-agent reinforcement learning, and calibrated sports analytics.
+PKL-Bench establishes the first standardized, mathematically verified benchmark dataset for professional Kabaddi, spanning 10 complete seasons and 90,644 raid events. By releasing this resource under CC-BY-NC-SA-4.0 with reproducible baselines and strict temporal splits, we provide the computational research community with a fertile testbed for asymmetric game theory, multi-agent reinforcement learning, and calibrated sports analytics.
 
 Future work will expand PKL-Bench with multi-camera computer vision pose tracking and continuous spatial player trajectory tracking.
 

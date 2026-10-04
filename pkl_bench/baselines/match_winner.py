@@ -35,19 +35,19 @@ class KabaddiEloBaseline:
         for tid in self.ratings:
             self.ratings[tid] = (1 - self.mean_reversion) * self.ratings[tid] + self.mean_reversion * 1500.0
 
-    def predict_match(self, team1_id: int, team2_id: int, is_home: bool = False) -> Tuple[float, float]:
+    def predict_match(self, team1_id: int, team2_id: int, home_team_id: int = -1) -> Tuple[float, float]:
         """
         Returns (p_team1_win, predicted_spread).
         """
-        r1 = self.get_rating(team1_id) + (self.home_advantage if is_home else 0.0)
-        r2 = self.get_rating(team2_id)
+        r1 = self.get_rating(team1_id) + (self.home_advantage if team1_id == home_team_id else 0.0)
+        r2 = self.get_rating(team2_id) + (self.home_advantage if team2_id == home_team_id else 0.0)
         diff = r1 - r2
         p1 = 1.0 / (1.0 + 10.0 ** (-diff / 400.0))
         predicted_margin = diff / 25.0  # Approx 25 Elo points per 1 kabaddi point
         return p1, predicted_margin
 
-    def update_match(self, team1_id: int, team2_id: int, team1_score: int, team2_score: int, is_home: bool = False):
-        p1, _ = self.predict_match(team1_id, team2_id, is_home=is_home)
+    def update_match(self, team1_id: int, team2_id: int, team1_score: int, team2_score: int, home_team_id: int = -1):
+        p1, _ = self.predict_match(team1_id, team2_id, home_team_id=home_team_id)
 
         if team1_score > team2_score:
             s1 = 1.0
@@ -96,8 +96,11 @@ def run_match_winner_benchmark() -> Dict[str, Any]:
         s2 = row.team2_score
         actual_margin = s1 - s2
         t1_won = 1 if s1 > s2 else 0
-
-        p1, pred_margin = elo.predict_match(t1, t2)
+        
+        # In a real pipeline, we'd join venues. For this benchmark without venues.csv, 
+        # assume neutral site for now unless we know otherwise (avoiding dead code error)
+        # We will pass -1 for neutral
+        p1, pred_margin = elo.predict_match(t1, t2, home_team_id=-1)
 
         if sid == 9 and actual_margin != 0:
             y_val_true.append(t1_won)
@@ -110,7 +113,7 @@ def run_match_winner_benchmark() -> Dict[str, Any]:
             y_test_margin_true.append(actual_margin)
             y_test_margin_pred.append(pred_margin)
 
-        elo.update_match(t1, t2, s1, s2)
+        elo.update_match(t1, t2, s1, s2, home_team_id=-1)
 
     def calc_metrics(y_true, y_prob, m_true, m_pred):
         y_pred_cls = [1 if p >= 0.5 else 0 for p in y_prob]

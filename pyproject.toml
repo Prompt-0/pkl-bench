@@ -7,8 +7,12 @@ name = "pkl-bench"
 version = "1.0.0"
 description = "PKL-Bench: The Pro Kabaddi League Research Benchmark Dataset & Analytics Suite"
 readme = "README.md"
-authors = [{ name = "Ritesh Dobhal", email = "ritesh2005dobhal@gmail.com" }]
-license = "CC-BY-NC-SA-4.0"
+authors = [
+    { name = "Ritesh Dobhal", email = "ritesh2005dobhal@gmail.com" },
+    { name = "Bhaskar Lalwani" },
+    { name = "Aniruddha Mukherjee" }
+]
+license = "GPL-2.0-only"
 license-files = ["LICENSE"]
 requires-python = ">=3.11"
 classifiers = [

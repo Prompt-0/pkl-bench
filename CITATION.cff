@@ -1,5 +1,6 @@
 cff-version: 1.2.0
-message: "If you use PKL-Bench in your research, please cite it as below."
+message: "If you use this dataset or code, please cite it as below."
+title: "PKL-Bench: Pro Kabaddi League Benchmark Dataset"
 authors:
   - family-names: "Dobhal"
     given-names: "Ritesh"
@@ -8,26 +9,7 @@ authors:
     given-names: "Bhaskar"
   - family-names: "Mukherjee"
     given-names: "Aniruddha"
-    given-names: "Ritesh"
-    orcid: "https://orcid.org/0009-0009-2773-4972"
-  - family-names: "Lalwani"
-    given-names: "Bhaskar"
-  - family-names: "Mukherjee"
-    given-names: "Aniruddha" 
-    given-names: "Ritesh"
-    orcid: "https://orcid.org/0009-0009-2773-4972"
-    affiliation: "University of Delhi, Delhi, India"
-    email: "ritesh2005dobhal@gmail.com"
-title: "PKL-Bench: The Pro Kabaddi League Research Benchmark Dataset and Evaluation Suite"
 version: 1.0.0
-date-released: 2026-09-24
+date-released: 2026-10-04
 url: "https://github.com/Prompt-0/pkl-bench"
-license: CC-BY-NC-SA-4.0
-keywords:
-  - "kabaddi"
-  - "sports analytics"
-  - "machine learning"
-  - "benchmark dataset"
-  - "pursuit-evasion"
-  - "reinforcement learning"
-  - "pro kabaddi league"
+license: GPL-2.0-only

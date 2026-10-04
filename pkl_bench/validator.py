@@ -34,31 +34,31 @@ def audit_score_conservation(df_matches: Optional[pd.DataFrame] = None) -> Dict[
     discrepancies = []
 
     for idx, row in df_matches.iterrows():
-        mid = getattr(row, "match_id")
+        mid = row.match_id
         # Team 1 audit
-        calc_t1 = getattr(row, "team1_raid_points") + getattr(row, "team1_tackle_points") + getattr(row, "team1_all_out_points") + getattr(row, "team1_extra_points")
-        diff_t1 = abs(calc_t1 - getattr(row, "team1_score"))
+        calc_t1 = row.team1_raid_points + row.team1_tackle_points + row.team1_all_out_points + row.team1_extra_points
+        diff_t1 = abs(calc_t1 - row.team1_score)
         if diff_t1 == 0:
             perfect_t1 += 1
         elif diff_t1 > 0 and calc_t1 > 0:
             discrepancies.append({
                 "match_id": mid,
                 "team": "team1",
-                "actual_score": getattr(row, "team1_score"),
+                "actual_score": row.team1_score,
                 "sum_breakdown": calc_t1,
                 "delta": diff_t1
             })
 
         # Team 2 audit
-        calc_t2 = getattr(row, "team2_raid_points") + getattr(row, "team2_tackle_points") + getattr(row, "team2_all_out_points") + getattr(row, "team2_extra_points")
-        diff_t2 = abs(calc_t2 - getattr(row, "team2_score"))
+        calc_t2 = row.team2_raid_points + row.team2_tackle_points + row.team2_all_out_points + row.team2_extra_points
+        diff_t2 = abs(calc_t2 - row.team2_score)
         if diff_t2 == 0:
             perfect_t2 += 1
         elif diff_t2 > 0 and calc_t2 > 0:
             discrepancies.append({
                 "match_id": mid,
                 "team": "team2",
-                "actual_score": getattr(row, "team2_score"),
+                "actual_score": row.team2_score,
                 "sum_breakdown": calc_t2,
                 "delta": diff_t2
             })
