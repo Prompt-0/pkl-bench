@@ -6,6 +6,7 @@
 [![Data Format: Parquet & CSV](https://img.shields.io/badge/Format-Parquet%20%7C%20CSV-green.svg)](https://frictionlessdata.io/)
 [![Dataset Tests: 17/17 Passed](https://img.shields.io/badge/Tests-17%2F17%20Passed-brightgreen.svg)]()
 [![Paper: PDF](https://img.shields.io/badge/Paper-IEEE%20PDF-red.svg)](paper/pkl_bench_paper.pdf)
+[![ORCID: 0009-0009-2773-4972](https://img.shields.io/badge/ORCID-0009--0009--2773--4972-green.svg)](https://orcid.org/0009-0009-2773-4972)
 
 **PKL-Bench** is the definitive, research-grade, multi-tier benchmark dataset and evaluation harness for professional Kabaddi analytics and machine learning. Covering **10 complete seasons** (2014–2024) of the **Pro Kabaddi League (PKL)**, PKL-Bench provides **1,060 matches**, **26,760 individual player boxscores**, and **103,176 granular, timestamped play-by-play raid events**.
 
@@ -161,7 +162,7 @@ If you use PKL-Bench in your research, please cite:
   year = {2026},
   publisher = {GitHub},
   howpublished = {\url{https://github.com/Prompt-0/pkl-bench}},
-  note = {University of Delhi. 10 Seasons (2014-2024), 1,060 Matches, 103,176 Play-by-Play Raids}
+  note = {University of Delhi. ORCID: 0009-0009-2773-4972. 10 Seasons (2014-2024), 1,060 Matches, 103,176 Play-by-Play Raids}
 }
 ```
 
