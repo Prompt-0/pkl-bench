@@ -29,6 +29,7 @@ def plot_phase_transitions(df_raids: pd.DataFrame):
     ax1.bar(outcomes.index.astype(str), outcomes.values, color=colors[:len(outcomes)], edgecolor="black", alpha=0.85)
     ax1.set_ylabel("Percentage of Total Raids (%)")
     ax1.set_title(f"Raid Outcome Distribution (N={len(df_raids):,})")
+    ax1.set_xticks(range(len(outcomes)))
     ax1.set_xticklabels(outcomes.index.astype(str), rotation=25, ha="right", fontsize=9)
     ax1.set_ylim(0, max(outcomes.values) * 1.15)
     

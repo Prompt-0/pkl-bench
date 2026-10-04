@@ -10,7 +10,7 @@ from pkl_bench.baselines.win_probability import WinProbabilityBaseline
 
 
 def test_raid_outcome_baseline():
-    X_dummy = np.random.randn(50, 6)
+    X_dummy = np.random.randn(50, 4)
     y_dummy = np.random.choice(["EMPTY_RAID", "SUCCESSFUL_RAID", "UNSUCCESSFUL_RAID"], size=50)
 
     model = RaidOutcomeBaseline(model_type="majority")
@@ -29,7 +29,7 @@ def test_prepare_raid_features():
     raids_s1 = load_raids(season=1)
     X, y = prepare_raid_features(raids_s1)
     assert len(X) == len(y)
-    assert X.shape[1] == 6
+    assert X.shape[1] == 4
     # Verify no NaN values in features
     assert not np.isnan(X).any()
     # Check that raiding score diff is in realistic range
