@@ -4,10 +4,12 @@ Computes context-adjusted True Raider Impact (TRI), Expected Points Added (EPA),
 and Defender Impact metrics.
 """
 
-from typing import Dict, Any, List, Optional
+from typing import Optional
+
 import numpy as np
 import pandas as pd
-from ..loader import load_player_matches, load_raids, load_players
+
+from ..loader import load_player_matches, load_raids
 
 
 def calculate_player_impact_metrics(season: Optional[int] = None) -> pd.DataFrame:

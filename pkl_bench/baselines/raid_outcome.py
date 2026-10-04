@@ -5,16 +5,17 @@ predict the multi-class outcome distribution:
 {EMPTY_RAID, SUCCESSFUL_RAID, UNSUCCESSFUL_RAID, SUPER_RAID, SUPER_TACKLE}
 """
 
-from typing import Dict, Any, Tuple, Optional
+from typing import Any, Dict, Optional, Tuple
+
 import numpy as np
 import pandas as pd
-from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import HistGradientBoostingClassifier, RandomForestClassifier
 from sklearn.dummy import DummyClassifier
+from sklearn.ensemble import HistGradientBoostingClassifier
+from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
-from ..loader import get_benchmark_split
-from ..metrics import multiclass_log_loss, classification_report_dict, brier_score
 
+from ..loader import get_benchmark_split
+from ..metrics import classification_report_dict, multiclass_log_loss
 
 TARGET_CLASSES = ["EMPTY_RAID", "SUCCESSFUL_RAID", "UNSUCCESSFUL_RAID", "SUPER_RAID", "SUPER_TACKLE"]
 

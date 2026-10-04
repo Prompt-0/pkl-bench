@@ -2,18 +2,14 @@
 Tests for PKL-Bench data loading functionality.
 """
 
-import pytest
-import pandas as pd
 from pkl_bench.loader import (
+    get_benchmark_split,
+    load_matches,
+    load_players,
+    load_raids,
     load_seasons,
     load_teams,
     load_venues,
-    load_matches,
-    load_players,
-    load_player_matches,
-    load_raids,
-    get_benchmark_split,
-    get_splits_info,
 )
 
 

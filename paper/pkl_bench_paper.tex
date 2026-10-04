@@ -37,13 +37,13 @@ While sports analytics benchmarks such as SoccerNet and NBA Play-by-Play have ac
 \end{abstract}
 
 \section{Introduction}
-Sports analytics has emerged as a fertile testbed for artificial intelligence, driving advances in multi-agent reinforcement learning (MARL), spatio-temporal tracking, and dynamic win probability modeling. However, modern research is overwhelmingly concentrated in association football \cite{deliege2021soccernet, pappalardo2019public}, basketball \cite{franks2016characterizing}, and cricket. These sports share structural symmetries: teams field equal numbers of players who freely transition between attack and defense on open playing surfaces.
+Sports analytics has emerged as a fertile testbed for artificial intelligence, driving advances in multi-agent reinforcement learning (MARL), spatio-temporal tracking, and dynamic win probability modeling. However, modern research is overwhelmingly concentrated in association football \cite{deliege2021soccernet, pappalardo2019public}, basketball \cite{franks2015characterizing}, and cricket. These sports share structural symmetries: teams field equal numbers of players who freely transition between attack and defense on open playing surfaces.
 
-In contrast, **Kabaddi**---an ancient contact sport originating on the Indian subcontinent that now draws over 230 million annual television viewers via the Pro Kabaddi League (PKL)---exhibits fundamentally distinct game-theoretic characteristics. Kabaddi is an **asymmetric, sequential zero-sum pursuit-evasion game** \cite{isaacs1999differential}. In each raid, exactly one attacker (the raider) enters the opponent's territory to confront an organized defensive unit of $N_{def} \in \{1, \dots, 7\}$ players within a strict 30-second shot clock. The sport features rule-induced non-linearities: when the defense drops to $\le 3$ players, the payoff for a successful tackle doubles (Super Tackle); when two consecutive raids yield no points, the third raid triggers mandatory offensive execution (Do-or-Die).
+In contrast, \textbf{Kabaddi}---an ancient contact sport originating on the Indian subcontinent that now draws over 230 million annual television viewers via the Pro Kabaddi League (PKL)---exhibits fundamentally distinct game-theoretic characteristics. Kabaddi is an \textbf{asymmetric, sequential zero-sum pursuit-evasion game} \cite{isaacs1999differential}. In each raid, exactly one attacker (the raider) enters the opponent's territory to confront an organized defensive unit of $N_{def} \in \{1, \dots, 7\}$ players within a strict 30-second shot clock. The sport features rule-induced non-linearities: when the defense drops to $\le 3$ players, the payoff for a successful tackle doubles (Super Tackle); when two consecutive raids yield no points, the third raid triggers mandatory offensive execution (Do-or-Die).
 
 Despite its strategic depth, Kabaddi analytics has remained fragmented. Prior studies were restricted to isolated hackathons, proprietary sports API paywalls, or post-hoc aggregated network analyses \cite{sengupta2024analyzing, lalwani2024kabaddipy}. No unified, multi-season, play-by-play benchmark dataset with rigorous evaluation protocols has existed.
 
-To resolve this deficiency, we present **PKL-Bench**, an open-science benchmark suite designed according to FAIR principles:
+To resolve this deficiency, we present \textbf{PKL-Bench}, an open-science benchmark suite designed according to FAIR principles:
 \begin{enumerate}
     \item \textbf{Complete Historical Corpus}: Covering 10 seasons (2014--2024), 1,060 matches, 26,760 player boxscores, and 103,176 discrete play-by-play raid events.
     \item \textbf{Mathematical Rigor}: Formalization of Kabaddi game dynamics as an MDP, backed by a programmatic score conservation audit proving 100.0\% point accounting integrity.
@@ -115,12 +115,13 @@ PKL-Bench structures data into five relational tiers:
 Tier 0 & Seasons & 10 & 0.01 MB & 0.00 MB \\
 Tier 0 & Teams & 12 & 0.00 MB & 0.00 MB \\
 Tier 0 & Venues & 28 & 0.00 MB & 0.00 MB \\
+Tier 0 & Rulesets & 1 & 0.00 MB & 0.00 MB \\
 Tier 1 & Master Players & 805 & 0.03 MB & 0.04 MB \\
 Tier 2 & Matches & 1,060 & 0.06 MB & 0.22 MB \\
 Tier 3 & Player Match Boxscores & 26,760 & 0.29 MB & 2.55 MB \\
 Tier 4 & Play-by-Play Raid Events & 103,176 & 1.31 MB & 12.29 MB \\
 \midrule
-\textbf{Total} & \textbf{Complete Corpus} & \textbf{131,849} & \textbf{1.70 MB} & \textbf{15.10 MB} \\
+\textbf{Total} & \textbf{Complete Corpus} & \textbf{131,852} & \textbf{1.70 MB} & \textbf{15.10 MB} \\
 \bottomrule
 \end{tabular}%
 }
@@ -133,7 +134,7 @@ S_i = \text{RaidPoints}_i + \text{TacklePoints}_i + \text{AllOutPoints}_i + \tex
 \end{equation}
 \textit{where $\text{RaidPoints}_i = \text{Touch}_i + \text{Bonus}_i$, $\text{TacklePoints}_i = \text{Capture}_i + \text{SuperTackleBonus}_i$, and $\text{AllOutPoints}_i = 2 \times \text{AllOutsInflicted}_i$.}
 
-\textbf{Empirical Verification}: We executed automated verification across all 1,060 matches using \texttt{pkl\_bench.validator}. The conservation theorem holds with **100.0\% adherence** on both Team 1 and Team 2, with 0 discrepancies flagged across the 10-season corpus.
+\textbf{Empirical Verification}: We executed automated verification across all 1,060 matches using \texttt{pkl\_bench.validator}. The conservation theorem holds with \textbf{100.0\% adherence} on both Team 1 and Team 2, with 0 discrepancies flagged across the 10-season corpus.
 
 \begin{figure}[t]
     \centering
@@ -158,7 +159,7 @@ Splits are mutually disjoint ($Train \cap Val = \emptyset$, $Train \cap Test = \
     \item \textbf{Task 1: Discrete Raid Outcome Prediction}: Multi-class classification predicting $y_t \in \mathcal{Y}$ from pre-raid state features. Evaluated by Multiclass Log-Loss and Macro-F1.
     \item \textbf{Task 2: Dynamic Win Probability}: Estimating win probability $P(W_1 \mid S_t)$ at every raid $t$. Evaluated by Brier Score \cite{brier1950verification} and Expected Calibration Error (ECE) \cite{guo2017calibration}.
     \item \textbf{Task 3: Match Forecasting}: Predicting match winner and point spread prior to coin toss. Evaluated by Accuracy, ROC-AUC, and Margin MAE.
-    \item \textbf{Task 4: Player Valuation}: Context-conditioned Expected Points Added (EPA) and True Raider Impact (TRI).
+    \item \textbf{Task 4: Player Valuation}: Context-conditioned Expected Points Added (EPA) adapting action-value valuation paradigms \cite{decroos2019actions} and True Raider Impact (TRI).
 \end{itemize}
 
 \begin{figure}[t]

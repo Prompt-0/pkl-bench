@@ -2,7 +2,6 @@
 Tests for score conservation law and dataset validation battery.
 """
 
-import pytest
 from pkl_bench.validator import audit_score_conservation, validate_dataset_integrity
 
 

@@ -3,11 +3,12 @@ Benchmark Task 3: Pre-Match Outcome & Margin Forecasting
 Dynamic Elo rating system tailored to Kabaddi scoring dynamics with margin-of-victory scaling.
 """
 
-from typing import Dict, Any, Tuple, Optional, List
+from typing import Any, Dict, List, Tuple
+
 import numpy as np
-import pandas as pd
-from sklearn.metrics import accuracy_score, roc_auc_score, mean_absolute_error
-from ..loader import load_matches, get_benchmark_split, load_teams
+from sklearn.metrics import accuracy_score, mean_absolute_error, roc_auc_score
+
+from ..loader import load_matches
 from ..metrics import brier_score
 
 

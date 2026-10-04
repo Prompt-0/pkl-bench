@@ -4,7 +4,7 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Data Format: Parquet & CSV](https://img.shields.io/badge/Format-Parquet%20%7C%20CSV-green.svg)](https://frictionlessdata.io/)
-[![Dataset Tests: 17/17 Passed](https://img.shields.io/badge/Tests-17%2F17%20Passed-brightgreen.svg)]()
+[![Dataset Tests: 22/22 Passed](https://img.shields.io/badge/Tests-22%2F22%20Passed-brightgreen.svg)]()
 [![Paper: PDF](https://img.shields.io/badge/Paper-IEEE%20PDF-red.svg)](paper/pkl_bench_paper.pdf)
 [![ORCID: 0009-0009-2773-4972](https://img.shields.io/badge/ORCID-0009--0009--2773--4972-green.svg)](https://orcid.org/0009-0009-2773-4972)
 
@@ -142,11 +142,12 @@ pkl-benchmark/
 │   └── KABADDI_DOMAIN_GUIDE.md        # Kabaddi rules, court layout, mechanics
 ├── examples/                          # Reproducible example scripts
 │   └── quickstart.py                  # 30-second end-to-end demonstration
-└── tests/                             # Test suite (16/16 passing)
+└── tests/                             # Test suite (22/22 passing)
     ├── test_loader.py
     ├── test_conservation.py
     ├── test_benchmarks.py
-    └── test_metrics.py
+    ├── test_metrics.py
+    └── test_cli.py
 ```
 
 ---

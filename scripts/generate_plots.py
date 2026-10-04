@@ -6,10 +6,11 @@ for the research paper.
 """
 
 from pathlib import Path
+
 import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
 import numpy as np
 import pandas as pd
+
 import pkl_bench as pb
 
 FIGURES_DIR = Path("/root/code/active/pkl-benchmark/paper/figures")
@@ -44,7 +45,7 @@ def plot_phase_transitions(df_raids: pd.DataFrame):
     # Empirical outcomes by raid type across all seasons
     outcomes = df_raids["outcome_category"].value_counts(normalize=True) * 100
     colors = ["#4A90E2", "#50E3C2", "#F5A623", "#E94E77", "#9013FE"]
-    
+
     categories = ["EMPTY_RAID", "SUCCESSFUL_RAID", "UNSUCCESSFUL_RAID", "SUPER_RAID", "SUPER_TACKLE"]
     labels = ["Empty Raid\n(0 pts)", "Successful\nTouch (1 pt)", "Tackled /\nOut (1 pt)", "Super Raid\n(≥3 pts)", "Super Tackle\n(2 pts)"]
     vals = [outcomes.get(c, 0) for c in categories]
@@ -146,7 +147,7 @@ def plot_elo_franchises(df_matches: pd.DataFrame):
 
     from pkl_bench.baselines.match_winner import KabaddiEloBaseline
     elo_baseline = KabaddiEloBaseline(k_factor=30.0, home_advantage=20.0, mean_reversion=0.15)
-    
+
     # Track ratings after each match
     history = {tid: [] for tid in [1, 2, 3, 5, 6, 7]}  # BLR, DEL, JAI, MUM, PAT, PUN
     match_indices = []

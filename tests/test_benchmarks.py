@@ -2,11 +2,11 @@
 Tests for baseline model execution and reproducible benchmark runs.
 """
 
-import pytest
 import numpy as np
+
+from pkl_bench.baselines.match_winner import KabaddiEloBaseline
 from pkl_bench.baselines.raid_outcome import RaidOutcomeBaseline
 from pkl_bench.baselines.win_probability import WinProbabilityBaseline
-from pkl_bench.baselines.match_winner import KabaddiEloBaseline
 
 
 def test_raid_outcome_baseline():
@@ -54,7 +54,10 @@ def test_kabaddi_elo():
 
 
 def test_player_impact_metrics():
-    from pkl_bench.baselines.player_impact import calculate_player_impact_metrics, calculate_expected_points_added
+    from pkl_bench.baselines.player_impact import (
+        calculate_expected_points_added,
+        calculate_player_impact_metrics,
+    )
     df_impact = calculate_player_impact_metrics(season=1)
     assert not df_impact.empty
     assert "true_raider_impact" in df_impact.columns

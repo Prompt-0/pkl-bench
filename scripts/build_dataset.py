@@ -4,14 +4,15 @@ PKL-Bench: Complete Dataset Builder & Harmonizer for Pro Kabaddi League (Seasons
 Extracts, harmonizes, validates, and exports multi-tier research datasets in Parquet and CSV formats.
 """
 
-import os
-import json
-import re
 import glob
+import json
+import os
+import re
 from pathlib import Path
-from typing import Dict, List, Any, Optional, Tuple
-import pandas as pd
+from typing import Any, Dict, List, Optional
+
 import numpy as np
+import pandas as pd
 
 BASE_RAW_DIR = "/usr/local/lib/python3.14/site-packages/kabaddiPy"
 DATA_DIR = Path("/root/code/active/pkl-benchmark/data")
@@ -393,7 +394,6 @@ def extract_player_matches(root: Dict[str, Any], match_id: int, season_id: int) 
             raid_bonus = clean_int(r_pts.get("raid_bonus") if isinstance(r_pts, dict) else 0)
 
             tackle_tot = clean_int(t_pts.get("total") if isinstance(t_pts, dict) else t_pts)
-            tackle_capture = clean_int(t_pts.get("capture") if isinstance(t_pts, dict) else 0)
 
             super_10 = (raid_tot >= 10)
             high_5 = (tackle_tot >= 5)
@@ -519,8 +519,6 @@ def extract_raids_pbp(root: Dict[str, Any], match_id: int, season_id: int, playe
             score_t1_after = clean_int(ev_score.get("team1"))
             score_t2_after = clean_int(ev_score.get("team2"))
 
-        # Score diff relative to raiding team
-        score_diff_after = None
         if score_t1_after is not None and score_t2_after is not None:
             # Check which team is raiding team
             # Let's see: ev_score usually corresponds to team 1 and team 2
@@ -670,7 +668,7 @@ def run_pipeline():
             raids = extract_raids_pbp(root, match_id, season_id, player_names)
             raids_pbp_list.extend(raids)
 
-    print(f"\nProcessing Complete:")
+    print("\nProcessing Complete:")
     print(f"  Total JSON files scanned: {total_files_scanned}")
     print(f"  Total matches extracted: {total_matches_parsed}")
     print(f"  Total player match appearances: {len(player_matches_list)}")

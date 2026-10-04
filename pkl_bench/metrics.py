@@ -2,10 +2,15 @@
 Standardized evaluation metrics for sports analytics and ML benchmarking.
 """
 
-from typing import Dict, Any, List, Optional, Tuple, Union
+from typing import Any, Dict, List, Optional, Union
+
 import numpy as np
-import pandas as pd
-from sklearn.metrics import log_loss, brier_score_loss, classification_report, accuracy_score, f1_score
+from sklearn.metrics import (
+    accuracy_score,
+    classification_report,
+    f1_score,
+    log_loss,
+)
 
 
 def brier_score(y_true: Union[np.ndarray, List[int]], y_prob: Union[np.ndarray, List[float]]) -> float:

@@ -5,7 +5,8 @@ Provides fast typed access to Parquet and CSV dataset tiers and official benchma
 
 import json
 from pathlib import Path
-from typing import Optional, Tuple, Dict, Any, List, Union
+from typing import Any, Dict, List, Optional, Tuple, Union
+
 import pandas as pd
 
 PACKAGE_DIR = Path(__file__).resolve().parent

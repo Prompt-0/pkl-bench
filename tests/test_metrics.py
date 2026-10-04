@@ -2,14 +2,14 @@
 Tests for mathematical evaluation metrics in sports analytics.
 """
 
-import pytest
 import numpy as np
+
 from pkl_bench.metrics import (
     brier_score,
-    expected_calibration_error,
-    multiclass_log_loss,
     classification_report_dict,
-    expected_points_added
+    expected_calibration_error,
+    expected_points_added,
+    multiclass_log_loss,
 )
 
 
@@ -37,3 +37,27 @@ def test_expected_points_added():
     expected = np.array([0.8, 0.8, 0.5])
     epa = expected_points_added(actual, expected)
     np.testing.assert_allclose(epa, [1.2, -0.8, 0.5])
+
+
+def test_multiclass_log_loss():
+    y_true = [0, 1, 2]
+    y_prob = np.array([
+        [0.9, 0.05, 0.05],
+        [0.1, 0.8, 0.1],
+        [0.05, 0.15, 0.8]
+    ])
+    loss = multiclass_log_loss(y_true, y_prob, labels=[0, 1, 2])
+    assert isinstance(loss, float)
+    assert loss > 0.0 and loss < 0.5
+
+
+def test_classification_report_dict():
+    y_true = [0, 1, 0, 1, 1]
+    y_pred = [0, 1, 0, 1, 0]
+    report = classification_report_dict(y_true, y_pred)
+    assert "accuracy" in report
+    assert "macro_f1" in report
+    assert "weighted_f1" in report
+    assert "details" in report
+    assert report["accuracy"] == 0.8
+

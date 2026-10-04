@@ -6,6 +6,7 @@ Loads data, inspects splits, and evaluates a baseline model in under 15 lines of
 
 import pkl_bench as pb
 
+
 def main():
     print("=== 1. Loading Datasets ===")
     matches = pb.load_matches()
@@ -27,8 +28,11 @@ def main():
     print(f"Test Raids (S10):    {len(test_raids):,}")
 
     print("\n=== 4. Running Raid Outcome Baseline (HistGradientBoosting) ===")
-    from pkl_bench.baselines.raid_outcome import RaidOutcomeBaseline, prepare_raid_features
-    
+    from pkl_bench.baselines.raid_outcome import (
+        RaidOutcomeBaseline,
+        prepare_raid_features,
+    )
+
     X_train, y_train = prepare_raid_features(train_raids)
     X_test, y_test = prepare_raid_features(test_raids)
 

@@ -1,33 +1,29 @@
-"""
-Command-Line Interface (CLI) for PKL-Bench.
-"""
+from __future__ import annotations
 
-import sys
 import argparse
-import json
-import pprint
-from .validator import validate_dataset_integrity, audit_score_conservation
+
 from .baselines import (
+    run_match_winner_benchmark,
     run_raid_outcome_benchmark,
     run_win_probability_benchmark,
-    run_match_winner_benchmark,
-    calculate_player_impact_metrics
 )
-from .loader import load_matches, load_raids, load_players
+from .loader import load_matches, load_players, load_raids
+from .validator import validate_dataset_integrity
 
 
-def main():
+def main() -> None:
+    """Entrypoint for the pkl-bench command-line tool."""
     parser = argparse.ArgumentParser(
         prog="pkl-bench",
-        description="PKL-Bench: Pro Kabaddi League Benchmark Dataset & Analytics Suite"
+        description="PKL-Bench: Pro Kabaddi League Benchmark Dataset & Analytics Suite",
     )
     subparsers = parser.add_subparsers(dest="command", help="Available sub-commands")
 
     # info
-    info_p = subparsers.add_parser("info", help="Display dataset overview and tier statistics")
+    subparsers.add_parser("info", help="Display dataset overview and tier statistics")
 
     # validate
-    val_p = subparsers.add_parser("validate", help="Run full data integrity and score conservation audits")
+    subparsers.add_parser("validate", help="Run full data integrity and score conservation audits")
 
     # benchmark
     bench_p = subparsers.add_parser("benchmark", help="Execute standard machine learning benchmark baselines")
@@ -47,11 +43,11 @@ def main():
         matches = load_matches()
         raids = load_raids()
         players = load_players()
-        print(f"Total Seasons:      10 (2014 - 2024)")
+        print("Total Seasons:      10 (2014 - 2024)")
         print(f"Total Matches:      {len(matches):,}")
         print(f"Total Raid Events:  {len(raids):,}")
         print(f"Unique Players:     {len(players):,}")
-        print(f"Standard Splits:    Train: Seasons 1-8 | Val: Season 9 | Test: Season 10")
+        print("Standard Splits:    Train: Seasons 1-8 | Val: Season 9 | Test: Season 10")
         print("=" * 65)
 
     elif args.command == "validate":

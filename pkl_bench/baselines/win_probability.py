@@ -3,14 +3,16 @@ Benchmark Task 2: Dynamic In-Game Win Probability Modeling
 Predicts P(Team 1 Wins | Match State at raid t) throughout the course of a 40-minute contest.
 """
 
-from typing import Dict, Any, Tuple, Optional, List
+from typing import Any, Dict, List, Optional, Tuple
+
 import numpy as np
 import pandas as pd
-from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import HistGradientBoostingClassifier
 from sklearn.calibration import CalibratedClassifierCV
+from sklearn.ensemble import HistGradientBoostingClassifier
+from sklearn.linear_model import LogisticRegression
+
 from ..loader import get_benchmark_split, load_matches
-from ..metrics import brier_score, expected_calibration_error, multiclass_log_loss
+from ..metrics import brier_score, expected_calibration_error
 
 
 def prepare_win_prob_features(df_raids: pd.DataFrame, df_matches: pd.DataFrame) -> Tuple[np.ndarray, np.ndarray]:
