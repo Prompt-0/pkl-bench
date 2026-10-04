@@ -297,7 +297,7 @@ def extract_match_record(root: Dict[str, Any], season_id: int, file_path: str) -
     t2_id = clean_int(t2.get("id"))
     t2_name = clean_str(t2.get("name"))
     t2_score = clean_int(t2.get("score"))
-    t2_stats = t2_stats = t2.get("stats", {}) or {}
+    t2_stats = t2.get("stats", {}) or {}
     t2_pts = t2_stats.get("points", {}) or {}
     t2_raids = t2_stats.get("raids", {}) or {}
     t2_tackles = t2_stats.get("tackles", {}) or {}
@@ -552,33 +552,40 @@ def extract_raids_pbp(root: Dict[str, Any], match_id: int, season_id: int, playe
 
         defender_name = player_name_map.get(defender_id) if defender_id else None
 
-        raids.append({
-            "match_id": match_id,
-            "season_id": season_id,
-            "raid_sequence_no": seq_no,
-            "half": half,
-            "clock": clock_str,
-            "clock_seconds_remaining": seconds_left,
-            "raiding_team_id": raiding_team_id,
-            "defending_team_id": defending_team_id,
-            "raider_id": raider_id,
-            "raider_name": raider_name,
-            "is_do_or_die": is_dod,
-            "outcome_category": outcome_category,
-            "raid_points": raid_pts,
-            "raid_touch_points": raid_touch,
-            "raid_bonus_points": raid_bonus,
-            "defending_points": def_pts,
-            "is_super_raid": is_super_raid,
-            "is_super_tackle": is_super_tackle,
-            "primary_defender_id": defender_id,
-            "primary_defender_name": defender_name,
-            "team1_score_before": score_t1_before,
-            "team2_score_before": score_t2_before,
-            "team1_score_after": curr_score_t1,
-            "team2_score_after": curr_score_t2,
-            "event_text": event_text
-        })
+        is_valid_raid = True
+        if "SUBSTITUTION" in raw_event_name or "TIMEOUT" in raw_event_name or "CARD" in raw_event_name or "REVIEW" in raw_event_name:
+            is_valid_raid = False
+        if clean_int(ev.get("raider_id")) == 0 and "RAID" not in raw_event_name:
+            is_valid_raid = False
+
+        if is_valid_raid:
+            raids.append({
+                "match_id": match_id,
+                "season_id": season_id,
+                "raid_sequence_no": seq_no,
+                "half": half,
+                "clock": clock_str,
+                "clock_seconds_remaining": seconds_left,
+                "raiding_team_id": raiding_team_id,
+                "defending_team_id": defending_team_id,
+                "raider_id": raider_id,
+                "raider_name": raider_name,
+                "is_do_or_die": is_dod,
+                "outcome_category": outcome_category,
+                "raid_points": raid_pts,
+                "raid_touch_points": raid_touch,
+                "raid_bonus_points": raid_bonus,
+                "defending_points": def_pts,
+                "is_super_raid": is_super_raid,
+                "is_super_tackle": is_super_tackle,
+                "primary_defender_id": defender_id,
+                "primary_defender_name": defender_name,
+                "team1_score_before": score_t1_before,
+                "team2_score_before": score_t2_before,
+                "team1_score_after": curr_score_t1,
+                "team2_score_after": curr_score_t2,
+                "event_text": event_text
+            })
     return raids
 
 

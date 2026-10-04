@@ -79,12 +79,13 @@ def calculate_expected_points_added(df_raids: Optional[pd.DataFrame] = None, min
     train_df = df[df["season_id"] <= 8]
     state_means = train_df.groupby(["is_do_or_die", "half"])["raid_points"].mean().to_dict()
 
-    df["expected_points"] = df.apply(
+    train_df["expected_points"] = train_df.apply(
         lambda r: state_means.get((r["is_do_or_die"], r["half"]), 0.5), axis=1
     )
-    df["epa"] = df["raid_points"] - df["expected_points"]
+    train_df["epa"] = train_df["raid_points"] - train_df["expected_points"]
 
-    raider_epa = df.groupby(["raider_id", "raider_name"]).agg(
+    # We evaluate EPA strictly on the historical training set to prevent leakage of test data
+    raider_epa = train_df.groupby(["raider_id", "raider_name"]).agg(
         total_raids=("raid_sequence_no", "count"),
         total_raid_points=("raid_points", "sum"),
         cumulative_epa=("epa", "sum"),
