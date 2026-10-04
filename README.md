@@ -81,7 +81,7 @@ All baselines are evaluated strictly on the **out-of-sample Season 10 test set**
 | **Task 2: In-Game Win Probability** | Logistic Leverage | Brier: 0.2287 | ECE: 0.0905 | Log-Loss: 0.6491 |
 | | **Calibrated GBDT** | **Brier: 0.1804** | **ECE: 0.1241** | **Log-Loss: 0.5423** |
 | **Task 3: Pre-Match Outcome & Spread** | Random Guess | Accuracy: 0.5000 | Brier: 0.2500 | ROC-AUC: 0.5000 |
-| | **Dynamic Kabaddi Elo** | **Accuracy: 0.7059** | **Brier: 0.1968** | **ROC-AUC: 0.7673** (MAE: 9.23) |
+| | **Dynamic Kabaddi Elo** | **Accuracy: 0.7059** | **Brier: 0.1968** | **ROC-AUC: 0.7874** (MAE: 9.23) |
 | **Task 4: Player Valuation & Impact** | Raw Total Points | Naive Cumulative | Top Volume: Pardeep Narwal (1,690 pts) | Top Defender: Fazel Atrachali (486 pts) |
 | | **Expected Points Added (EPA)** | **State-Conditioned** | **Top Cumulative: Pardeep Narwal (+455.60 EPA)** | **Top Rate: Pawan Sehrawat (0.190 EPA/raid)** |
 

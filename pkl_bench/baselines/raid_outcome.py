@@ -95,17 +95,11 @@ class RaidOutcomeBaseline:
 
         # Classes in model
         classes = list(self.model.classes_)
-        # Re-index probs to match TARGET_CLASSES
-        prob_matrix = np.zeros((len(X_test), len(TARGET_CLASSES)))
-        for idx, cls in enumerate(classes):
-            if cls in TARGET_CLASSES:
-                target_idx = TARGET_CLASSES.index(cls)
-                prob_matrix[:, target_idx] = probs[:, idx]
 
         report = classification_report_dict(y_test, preds)
         # Log loss over present classes
         try:
-            ll = multiclass_log_loss(y_test, prob_matrix, labels=TARGET_CLASSES)
+            ll = multiclass_log_loss(y_test, probs, labels=classes)
         except ValueError:
             ll = float("nan")
 

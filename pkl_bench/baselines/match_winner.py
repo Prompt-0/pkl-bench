@@ -99,12 +99,12 @@ def run_match_winner_benchmark() -> Dict[str, Any]:
 
         p1, pred_margin = elo.predict_match(t1, t2)
 
-        if sid == 9:
+        if sid == 9 and actual_margin != 0:
             y_val_true.append(t1_won)
             y_val_prob.append(p1)
             y_val_margin_true.append(actual_margin)
             y_val_margin_pred.append(pred_margin)
-        elif sid == 10:
+        elif sid == 10 and actual_margin != 0:
             y_test_true.append(t1_won)
             y_test_prob.append(p1)
             y_test_margin_true.append(actual_margin)
