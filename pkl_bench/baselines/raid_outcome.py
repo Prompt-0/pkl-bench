@@ -31,8 +31,6 @@ def prepare_raid_features(
       2. clock_seconds_remaining (0 to 2400)
       3. half (1 or 2)
       4. score_diff (relative to raiding team: score_raiding - score_defending)
-      5. raiding_team_id
-      6. defending_team_id
     """
     # Clean targets
     valid_mask = df_raids["outcome_category"].isin(TARGET_CLASSES)
@@ -58,9 +56,7 @@ def prepare_raid_features(
         df_clean["is_do_or_die"].astype(float).values,
         df_clean["clock_seconds_remaining"].fillna(1200).values,
         df_clean["half"].values,
-        score_diff_clean,
-        df_clean["raiding_team_id"].values,
-        df_clean["defending_team_id"].values
+        score_diff_clean
     ])
 
     targets = df_clean["outcome_category"].values
