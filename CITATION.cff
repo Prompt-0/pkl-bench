@@ -9,7 +9,7 @@ authors:
     given-names: "Bhaskar"
   - family-names: "Mukherjee"
     given-names: "Aniruddha"
-version: 1.0.0
+version: 2.0.0
 date-released: 2026-10-04
 url: "https://github.com/Prompt-0/pkl-bench"
 license: GPL-2.0-only
