@@ -14,7 +14,7 @@ Open scientific research initiative.
 
 ## 2. Composition
 **What do the instances that comprise the dataset represent?**
-The dataset contains 1,060 match records and 90,644 discrete raid events across Seasons 1-10 of the PKL.
+The dataset contains 1,060 match records and 90,644 discrete raid events across Seasons 1-10 of the PKL. The splits are standardized chronologically: Train (S1-S8) with 67,181 raids, Validation (S9) with 11,642 raids, and Test (S10) with 11,821 raids.
 
 **Are there any errors, sources of noise, or redundancies?**
 Yes. As this dataset is derived from upstream official sources (via `kabaddiPy`), early seasons (particularly Season 1) contain historical recording errors. Play-by-play running scores occasionally decrease, and some official final scores do not perfectly reconcile with the event logs. The benchmark preserves these historical anomalies identically to the source data.
