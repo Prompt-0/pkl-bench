@@ -537,9 +537,10 @@ def extract_raids_pbp(root: Dict[str, Any], match_id: int, season_id: int, playe
             score_t1_after = clean_int(ev_score.get("team1"))
             score_t2_after = clean_int(ev_score.get("team2"))
 
+        score_t1_before = curr_score_t1
+        score_t2_before = curr_score_t2
+
         if score_t1_after is not None and score_t2_after is not None:
-            # Check which team is raiding team
-            # Let's see: ev_score usually corresponds to team 1 and team 2
             curr_score_t1 = score_t1_after
             curr_score_t2 = score_t2_after
 
@@ -572,6 +573,8 @@ def extract_raids_pbp(root: Dict[str, Any], match_id: int, season_id: int, playe
             "is_super_tackle": is_super_tackle,
             "primary_defender_id": defender_id,
             "primary_defender_name": defender_name,
+            "team1_score_before": score_t1_before,
+            "team2_score_before": score_t2_before,
             "team1_score_after": curr_score_t1,
             "team2_score_after": curr_score_t2,
             "event_text": event_text

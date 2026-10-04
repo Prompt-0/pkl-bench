@@ -35,7 +35,7 @@ class KabaddiEloBaseline:
         for tid in self.ratings:
             self.ratings[tid] = (1 - self.mean_reversion) * self.ratings[tid] + self.mean_reversion * 1500.0
 
-    def predict_match(self, team1_id: int, team2_id: int, is_home: bool = True) -> Tuple[float, float]:
+    def predict_match(self, team1_id: int, team2_id: int, is_home: bool = False) -> Tuple[float, float]:
         """
         Returns (p_team1_win, predicted_spread).
         """
@@ -46,7 +46,7 @@ class KabaddiEloBaseline:
         predicted_margin = diff / 25.0  # Approx 25 Elo points per 1 kabaddi point
         return p1, predicted_margin
 
-    def update_match(self, team1_id: int, team2_id: int, team1_score: int, team2_score: int, is_home: bool = True):
+    def update_match(self, team1_id: int, team2_id: int, team1_score: int, team2_score: int, is_home: bool = False):
         p1, _ = self.predict_match(team1_id, team2_id, is_home=is_home)
 
         if team1_score > team2_score:

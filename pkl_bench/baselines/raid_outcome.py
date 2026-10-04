@@ -49,8 +49,8 @@ def prepare_raid_features(
     is_t1 = (df_merged["raiding_team_id"] == df_merged["team1_id"])
     score_diff = np.where(
         is_t1,
-        df_merged["team1_score_after"] - df_merged["team2_score_after"],
-        df_merged["team2_score_after"] - df_merged["team1_score_after"],
+        df_merged["team1_score_before"] - df_merged["team2_score_before"],
+        df_merged["team2_score_before"] - df_merged["team1_score_before"],
     )
     score_diff_clean = np.nan_to_num(score_diff, nan=0.0)
 

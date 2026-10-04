@@ -19,7 +19,7 @@ def prepare_win_prob_features(df_raids: pd.DataFrame, df_matches: pd.DataFrame) 
     """
     Pairs each raid state with final match outcome.
     Features:
-      1. score_diff: team1_score_after - team2_score_after
+      1. score_diff: team1_score_before - team2_score_before
       2. seconds_remaining: total match seconds left (0 to 2400)
       3. half: 1 or 2
       4. scaled_leverage: score_diff / sqrt(seconds_remaining + 1)
@@ -46,7 +46,7 @@ def prepare_win_prob_features(df_raids: pd.DataFrame, df_matches: pd.DataFrame) 
     t1_ids = np.array([team1_map[m] for m in mids])
     targets = np.array([match_winner_map[m] for m in mids])
 
-    score_diff = (df_valid["team1_score_after"] - df_valid["team2_score_after"]).fillna(0).values
+    score_diff = (df_valid["team1_score_before"] - df_valid["team2_score_before"]).fillna(0).values
     sec_left = df_valid["clock_seconds_remaining"].fillna(1200).values
     half = df_valid["half"].values
     leverage = score_diff / np.sqrt(sec_left + 1.0)

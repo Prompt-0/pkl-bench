@@ -75,8 +75,9 @@ def calculate_expected_points_added(df_raids: Optional[pd.DataFrame] = None, min
     # Filter to active raid events (excluding non-raid substitution/card timeline records)
     df = df_raids[df_raids["raider_id"] > 0].copy()
 
-    # Calculate baseline expectation across state partitions
-    state_means = df.groupby(["is_do_or_die", "half"])["raid_points"].mean().to_dict()
+    # Calculate baseline expectation strictly on Train Split (Seasons 1-8) to prevent leakage
+    train_df = df[df["season_id"] <= 8]
+    state_means = train_df.groupby(["is_do_or_die", "half"])["raid_points"].mean().to_dict()
 
     df["expected_points"] = df.apply(
         lambda r: state_means.get((r["is_do_or_die"], r["half"]), 0.5), axis=1
