@@ -1,7 +1,7 @@
 # PKL-Bench: The Pro Kabaddi League Research Benchmark Dataset
 
 [![CI](https://github.com/Prompt-0/pkl-bench/actions/workflows/ci.yml/badge.svg)](https://github.com/Prompt-0/pkl-bench/actions/workflows/ci.yml)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![License: GPL 2.0](https://img.shields.io/badge/License-GPL_2.0-blue.svg)](https://opensource.org/licenses/GPL-2.0)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Data Format: Parquet & CSV](https://img.shields.io/badge/Format-Parquet%20%7C%20CSV-green.svg)](https://frictionlessdata.io/)
 [![Dataset Tests: 23/23 Passed](https://img.shields.io/badge/Tests-23%2F23%20Passed-brightgreen.svg)]()

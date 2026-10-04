@@ -226,9 +226,10 @@ def parse_clock_to_seconds(clock_str: Optional[str], half: int, season_id: int) 
         val = minutes * 60 + seconds
         
         if season_id <= 4:
-            # val is elapsed time from 0 to 2400
-            if val >= 1200:
+            # val is elapsed time. Half 1 is 0-1200, Half 2 is 1200-2400.
+            if half == 2 and val >= 1200:
                 val -= 1200
+            # If val is still >= 1200 (e.g. exactly 1200 in half 1), cap it
             val = min(1200, val)
             half_sec_remaining = 1200 - val
         else:
