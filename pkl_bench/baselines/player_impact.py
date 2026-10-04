@@ -98,6 +98,7 @@ def calculate_expected_points_added(df_raids: Optional[pd.DataFrame] = None, min
     ).reset_index()
 
     raider_epa = raider_epa[raider_epa["total_raids"] >= min_raids]
+    raider_epa = raider_epa.copy()
     raider_epa["cumulative_epa"] = np.round(raider_epa["cumulative_epa"], 2)
     raider_epa["epa_per_raid"] = np.round(raider_epa["epa_per_raid"], 4)
 

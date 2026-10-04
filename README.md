@@ -83,7 +83,7 @@ All baselines are evaluated strictly on the **out-of-sample Season 10 test set**
 | **Task 3: Pre-Match Outcome & Spread** | Random Guess | Accuracy: 0.5000 | Brier: 0.2500 | ROC-AUC: 0.5000 |
 | | **Dynamic Kabaddi Elo** | **Accuracy: 0.7059** | **Brier: 0.1968** | **ROC-AUC: 0.7673** (MAE: 9.23) |
 | **Task 4: Player Valuation & Impact** | Raw Total Points | Naive Cumulative | Top Volume: Pardeep Narwal (1,690 pts) | Top Defender: Fazel Atrachali (486 pts) |
-| | **Expected Points Added (EPA)** | **State-Conditioned** | **Top Cumulative: Pardeep Narwal (+431.2 EPA)** | **Top Rate: Pawan Sehrawat (0.190 EPA/raid)** |
+| | **Expected Points Added (EPA)** | **State-Conditioned** | **Top Cumulative: Pardeep Narwal (+455.60 EPA)** | **Top Rate: Pawan Sehrawat (0.190 EPA/raid)** |
 
 ---
 
@@ -172,3 +172,6 @@ If you use PKL-Bench in your research, please cite:
 ## 📜 License
 
 This dataset and codebase are built upon `kabaddiPy` and are distributed under the **GNU General Public License v2.0 (GPL-2.0)** to comply with the upstream data source and promote open-science.
+
+## Known Domain Limitations
+- **Defenders on Mat:** The benchmark currently lacks a `defenders_on_mat` feature due to historical limitations in the upstream PKL APIs. Consequently, models cannot statically infer Super Tackle or Bonus Point eligibility. Baselines are designed to be intentionally naïve to this domain state.

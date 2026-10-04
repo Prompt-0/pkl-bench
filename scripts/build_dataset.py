@@ -616,7 +616,7 @@ def run_pipeline():
             try:
                 with open(fpath, "r", encoding="utf-8") as fp:
                     data = json.load(fp)
-            except Exception as e:
+            except (ValueError, TypeError) as e:
                 print(f"Error reading {fpath}: {e}")
                 continue
 

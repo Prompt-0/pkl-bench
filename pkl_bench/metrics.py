@@ -13,15 +13,14 @@ from sklearn.metrics import (
 )
 
 
+from sklearn.metrics import brier_score_loss
 def brier_score(y_true: Union[np.ndarray, List[int]], y_prob: Union[np.ndarray, List[float]]) -> float:
     """
     Computes the Brier score for probabilistic binary classification.
-    BS = (1/N) * sum((y_prob_i - y_true_i)^2)
-    Lower is better. Perfect score is 0.0.
     """
     y_t = np.asarray(y_true).astype(float)
     y_p = np.asarray(y_prob).astype(float)
-    return float(np.mean((y_p - y_t) ** 2))
+    return float(brier_score_loss(y_t, y_p))
 
 
 def multiclass_log_loss(

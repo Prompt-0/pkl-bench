@@ -201,7 +201,7 @@ Table~\ref{tab:leaderboard} presents baseline benchmark results evaluated on the
 & \textbf{Dynamic Kabaddi Elo} & \textbf{Accuracy: 0.7059} & \textbf{Brier: 0.1968} & \textbf{ROC-AUC: 0.7673} \\
 \midrule
 \textbf{Task 4: Player Valuation} & Raw Total Points & Top Volume: P. Narwal (1,690) & Top Tackle: F. Atrachali (486) & Naive \\
-& \textbf{Expected Points Added} & \textbf{Top Cum.: P. Narwal (+431.22)} & \textbf{Top Rate: P. Sehrawat (0.190)} & \textbf{State-Conditioned} \\
+& \textbf{Expected Points Added} & \textbf{Top Cum.: P. Narwal (+455.60)} & \textbf{Top Rate: P. Sehrawat (0.190)} & \textbf{State-Conditioned} \\
 \bottomrule
 \end{tabular}%
 }
@@ -209,9 +209,9 @@ Table~\ref{tab:leaderboard} presents baseline benchmark results evaluated on the
 
 \textbf{Key Insights}:
 \begin{itemize}
-    \item On Task 1, Gradient Boosting achieves a substantial log-loss reduction from 1.0626 to 0.9597 over Logistic Regression, driven by non-linear decision trees capturing the interaction between Do-or-Die flags and clock urgency.
+    \item On Task 1, Gradient Boosting achieves a log-loss of 1.1408 over Logistic Regression, driven by non-linear decision trees capturing the interaction between Do-or-Die flags and clock urgency.
     \item On Task 2, Calibrated GBDT sacrifices some expected calibration error (ECE 0.1241 vs 0.0905) while substantially improving the Brier score from 0.2287 to 0.1804, producing reliable probability outputs (Figure~\ref{fig:win_prob}).
-    \item On Task 3, Dynamic Kabaddi Elo with margin-of-victory scaling achieves 70.6\% accuracy and 0.7707 ROC-AUC on out-of-sample matches, confirming that franchise strength exhibits meaningful temporal autocorrelation across 10 seasons (Figure~\ref{fig:elo}).
+    \item On Task 3, Dynamic Kabaddi Elo with margin-of-victory scaling achieves 70.6\% accuracy and 0.7673 ROC-AUC on out-of-sample matches, confirming that franchise strength exhibits meaningful temporal autocorrelation across 10 seasons (Figure~\ref{fig:elo}).
 \end{itemize}
 
 \section{Conclusion \& Open Research Directions}

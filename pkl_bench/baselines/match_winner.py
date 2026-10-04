@@ -86,7 +86,8 @@ def run_match_winner_benchmark() -> Dict[str, Any]:
         current_season = sid
 
         # Hardcode bio-bubble removal for Season 8!
-        current_home_adv = 0.0 if sid == 8 else elo.home_advantage
+        # Use a temporary toggle for bio-bubble, do not overwrite the base attribute
+        current_home_adv = 0.0 if sid == 8 else getattr(elo, 'base_home_advantage', 20.0)
         elo.home_advantage = current_home_adv
 
         t1 = row.team1_id

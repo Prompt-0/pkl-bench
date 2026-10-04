@@ -140,12 +140,12 @@ def plot_elo_franchises(df_matches: pd.DataFrame):
     sorted_matches = df_matches.sort_values(["season_id", "match_id"]).reset_index(drop=True)
 
     for idx, row in sorted_matches.iterrows():
-        sid = row["season_id"]
+        sid = getattr(row, "season_id")
         if current_season is not None and sid != current_season:
             elo_baseline.reset_season()
         current_season = sid
 
-        elo_baseline.update_match(row["team1_id"], row["team2_id"], row["team1_score"], row["team2_score"])
+        elo_baseline.update_match(getattr(row, "team1_id"), getattr(row, "team2_id"), getattr(row, "team1_score"), getattr(row, "team2_score"))
 
         if idx % 10 == 0:
             match_indices.append(idx)

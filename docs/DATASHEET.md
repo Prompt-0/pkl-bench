@@ -7,7 +7,7 @@ This datasheet follows the framework established by Gebru et al. (2021).
 To provide a standardized machine learning benchmark for the Pro Kabaddi League (PKL), addressing the lack of unified play-by-play datasets in contact evasion sports.
 
 **Who created the dataset?**
-The structured ML benchmark was engineered by **Ritesh Dobhal** (ritesh2005dobhal@gmail.com).
+The structured ML benchmark was engineered by **Ritesh Dobhal, Bhaskar Lalwani, and Aniruddha Mukherjee** (ritesh2005dobhal@gmail.com).
 
 **Who funded the creation of the dataset?**
 Open scientific research initiative.
@@ -28,4 +28,4 @@ The raw JSON data was acquired from the open-source `kabaddiPy` package, which o
 Raid outcome prediction, dynamic win probability modeling, and pre-match outcome forecasting.
 
 ## 5. Distribution
-**License:** GNU General Public License v2.0 (GPL-2.0).
+**License:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC-BY-NC-SA-4.0).

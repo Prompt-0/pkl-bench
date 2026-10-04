@@ -30,14 +30,14 @@ def prepare_win_prob_features(df_raids: pd.DataFrame, df_matches: pd.DataFrame) 
     # Match winner mapping: match_id -> team1_won (1 or 0)
     match_winner_map = {}
     team1_map = {}
-    for _, row in df_matches.iterrows():
+    for row in df_matches.itertuples(index=False):
         # Drop ties for clean binary win probability task
-        if row["winner_id"] == 0 or pd.isna(row["winner_id"]) or row["is_tie"]:
+        if getattr(row, "winner_id") == 0 or pd.isna(getattr(row, "winner_id")) or getattr(row, "is_tie"):
             continue
-        mid = row["match_id"]
-        t1 = row["team1_id"]
+        mid = getattr(row, "match_id")
+        t1 = getattr(row, "team1_id")
         team1_map[mid] = t1
-        match_winner_map[mid] = 1 if row["winner_id"] == t1 else 0
+        match_winner_map[mid] = 1 if getattr(row, "winner_id") == t1 else 0
 
     valid_mask = df_raids["match_id"].isin(match_winner_map)
     df_valid = df_raids[valid_mask].copy()

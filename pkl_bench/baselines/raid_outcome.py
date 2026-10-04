@@ -106,7 +106,7 @@ class RaidOutcomeBaseline:
         # Log loss over present classes
         try:
             ll = multiclass_log_loss(y_test, probs, labels=classes)
-        except Exception:
+        except ValueError:
             ll = float("nan")
 
         return {
