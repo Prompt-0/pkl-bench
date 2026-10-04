@@ -31,6 +31,9 @@ def prepare_win_prob_features(df_raids: pd.DataFrame, df_matches: pd.DataFrame) 
     match_winner_map = {}
     team1_map = {}
     for _, row in df_matches.iterrows():
+        # Drop ties for clean binary win probability task
+        if row["winner_id"] == 0 or pd.isna(row["winner_id"]) or row["is_tie"]:
+            continue
         mid = row["match_id"]
         t1 = row["team1_id"]
         team1_map[mid] = t1

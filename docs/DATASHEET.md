@@ -7,13 +7,13 @@ Following the framework proposed by Timnit Gebru et al. (*Datasheets for Dataset
 ## 1. Motivation
 
 ### For what purpose was the dataset created?
-**PKL-Bench** was created to address the acute lack of standardized, granular, research-grade benchmark datasets for contact and invasion team sports from non-Western origins, specifically **Kabaddi**. While sports analytics has flourished in association football (SoccerNet, StatsBomb), basketball (NBA Play-by-Play), and cricket (Cricsheet), professional Kabaddi—despite being watched by over 230 million viewers annually—has lacked a unified, open, play-by-play benchmark dataset with rigorous evaluation protocols. PKL-Bench standardizes 10 full seasons of the Pro Kabaddi League (2014–2024), providing 1,060 matches, 26,760 player boxscores, and 103,176 granular, timestamped raid events.
+**PKL-Bench** was created to address the acute lack of standardized, granular, research-grade benchmark datasets for contact and invasion team sports from non-Western origins, specifically **Kabaddi**. While sports analytics has flourished in association football (SoccerNet, StatsBomb), basketball (NBA Play-by-Play), and cricket (Cricsheet), professional Kabaddi—despite being watched by over 230 million viewers annually—has lacked a unified, open, play-by-play benchmark dataset with rigorous evaluation protocols. PKL-Bench standardizes 10 full seasons of the Pro Kabaddi League (2014–2024), providing 1,060 matches, 26,760 player boxscores, and 90,644 granular, timestamped raid events.
 
 ### Who created the dataset and on whose behalf?
-The dataset was engineered, harmonized, and verified by **Ritesh Dobhal** (University of Delhi; Email: ritesh2005dobhal@gmail.com; ORCID: [0009-0009-2773-4972](https://orcid.org/0009-0009-2773-4972); GitHub: [\texttt{Prompt-0}](https://github.com/Prompt-0)) for the global sports analytics, machine learning, and sequential decision-making / reinforcement learning research communities.
+The structured benchmark was engineered by **Ritesh Dobhal** (University of Delhi; Email: ritesh2005dobhal@gmail.com; ORCID: [0009-0009-2773-4972](https://orcid.org/0009-0009-2773-4972); GitHub: [\texttt{Prompt-0}](https://github.com/Prompt-0)) for the global sports analytics, machine learning, and sequential decision-making / reinforcement learning research communities. The raw underlying data is strictly derived from the `kabaddiPy` open-source package, which aggregated historical feeds from the official PKL website.
 
 ### Who funded the creation of the dataset?
-Open scientific research initiative; self-funded under open-science principles.
+Open scientific research initiative. Raw data sourcing is credited to the authors of `kabaddiPy`.
 
 ---
 
@@ -25,7 +25,7 @@ The dataset is structured across five hierarchical tiers:
 2. **Tier 1 (Players)**: Master registry of 805 professional athletes, tactical roles, positions, and career aggregates.
 3. **Tier 2 (Matches)**: 1,060 completed PKL matches with final scores, halves, toss decisions, venue linkages, and point breakdowns.
 4. **Tier 3 (Player Matches)**: 26,760 individual player boxscores recording raids, tackles, super 10s, high 5s, cards, and points.
-5. **Tier 4 (Play-by-Play Raids)**: 103,176 sequential raid events recording clock time, half, score differential, do-or-die status, raider ID, primary defender ID, and outcomes.
+5. **Tier 4 (Play-by-Play Raids)**: 90,644 sequential raid events recording clock time, half, score differential, do-or-die status, raider ID, primary defender ID, and outcomes.
 
 ### How many instances are there in total?
 - **Seasons**: 10
@@ -34,7 +34,7 @@ The dataset is structured across five hierarchical tiers:
 - **Matches**: 1,060
 - **Registered Players**: 805
 - **Player Match Boxscores**: 26,760
-- **Discrete Raid Events**: 103,176
+- **Discrete Raid Events**: 90,644
 
 ### Does the dataset contain all possible instances or is it a sample?
 The dataset represents the **complete universe** of official Pro Kabaddi League matches from Season 1 (July 2014) through the conclusion of Season 10 (March 2024). No sampling or filtering was performed.

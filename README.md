@@ -8,7 +8,7 @@
 [![Paper: PDF](https://img.shields.io/badge/Paper-IEEE%20PDF-red.svg)](paper/pkl_bench_paper.pdf)
 [![ORCID: 0009-0009-2773-4972](https://img.shields.io/badge/ORCID-0009--0009--2773--4972-green.svg)](https://orcid.org/0009-0009-2773-4972)
 
-**PKL-Bench** is the definitive, research-grade, multi-tier benchmark dataset and evaluation harness for professional Kabaddi analytics and machine learning. Covering **10 complete seasons** (2014–2024) of the **Pro Kabaddi League (PKL)**, PKL-Bench provides **1,060 matches**, **26,760 individual player boxscores**, and **103,176 granular, timestamped play-by-play raid events**.
+**PKL-Bench** is the definitive, research-grade, multi-tier benchmark dataset and evaluation harness for professional Kabaddi analytics and machine learning. Covering **10 complete seasons** (2014–2024) of the **Pro Kabaddi League (PKL)**, PKL-Bench provides **1,060 matches**, **26,760 individual player boxscores**, and **90,644 granular, timestamped play-by-play raid events**.
 
 Engineered according to FAIR principles (Findable, Accessible, Interoperable, Reusable), PKL-Bench includes a formal [Academic Paper (PDF)](paper/pkl_bench_paper.pdf), [Datasheets for Datasets](docs/DATASHEET.md), a [Mathematical Methodology Guide](docs/METHODOLOGY.md), a [Domain Guide](docs/KABADDI_DOMAIN_GUIDE.md), and strict **leakage-free temporal splits** with verified baselines.
 
@@ -65,13 +65,13 @@ The dataset is structured across five relational tiers, distributed in both **Ap
 | **Tier 1** | **Players** | `data/players/players.parquet` | 805 | Master athlete registry, roles, positions, career totals |
 | **Tier 2** | **Matches** | `data/matches/matches.parquet` | 1,060 | Final scores, toss results, margins, point breakdowns |
 | **Tier 3** | **Boxscores** | `data/player_matches/player_match_stats.parquet` | 26,760 | Player-match stats: raids, tackles, super 10s, high 5s |
-| **Tier 4** | **Play-by-Play**| `data/raids_pbp/raids_pbp.parquet` | 103,176 | Sequential raid events: clocks, score diffs, outcomes |
+| **Tier 4** | **Play-by-Play**| `data/raids_pbp/raids_pbp.parquet` | 90,644 | Sequential raid events: clocks, score diffs, outcomes |
 
 ---
 
 ## 🏆 Official Benchmark Leaderboard (Test Set: Season 10)
 
-All baselines are evaluated strictly on the **out-of-sample Season 10 test set** (136 matches, 13,894 raids) without temporal lookahead leakage.
+All baselines are evaluated strictly on the **out-of-sample Season 10 test set** (136 matches, 12,094 raids) without temporal lookahead leakage.
 
 | Benchmark Task | Model | Primary Metric | Secondary Metric | Third Metric |
 | :--- | :--- | :--- | :--- | :--- |
@@ -91,9 +91,9 @@ All baselines are evaluated strictly on the **out-of-sample Season 10 test set**
 
 Random $k$-fold cross-validation in sports causes severe **data leakage** because player rosters, franchise form, and tactical trends persist across games. PKL-Bench enforces a strict chronological partition:
 
-- **Train Set (Seasons 1–8, 2014–2022)**: 787 matches | 75,777 raid events (74.2%)
-- **Validation Set (Season 9, 2022)**: 137 matches | 13,505 raid events (12.9%)
-- **Test Set (Season 10, 2023–2024)**: 136 matches | 13,894 raid events (12.8%)
+- **Train Set (Seasons 1–8, 2014–2022)**: 787 matches | 66,692 raid events (74.2%)
+- **Validation Set (Season 9, 2022)**: 137 matches | 11,858 raid events (12.9%)
+- **Test Set (Season 10, 2023–2024)**: 136 matches | 12,094 raid events (12.8%)
 - **Disjointness Guarantee**: $\text{Train} \cap \text{Val} = \emptyset$, $\text{Train} \cap \text{Test} = \emptyset$, $\text{Val} \cap \text{Test} = \emptyset$.
 
 Explicit match IDs are codified in `data/benchmark_splits/splits.json`.
@@ -121,7 +121,7 @@ pkl-benchmark/
 │   ├── players/                       # 805 players master registry
 │   ├── matches/                       # 1,060 match summary records
 │   ├── player_matches/                # 26,760 player boxscores
-│   ├── raids_pbp/                     # 103,176 granular raid events
+│   ├── raids_pbp/                     # 90,644 granular raid events
 │   ├── benchmark_splits/              # splits.json (Train/Val/Test match IDs)
 │   └── datapackage.json               # Frictionless Data open standard schema
 ├── pkl_bench/                         # Python evaluation harness & SDK
@@ -163,7 +163,7 @@ If you use PKL-Bench in your research, please cite:
   year = {2026},
   publisher = {GitHub},
   howpublished = {\url{https://github.com/Prompt-0/pkl-bench}},
-  note = {University of Delhi. ORCID: 0009-0009-2773-4972. 10 Seasons (2014-2024), 1,060 Matches, 103,176 Play-by-Play Raids}
+  note = {University of Delhi. ORCID: 0009-0009-2773-4972. 10 Seasons (2014-2024), 1,060 Matches, 90,644 Play-by-Play Raids}
 }
 ```
 
@@ -171,4 +171,4 @@ If you use PKL-Bench in your research, please cite:
 
 ## 📜 License
 
-This dataset and codebase are distributed under the **Creative Commons Attribution 4.0 International License (CC-BY-4.0)**.
+This dataset and codebase are built upon `kabaddiPy` and are distributed under the **GNU General Public License v2.0 (GPL-2.0)** to comply with the upstream data source and promote open-science.

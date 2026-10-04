@@ -8,13 +8,13 @@ version = "1.0.0"
 description = "PKL-Bench: The Pro Kabaddi League Research Benchmark Dataset & Analytics Suite"
 readme = "README.md"
 authors = [{ name = "Ritesh Dobhal", email = "ritesh2005dobhal@gmail.com" }]
-license = { text = "CC-BY-4.0" }
+license = { text = "GPL-2.0" }
 requires-python = ">=3.9"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Science/Research",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
-    "License :: OSI Approved :: Creative Commons Attribution 4.0 International",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
