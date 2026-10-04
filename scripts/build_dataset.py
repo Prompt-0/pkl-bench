@@ -321,10 +321,10 @@ def extract_match_record(root: Dict[str, Any], season_id: int, file_path: str) -
 
     # Points breakdown helper
     def get_points(p_dict):
-        r_dict = p_dict.get("raid_points", {}) if isinstance(p_dict.get("raid_points"), dict) else {}
-        t_dict = p_dict.get("tackle_points", {}) if isinstance(p_dict.get("tackle_points"), dict) else {}
-        raid_pts = clean_int(r_dict.get("total") if isinstance(r_dict, dict) else p_dict.get("raid_points"))
-        tackle_pts = clean_int(t_dict.get("total") if isinstance(t_dict, dict) else p_dict.get("tackle_points"))
+        r_val = p_dict.get("raid_points")
+        raid_pts = clean_int(r_val.get("total") if isinstance(r_val, dict) else r_val)
+        t_val = p_dict.get("tackle_points")
+        tackle_pts = clean_int(t_val.get("total") if isinstance(t_val, dict) else t_val)
         all_out_pts = clean_int(p_dict.get("all_out"))
         extra_pts = clean_int(p_dict.get("extras"))
         return raid_pts, tackle_pts, all_out_pts, extra_pts
