@@ -136,7 +136,7 @@ def run_raid_outcome_benchmark(model_types: Optional[list] = None) -> Dict[str, 
     X_val, y_val = prepare_raid_features(val_df)
     X_test, y_test = prepare_raid_features(test_df)
 
-    results = {
+    results: Dict[str, Any] = {
         "train_samples": len(X_train),
         "val_samples": len(X_val),
         "test_samples": len(X_test),

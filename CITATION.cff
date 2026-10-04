@@ -5,6 +5,7 @@ authors:
     given-names: "Ritesh"
     orcid: "https://orcid.org/0009-0009-2773-4972"
     affiliation: "University of Delhi, Delhi, India"
+    email: "ritesh2005dobhal@gmail.com"
 title: "PKL-Bench: The Pro Kabaddi League Research Benchmark Dataset and Evaluation Suite"
 version: 1.0.0
 date-released: 2026-09-24

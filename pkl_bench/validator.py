@@ -83,7 +83,7 @@ def validate_dataset_integrity(data_dir: Optional[Path] = None) -> Dict[str, Any
     3. Foreign key integrity
     4. Benchmark split disjointness and completeness
     """
-    results = {}
+    results: Dict[str, Any] = {}
 
     # Load tiers
     df_seasons = load_seasons(data_dir=data_dir)

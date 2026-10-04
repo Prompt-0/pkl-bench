@@ -116,7 +116,7 @@ def run_win_probability_benchmark(model_types: Optional[List[str]] = None) -> Di
     X_val, y_val = prepare_win_prob_features(val_raids, df_matches)
     X_test, y_test = prepare_win_prob_features(test_raids, df_matches)
 
-    results = {
+    results: Dict[str, Any] = {
         "train_samples": len(X_train),
         "val_samples": len(X_val),
         "test_samples": len(X_test),
