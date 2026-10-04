@@ -4,7 +4,7 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Data Format: Parquet & CSV](https://img.shields.io/badge/Format-Parquet%20%7C%20CSV-green.svg)](https://frictionlessdata.io/)
-[![Dataset Tests: 22/22 Passed](https://img.shields.io/badge/Tests-22%2F22%20Passed-brightgreen.svg)]()
+[![Dataset Tests: 23/23 Passed](https://img.shields.io/badge/Tests-23%2F23%20Passed-brightgreen.svg)]()
 [![Paper: PDF](https://img.shields.io/badge/Paper-IEEE%20PDF-red.svg)](paper/pkl_bench_paper.pdf)
 [![ORCID: 0009-0009-2773-4972](https://img.shields.io/badge/ORCID-0009--0009--2773--4972-green.svg)](https://orcid.org/0009-0009-2773-4972)
 
@@ -76,14 +76,14 @@ All baselines are evaluated strictly on the **out-of-sample Season 10 test set**
 | Benchmark Task | Model | Primary Metric | Secondary Metric | Third Metric |
 | :--- | :--- | :--- | :--- | :--- |
 | **Task 1: Raid Outcome Prediction** | Majority Class | Accuracy: 0.4770 | Macro-F1: 0.1292 | Log-Loss: 18.8520 |
-| | Multinomial Logistic | Accuracy: 0.5107 | Macro-F1: 0.2186 | Log-Loss: 1.0705 |
-| | **HistGradientBoosting** | **Accuracy: 0.5319** | **Macro-F1: 0.2328** | **Log-Loss: 0.9804** |
+| | Multinomial Logistic | Accuracy: 0.5188 | Macro-F1: 0.2274 | Log-Loss: 1.0626 |
+| | **HistGradientBoosting** | **Accuracy: 0.5442** | **Macro-F1: 0.2484** | **Log-Loss: 0.9597** |
 | **Task 2: In-Game Win Probability** | Logistic Leverage | Brier: 0.2270 | ECE: 0.1882 | Log-Loss: 0.6446 |
 | | **Calibrated GBDT** | **Brier: 0.1991** | **ECE: 0.1561** | **Log-Loss: 0.5827** |
 | **Task 3: Pre-Match Outcome & Spread** | Random Guess | Accuracy: 0.5000 | Brier: 0.2500 | ROC-AUC: 0.5000 |
 | | **Dynamic Kabaddi Elo** | **Accuracy: 0.7059** | **Brier: 0.1968** | **ROC-AUC: 0.7707** (MAE: 9.23) |
 | **Task 4: Player Valuation & Impact** | Raw Total Points | Naive Cumulative | Top Volume: Pardeep Narwal (1,690 pts) | Top Defender: Fazel Atrachali (486 pts) |
-| | **Expected Points Added (EPA)** | **State-Conditioned** | **Top Cumulative: Pardeep Narwal (+633.4 EPA)** | **Top Rate: Pawan Sehrawat (0.251 EPA/raid)** |
+| | **Expected Points Added (EPA)** | **State-Conditioned** | **Top Cumulative: Pardeep Narwal (+470.3 EPA)** | **Top Rate: Pawan Sehrawat (0.190 EPA/raid)** |
 
 ---
 
@@ -142,7 +142,7 @@ pkl-benchmark/
 │   └── KABADDI_DOMAIN_GUIDE.md        # Kabaddi rules, court layout, mechanics
 ├── examples/                          # Reproducible example scripts
 │   └── quickstart.py                  # 30-second end-to-end demonstration
-└── tests/                             # Test suite (22/22 passing)
+└── tests/                             # Test suite (23/23 passing)
     ├── test_loader.py
     ├── test_conservation.py
     ├── test_benchmarks.py

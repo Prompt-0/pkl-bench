@@ -20,7 +20,10 @@ from ..metrics import classification_report_dict, multiclass_log_loss
 TARGET_CLASSES = ["EMPTY_RAID", "SUCCESSFUL_RAID", "UNSUCCESSFUL_RAID", "SUPER_RAID", "SUPER_TACKLE"]
 
 
-def prepare_raid_features(df_raids: pd.DataFrame) -> Tuple[np.ndarray, np.ndarray]:
+def prepare_raid_features(
+    df_raids: pd.DataFrame,
+    df_matches: Optional[pd.DataFrame] = None,
+) -> Tuple[np.ndarray, np.ndarray]:
     """
     Extracts numerical feature matrix X and categorical target vector y.
     Features:
@@ -35,13 +38,20 @@ def prepare_raid_features(df_raids: pd.DataFrame) -> Tuple[np.ndarray, np.ndarra
     valid_mask = df_raids["outcome_category"].isin(TARGET_CLASSES)
     df_clean = df_raids[valid_mask].copy()
 
-    # Score diff approx:
-    # If raiding team is team1, score_diff = team1_score_after - team2_score_after
-    score_diff = df_clean["team1_score_after"] - df_clean["team2_score_after"]
-    # Adjust sign if raiding team is team2
-    is_team2 = (df_clean["raiding_team_id"] != df_clean["defending_team_id"]) & (df_clean["raiding_team_id"] > 10)
-    score_diff = np.where(is_team2, -score_diff, score_diff)
+    if df_matches is None:
+        from ..loader import load_matches
+        df_matches = load_matches()
 
+    m_sub = df_matches[["match_id", "team1_id", "team2_id"]].drop_duplicates()
+    df_merged = df_clean.merge(m_sub, on="match_id", how="left")
+
+    # True score differential from perspective of raiding team
+    is_t1 = (df_merged["raiding_team_id"] == df_merged["team1_id"])
+    score_diff = np.where(
+        is_t1,
+        df_merged["team1_score_after"] - df_merged["team2_score_after"],
+        df_merged["team2_score_after"] - df_merged["team1_score_after"],
+    )
     score_diff_clean = np.nan_to_num(score_diff, nan=0.0)
 
     features = np.column_stack([

@@ -23,6 +23,20 @@ def test_raid_outcome_baseline():
     assert "log_loss" in eval_dict
 
 
+def test_prepare_raid_features():
+    from pkl_bench.baselines.raid_outcome import prepare_raid_features
+    from pkl_bench.loader import load_raids
+    raids_s1 = load_raids(season=1)
+    X, y = prepare_raid_features(raids_s1)
+    assert len(X) == len(y)
+    assert X.shape[1] == 6
+    # Verify no NaN values in features
+    assert not np.isnan(X).any()
+    # Check that raiding score diff is in realistic range
+    score_diffs = X[:, 3]
+    assert score_diffs.min() >= -40 and score_diffs.max() <= 40
+
+
 def test_win_probability_baseline():
     X_dummy = np.column_stack([
         np.random.randint(-15, 15, size=60),

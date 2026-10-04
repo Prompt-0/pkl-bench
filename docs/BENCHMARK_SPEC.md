@@ -9,12 +9,14 @@ This specification establishes standard tasks, formal evaluation protocols, and 
 | Task | Baseline Model | Primary Metric | Secondary Metric | Third Metric |
 | :--- | :--- | :--- | :--- | :--- |
 | **Task 1: Raid Outcome** | Majority Class | Accuracy: 0.4770 | Macro-F1: 0.1292 | Log-Loss: 18.8520 |
-| | Multinomial Logistic | Accuracy: 0.5107 | Macro-F1: 0.2186 | Log-Loss: 1.0705 |
-| | **HistGradientBoosting** | **Accuracy: 0.5319** | **Macro-F1: 0.2328** | **Log-Loss: 0.9804** |
+| | Multinomial Logistic | Accuracy: 0.5188 | Macro-F1: 0.2274 | Log-Loss: 1.0626 |
+| | **HistGradientBoosting** | **Accuracy: 0.5442** | **Macro-F1: 0.2484** | **Log-Loss: 0.9597** |
 | **Task 2: Win Probability** | Logistic Leverage | Brier: 0.2270 | ECE: 0.1882 | Log-Loss: 0.6446 |
 | | **Calibrated GBDT** | **Brier: 0.1991** | **ECE: 0.1561** | **Log-Loss: 0.5827** |
 | **Task 3: Match Winner** | Random Baseline | Accuracy: 0.5000 | Brier: 0.2500 | ROC-AUC: 0.5000 |
 | | **Dynamic Kabaddi Elo** | **Accuracy: 0.7059** | **Brier: 0.1968** | **ROC-AUC: 0.7707** (MAE: 9.23) |
+| **Task 4: Player Valuation** | Raw Total Points | Naive Cumulative | Top Volume: Pardeep Narwal (1,690 pts) | Top Defender: Fazel Atrachali (486 pts) |
+| | **Expected Points Added (EPA)** | **State-Conditioned** | **Top Cumulative: Pardeep Narwal (+470.3 EPA)** | **Top Rate: Pawan Sehrawat (0.190 EPA/raid)** |
 
 ---
 
@@ -85,6 +87,13 @@ $$\text{TRI} = \frac{\sum (\text{Raid Points}) - 1.25 \times \sum (\text{Unsucce
 
 ### 4.2 True Defender Impact (TDI)
 $$\text{TDI} = \frac{\sum (\text{Tackle Points}) - 1.0 \times \sum (\text{Unsuccessful Tackles}) + 1.0 \times \sum (\text{Super Tackles})}{\text{Total Tackles Attempted}}$$
+
+### 4.3 Expected Points Added (EPA)
+Adapting the action-value framework (Decroos et al., 2019) to discrete asymmetric Kabaddi states, Expected Points Added measures point production relative to game-situation baseline expectation:
+
+$$\text{EPA}_t = \text{RaidPoints}_t - \mathbb{E}[\text{Points} \mid \text{Do-or-Die}_t, \text{Half}_t]$$
+
+Aggregated metrics include **Cumulative EPA** ($\sum \text{EPA}$) and **EPA per Raid** ($\frac{1}{N}\sum \text{EPA}$).
 
 ---
 
