@@ -79,16 +79,20 @@ def run_match_winner_benchmark() -> Dict[str, Any]:
     y_val_true, y_val_prob, y_val_margin_true, y_val_margin_pred = [], [], [], []
     y_test_true, y_test_prob, y_test_margin_true, y_test_margin_pred = [], [], [], []
 
-    for _, row in df_matches.iterrows():
-        sid = row["season_id"]
+    for row in df_matches.itertuples(index=False):
+        sid = row.season_id
         if current_season is not None and sid != current_season:
             elo.reset_season()
         current_season = sid
 
-        t1 = row["team1_id"]
-        t2 = row["team2_id"]
-        s1 = row["team1_score"]
-        s2 = row["team2_score"]
+        # Hardcode bio-bubble removal for Season 8!
+        current_home_adv = 0.0 if sid == 8 else elo.home_advantage
+        elo.home_advantage = current_home_adv
+
+        t1 = row.team1_id
+        t2 = row.team2_id
+        s1 = row.team1_score
+        s2 = row.team2_score
         actual_margin = s1 - s2
         t1_won = 1 if s1 > s2 else 0
 

@@ -47,7 +47,7 @@ def prepare_win_prob_features(df_raids: pd.DataFrame, df_matches: pd.DataFrame) 
     targets = np.array([match_winner_map[m] for m in mids])
 
     score_diff = (df_valid["team1_score_before"] - df_valid["team2_score_before"]).fillna(0).values
-    sec_left = df_valid["clock_seconds_remaining"].fillna(1200).values
+    sec_left = np.where(df_valid["half"] == 1, 1200 + df_valid["clock_seconds_remaining"].fillna(1200), df_valid["clock_seconds_remaining"].fillna(1200))
     half = df_valid["half"].values
     leverage = score_diff / np.sqrt(sec_left + 1.0)
     possession = (df_valid["raiding_team_id"].values == t1_ids).astype(float)

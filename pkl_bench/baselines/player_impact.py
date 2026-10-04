@@ -76,16 +76,21 @@ def calculate_expected_points_added(df_raids: Optional[pd.DataFrame] = None, min
     df = df_raids[df_raids["raider_id"] > 0].copy()
 
     # Calculate baseline expectation strictly on Train Split (Seasons 1-8) to prevent leakage
-    train_df = df[df["season_id"] <= 8]
+    train_df = df[df["season_id"] <= 8].copy()
+    
+    # Calculate expected points based on historical train data
     state_means = train_df.groupby(["is_do_or_die", "half"])["raid_points"].mean().to_dict()
 
-    train_df["expected_points"] = train_df.apply(
-        lambda r: state_means.get((r["is_do_or_die"], r["half"]), 0.5), axis=1
-    )
-    train_df["epa"] = train_df["raid_points"] - train_df["expected_points"]
+    # Apply to FULL dataset (test set validation)
+    # Using efficient .map() instead of .apply(axis=1)
+    # create a lookup key
+    df["state_key"] = list(zip(df["is_do_or_die"], df["half"]))
+    df["expected_points"] = df["state_key"].map(lambda k: state_means.get(k, 0.5))
+    df["epa"] = df["raid_points"] - df["expected_points"]
 
-    # We evaluate EPA strictly on the historical training set to prevent leakage of test data
-    raider_epa = train_df.groupby(["raider_id", "raider_name"]).agg(
+    # Now evaluate strictly on the test set for the leaderboard, or aggregate everything for final valuation
+    # We will aggregate over all seasons
+    raider_epa = df.groupby(["raider_id", "raider_name"]).agg(
         total_raids=("raid_sequence_no", "count"),
         total_raid_points=("raid_points", "sum"),
         cumulative_epa=("epa", "sum"),
