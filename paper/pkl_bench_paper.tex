@@ -158,7 +158,7 @@ Splits are mutually disjoint ($\mathrm{Train} \cap \mathrm{Val} = \emptyset$, $\
 \begin{itemize}
     \item \textbf{Task 1: Discrete Raid Outcome Prediction}: Multi-class classification predicting $y_t \in \mathcal{Y}$ from pre-raid state features. Evaluated by Multiclass Log-Loss and Macro-F1.
     \item \textbf{Task 2: Dynamic Win Probability}: Estimating win probability $P(W_1 \mid S_t)$ at every raid $t$. Evaluated by Brier Score \cite{brier1950verification} and Expected Calibration Error (ECE) \cite{guo2017calibration}.
-    \item \textbf{Task 3: Match Forecasting}: Predicting match winner and point spread prior to coin toss. Evaluated by Accuracy, ROC-AUC, and Margin MAE.
+    \item \textbf{Task 3: Match Forecasting}: Predicting match winner and point spread prior to coin toss. To capture dynamic team form, this task explicitly uses \textbf{online prequential evaluation} across all seasons. Matches ending in ties are excluded from binary ROC-AUC evaluation. Evaluated by Accuracy, ROC-AUC, and Margin MAE.
     \item \textbf{Task 4: Player Valuation}: Context-conditioned Expected Points Added (EPA) adapting action-value valuation paradigms \cite{decroos2019actions} and True Raider Impact (TRI).
 \end{itemize}
 
@@ -190,7 +190,7 @@ Table~\ref{tab:leaderboard} presents baseline benchmark results evaluated on the
 \toprule
 \textbf{Task} & \textbf{Model} & \textbf{Primary Metric} & \textbf{Secondary Metric} & \textbf{Tertiary Metric} \\
 \midrule
-\textbf{Task 1: Raid Outcome} & Majority Class & Accuracy: 0.3852 & Macro-F1: 0.1112 & Log-Loss: 22.1580 \\
+\textbf{Task 1: Raid Outcome} & Majority Class & Accuracy: 0.3852 & Macro-F1: 0.1112 & Log-Loss: 1.2241 \\
 & Multinomial Logistic & Accuracy: 0.4434 & Macro-F1: 0.1918 & Log-Loss: 1.1492 \\
 & \textbf{HistGradientBoosting} & \textbf{Accuracy: 0.4555} & \textbf{Macro-F1: 0.2171} & \textbf{Log-Loss: 1.1408} \\
 \midrule

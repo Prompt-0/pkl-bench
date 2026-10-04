@@ -75,7 +75,7 @@ All baselines are evaluated strictly on the **out-of-sample Season 10 test set**
 
 | Benchmark Task | Model | Primary Metric | Secondary Metric | Third Metric |
 | :--- | :--- | :--- | :--- | :--- |
-| **Task 1: Raid Outcome Prediction** | Majority Class | Accuracy: 0.3852 | Macro-F1: 0.1112 | Log-Loss: 22.1580 |
+| **Task 1: Raid Outcome Prediction** | Majority Class | Accuracy: 0.3852 | Macro-F1: 0.1112 | Log-Loss: 1.2241 |
 | | Multinomial Logistic | Accuracy: 0.4434 | Macro-F1: 0.1918 | Log-Loss: 1.1492 |
 | | **HistGradientBoosting** | **Accuracy: 0.4555** | **Macro-F1: 0.2171** | **Log-Loss: 1.1408** |
 | **Task 2: In-Game Win Probability** | Logistic Leverage | Brier: 0.2287 | ECE: 0.0905 | Log-Loss: 0.6491 |

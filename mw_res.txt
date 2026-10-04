@@ -4,5 +4,5 @@ Executing Benchmark Task: MATCH_WINNER...
 TASK 3: PRE-MATCH OUTCOME & SPREAD FORECASTING
 --------------------------------------------------
 Model: Dynamic_Kabaddi_Elo
-  Val (S9):  Acc: 0.6400 | Brier: 0.2361 | ROC-AUC: 0.6655 | Margin MAE: 8.76
-  Test (S10): Acc: 0.6960 | Brier: 0.1864 | ROC-AUC: 0.7874 | Margin MAE: 9.22
+  Val (S9):  Acc: 0.5440 | Brier: 0.2491 | ROC-AUC: 0.6240 | Margin MAE: 9.27
+  Test (S10): Acc: 0.5440 | Brier: 0.2377 | ROC-AUC: 0.6415 | Margin MAE: 9.76

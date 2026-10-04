@@ -68,7 +68,7 @@ class RaidOutcomeBaseline:
         self.model_type = model_type
         self.scaler = StandardScaler()
         if model_type == "majority":
-            self.model = DummyClassifier(strategy="most_frequent")
+            self.model = DummyClassifier(strategy="prior")
         elif model_type == "logistic_regression":
             self.model = LogisticRegression(max_iter=1000, solver="lbfgs")
         elif model_type == "gradient_boosting":
