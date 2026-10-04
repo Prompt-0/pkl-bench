@@ -1,16 +1,16 @@
 import sys
 from pathlib import Path
-import numpy as np
-import pandas as pd
+
 import matplotlib.pyplot as plt
+import pandas as pd
 
 # Add parent directory to path to import pkl_bench
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import pkl_bench as pb
-from pkl_bench.loader import get_benchmark_split
-from pkl_bench.baselines.win_probability import prepare_win_prob_features, WinProbabilityBaseline
 from pkl_bench.baselines.match_winner import KabaddiEloBaseline
+from pkl_bench.baselines.win_probability import WinProbabilityBaseline, prepare_win_prob_features
+from pkl_bench.loader import get_benchmark_split
 
 FIGURES_DIR = Path(__file__).resolve().parent.parent / "paper" / "figures"
 FIGURES_DIR.mkdir(parents=True, exist_ok=True)
@@ -22,17 +22,17 @@ def plot_phase_transitions(df_raids: pd.DataFrame):
 
     outcomes = df_raids["outcome_category"].value_counts(normalize=True) * 100
     colors = ["#4A90E2", "#7ED321", "#D0021B", "#F5A623", "#9013FE", "#50E3C2"]
-    
+
     # Take top 5 to match the 5 classes
     outcomes = outcomes.head(5)
-    
+
     ax1.bar(outcomes.index.astype(str), outcomes.values, color=colors[:len(outcomes)], edgecolor="black", alpha=0.85)
     ax1.set_ylabel("Percentage of Total Raids (%)")
     ax1.set_title(f"Raid Outcome Distribution (N={len(df_raids):,})")
     ax1.set_xticks(range(len(outcomes)))
     ax1.set_xticklabels(outcomes.index.astype(str), rotation=25, ha="right", fontsize=9)
     ax1.set_ylim(0, max(outcomes.values) * 1.15)
-    
+
     for i, v in enumerate(outcomes.values):
         ax1.text(i, v + 1, f"{v:.1f}%", ha='center', va='bottom', fontsize=9, fontweight='bold')
 
@@ -42,14 +42,14 @@ def plot_phase_transitions(df_raids: pd.DataFrame):
     # The reviewer said: "The dataset has no defender-count column at all."
     # Since defender_count isn't explicitly recorded cleanly, we will plot Super Tackle rate by half or something,
     # OR we can just plot the clock vs raid success rate (which IS empirical).
-    
+
     # Let's plot Raid Success Rate over time (Clock)
     df_clean = df_raids[df_raids["clock_seconds_remaining"].notna()].copy()
     df_clean["minute_bin"] = (2400 - df_clean["clock_seconds_remaining"]) // 120
     df_clean["is_success"] = df_clean["outcome_category"].isin(["SUCCESSFUL_RAID", "SUPER_RAID"])
-    
+
     minute_stats = df_clean.groupby("minute_bin")["is_success"].mean() * 100
-    
+
     ax2.plot(minute_stats.index * 2, minute_stats.values, "o-", color="#D0021B", linewidth=2.2, markersize=7)
     ax2.set_xlabel("Elapsed Match Time (Minutes)")
     ax2.set_ylabel("Raid Success Rate (%)")
@@ -57,7 +57,7 @@ def plot_phase_transitions(df_raids: pd.DataFrame):
     ax2.set_ylim(0, 100)
     ax2.axvline(20, color="gray", linestyle="--", alpha=0.4, label="Half-Time")
     ax2.legend()
-    
+
     plt.tight_layout()
     fig.savefig(FIGURES_DIR / "fig1_phase_transitions.pdf")
     plt.close(fig)
@@ -80,7 +80,7 @@ def plot_win_prob_calibration():
 
     p_gbdt = gbdt.predict_proba(X_test)
     p_log = logistic.predict_proba(X_test)
-    
+
     # Calculate empirical calibration
     from sklearn.calibration import calibration_curve
     prob_true_gb, prob_pred_gb = calibration_curve(y_test, p_gbdt, n_bins=10)
@@ -104,7 +104,7 @@ def plot_win_prob_calibration():
     if len(match_ids) > 2:
         m_close = match_ids[10]
         m_blowout = match_ids[20]
-        
+
         for m_id, label, color in [(m_close, "Match A", "#E94E77"), (m_blowout, "Match B", "#50E3C2")]:
             m_df = test_raids[test_raids["match_id"] == m_id].copy()
             X_m, _ = prepare_win_prob_features(m_df, df_matches)
@@ -112,7 +112,7 @@ def plot_win_prob_calibration():
                 p_m = gbdt.predict_proba(X_m)
                 time_elapsed = 40 - (X_m[:, 1] / 60) # X_m[:, 1] is seconds remaining
                 ax2.plot(time_elapsed, p_m, color=color, linewidth=2.2, label=label)
-    
+
     ax2.axhline(0.5, color="gray", linestyle=":", alpha=0.6)
     ax2.axvline(20, color="gray", linestyle="--", alpha=0.4, label="Half-Time")
     ax2.set_xlabel("Match Elapsed Time (Minutes)")
@@ -135,7 +135,7 @@ def plot_elo_franchises(df_matches: pd.DataFrame):
     elo_baseline = KabaddiEloBaseline(k_factor=30.0, home_advantage=20.0, mean_reversion=0.15)
     history = {tid: [] for tid in [1, 2, 3, 5, 6, 7]}  # BLR, DEL, JAI, MUM, PAT, PUN
     match_indices = []
-    
+
     current_season = None
     sorted_matches = df_matches.sort_values(["season_id", "match_id"]).reset_index(drop=True)
 
@@ -144,7 +144,7 @@ def plot_elo_franchises(df_matches: pd.DataFrame):
         if current_season is not None and sid != current_season:
             elo_baseline.reset_season()
         current_season = sid
-        
+
         elo_baseline.update_match(row["team1_id"], row["team2_id"], row["team1_score"], row["team2_score"])
 
         if idx % 10 == 0:

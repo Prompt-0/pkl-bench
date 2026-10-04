@@ -11,10 +11,10 @@ import re
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
+import kabaddiPy
 import numpy as np
 import pandas as pd
 
-import kabaddiPy
 BASE_RAW_DIR = Path(kabaddiPy.__file__).parent
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
@@ -224,7 +224,7 @@ def parse_clock_to_seconds(clock_str: Optional[str], half: int, season_id: int) 
         minutes = int(parts[0])
         seconds = int(parts[1])
         val = minutes * 60 + seconds
-        
+
         if season_id <= 4:
             # val is elapsed time. Half 1 is 0-1200, Half 2 is 1200-2400.
             if half == 2 and val >= 1200:
@@ -236,7 +236,7 @@ def parse_clock_to_seconds(clock_str: Optional[str], half: int, season_id: int) 
             # Seasons 5-10: val is remaining time per half
             val = min(1200, val)
             half_sec_remaining = val
-            
+
         if half == 1:
             return 1200 + half_sec_remaining
         else:
@@ -487,7 +487,7 @@ def extract_raids_pbp(root: Dict[str, Any], match_id: int, season_id: int, playe
 
     for idx, ev in enumerate(events_sorted):
         raw_event_name = clean_str(ev.get("event")).upper()
-            
+
         seq_no = clean_int(ev.get("event_no") or ev.get("seq_no") or (idx + 1))
         half = clean_int(ev.get("event_half") or 1)
         clock_str = clean_str(ev.get("clock"))

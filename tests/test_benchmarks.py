@@ -24,9 +24,10 @@ def test_raid_outcome_baseline():
 
 
 def test_prepare_raid_features():
-    from pkl_bench.baselines.raid_outcome import prepare_raid_features
+
     from pkl_bench.loader import load_raids
     raids_s1 = load_raids(season=1)
+    from pkl_bench.baselines.raid_outcome import prepare_raid_features
     X, y = prepare_raid_features(raids_s1)
     assert len(X) == len(y)
     assert X.shape[1] == 4
@@ -88,11 +89,14 @@ def test_player_impact_metrics():
     assert df_epa["cumulative_epa"].iloc[0] > 0
 
 
-from pkl_bench.loader import load_matches, load_raids
-from pkl_bench.baselines.raid_outcome import prepare_raid_features
+
+
+
+
 def test_raid_outcome_leakage():
     # Ensure that score_diff is calculated using score_before, not score_after
-    df_matches = load_matches()
+    from pkl_bench.baselines.raid_outcome import prepare_raid_features
+    from pkl_bench.loader import load_raids
     df_raids = load_raids()
     X, y = prepare_raid_features(df_raids)
     assert len(X) > 0
