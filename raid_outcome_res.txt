@@ -1,0 +1,14 @@
+Executing Benchmark Task: RAID_OUTCOME...
+
+--------------------------------------------------
+TASK 1: DISCRETE RAID OUTCOME PREDICTION
+--------------------------------------------------
+Validation (Season 9) Results:
+  majority                  | Acc: 0.3725 | Macro-F1: 0.1086 | LogLoss: 22.6163
+  logistic_regression       | Acc: 0.4238 | Macro-F1: 0.1805 | LogLoss: 1.6016
+  gradient_boosting         | Acc: 0.4491 | Macro-F1: 0.2166 | LogLoss: 1.6313
+
+Test (Season 10) Out-of-Sample Results:
+  majority                  | Acc: 0.3852 | Macro-F1: 0.1112 | LogLoss: 22.1580
+  logistic_regression       | Acc: 0.4434 | Macro-F1: 0.1918 | LogLoss: 1.6373
+  gradient_boosting         | Acc: 0.4555 | Macro-F1: 0.2171 | LogLoss: 1.6752

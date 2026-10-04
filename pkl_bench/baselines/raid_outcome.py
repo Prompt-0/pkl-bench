@@ -105,7 +105,7 @@ class RaidOutcomeBaseline:
         report = classification_report_dict(y_test, preds)
         # Log loss over present classes
         try:
-            ll = multiclass_log_loss(y_test, probs, labels=classes)
+            ll = multiclass_log_loss(y_test, prob_matrix, labels=TARGET_CLASSES)
         except ValueError:
             ll = float("nan")
 
