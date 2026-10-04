@@ -487,12 +487,6 @@ def extract_raids_pbp(root: Dict[str, Any], match_id: int, season_id: int, playe
 
     for idx, ev in enumerate(events_sorted):
         raw_event_name = clean_str(ev.get("event")).upper()
-        # Filter out substitutions, timeouts, and cards which are not raids
-        if "SUBSTITUTION" in raw_event_name or "TIMEOUT" in raw_event_name or "CARD" in raw_event_name or "REVIEW" in raw_event_name:
-            continue
-        # Also filter out rows with raider_id 0 unless it's a technical point
-        if clean_int(ev.get("raider_id")) == 0 and "RAID" not in raw_event_name:
-            continue
             
         seq_no = clean_int(ev.get("event_no") or ev.get("seq_no") or (idx + 1))
         half = clean_int(ev.get("event_half") or 1)

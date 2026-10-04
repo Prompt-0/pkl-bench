@@ -192,10 +192,10 @@ Table~\ref{tab:leaderboard} presents baseline benchmark results evaluated on the
 \midrule
 \textbf{Task 1: Raid Outcome} & Majority Class & Accuracy: 0.4770 & Macro-F1: 0.1292 & Log-Loss: 18.8520 \\
 & Multinomial Logistic & Accuracy: 0.5188 & Macro-F1: 0.2274 & Log-Loss: 1.0626 \\
-& \textbf{HistGradientBoosting} & \textbf{Accuracy: 0.5442} & \textbf{Macro-F1: 0.2484} & \textbf{Log-Loss: 1.1451} \\
+& \textbf{HistGradientBoosting} & \textbf{Accuracy: 0.5442} & \textbf{Macro-F1: 0.2484} & \textbf{Log-Loss: 1.1435} \\
 \midrule
-\textbf{Task 2: Win Probability} & Logistic Leverage & Brier: 0.2263 & ECE: 0.0972 & Log-Loss: 0.6438 \\
-& \textbf{Calibrated GBDT} & \textbf{Brier: 0.1798} & \textbf{ECE: 0.1219} & \textbf{Log-Loss: 0.5409} \\
+\textbf{Task 2: Win Probability} & Logistic Leverage & Brier: 0.2260 & ECE: 0.0979 & Log-Loss: 0.6432 \\
+& \textbf{Calibrated GBDT} & \textbf{Brier: 0.1810} & \textbf{ECE: 0.1259} & \textbf{Log-Loss: 0.5437} \\
 \midrule
 \textbf{Task 3: Match Forecasting} & Random Baseline & Accuracy: 0.5000 & Brier: 0.2500 & ROC-AUC: 0.5000 \\
 & \textbf{Dynamic Kabaddi Elo} & \textbf{Accuracy: 0.7059} & \textbf{Brier: 0.1968} & \textbf{ROC-AUC: 0.7673} \\
@@ -210,7 +210,7 @@ Table~\ref{tab:leaderboard} presents baseline benchmark results evaluated on the
 \textbf{Key Insights}:
 \begin{itemize}
     \item On Task 1, Gradient Boosting achieves a substantial log-loss reduction from 1.0626 to 0.9597 over Logistic Regression, driven by non-linear decision trees capturing the interaction between Do-or-Die flags and clock urgency.
-    \item On Task 2, Calibrated GBDT sacrifices some expected calibration error (ECE 0.1219 vs 0.0972) while substantially improving the Brier score from 0.2263 to 0.1798, producing reliable probability outputs (Figure~\ref{fig:win_prob}).
+    \item On Task 2, Calibrated GBDT sacrifices some expected calibration error (ECE 0.1259 vs 0.0979) while substantially improving the Brier score from 0.2260 to 0.1810, producing reliable probability outputs (Figure~\ref{fig:win_prob}).
     \item On Task 3, Dynamic Kabaddi Elo with margin-of-victory scaling achieves 70.6\% accuracy and 0.7707 ROC-AUC on out-of-sample matches, confirming that franchise strength exhibits meaningful temporal autocorrelation across 10 seasons (Figure~\ref{fig:elo}).
 \end{itemize}
 

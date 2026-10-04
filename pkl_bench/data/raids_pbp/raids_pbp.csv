@@ -386,7 +386,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 14,1,24,1,11:48,1692,5,4,105,Shabeer Bappu,False,EMPTY_RAID,0,0,0,0,False,False,,,8,15,8,15,Shabeer Bappu Empty Raid
 14,1,25,1,12:9,1671,4,5,141,Sunil Jaipal,False,EMPTY_RAID,0,0,0,0,False,False,,,8,15,8,15,Sunil Jaipal Empty Raid
 14,1,26,1,12:54,1626,5,4,29,Anup Kumar,False,SUCCESSFUL_RAID,1,0,0,0,False,False,77.0,Parveen Kumar,8,15,8,16,Anup Kumar Successful Raid
-14,1,29,1,13:19,1601,4,5,75,Nitin Madane,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,8,16,9,16,Nitin Madane Successful Raid
+14,1,29,1,13:19,1601,4,5,75,Nitin Madane,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,9,16,9,16,Nitin Madane Successful Raid
 14,1,30,1,14:6,1554,5,4,105,Shabeer Bappu,False,SUCCESSFUL_RAID,2,0,0,0,False,False,108.0,Shyam Kumar Sah,9,16,9,18,Shabeer Bappu Successful Raid
 14,1,30,1,14:6,1554,5,4,105,Shabeer Bappu,False,SUCCESSFUL_RAID,2,0,0,0,False,False,141.0,Sunil Jaipal,9,18,9,18,Shabeer Bappu Successful Raid
 14,1,31,1,14:24,1536,4,5,75,Nitin Madane,False,EMPTY_RAID,0,0,0,0,False,False,,,9,18,9,18,Nitin Madane Empty Raid
@@ -3463,7 +3463,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 47,1,50,1,19:29,1231,2,3,118,Surjeet Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,14,18,14,18,Surjeet Narwal Empty Raid
 47,1,51,1,19:40,1220,3,2,52,Jasvir Singh,False,SUCCESSFUL_RAID,2,0,0,0,False,False,107.0,Shrikant Tewthia,14,18,16,18,Jasvir Singh Successful Raid
 47,1,51,1,19:40,1220,3,2,52,Jasvir Singh,False,SUCCESSFUL_RAID,2,0,0,0,False,False,157.0,Ravinder Pahal,16,18,16,18,Jasvir Singh Successful Raid
-47,1,53,1,20:0,1200,2,3,58,Kashiling Adake,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,,,16,18,17,18,Kashiling Adake Unsuccessful Raid
+47,1,53,1,20:0,1200,2,3,58,Kashiling Adake,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,,,17,18,17,18,Kashiling Adake Unsuccessful Raid
 47,1,54,1,20:40,1200,3,2,52,Jasvir Singh,False,SUCCESSFUL_RAID,1,0,0,0,False,False,118.0,Surjeet Narwal,17,18,20,18,Jasvir Singh Successful Raid
 47,1,55,1,20:50,1200,2,3,58,Kashiling Adake,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,147.0,Prashant Chavan,20,18,21,18,Kashiling Adake Unsuccessful Raid
 47,1,56,1,20:55,1200,3,2,52,Jasvir Singh,False,EMPTY_RAID,0,0,0,0,False,False,,,21,18,21,18,Jasvir Singh Empty Raid
@@ -4606,7 +4606,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 59,1,88,2,34:53,307,6,1,92,Ravi Dalal,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,42.0,Dharmaraj Cheralathan,24,17,24,18,Ravi Dalal Unsuccessful Raid
 59,1,89,2,36:42,198,1,6,26,Ajay Thakur,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,162.0,D. Suresh Kumar,24,18,25,18,Ajay Thakur Unsuccessful Raid
 59,1,90,2,37:17,163,6,1,68,Mandeep Kumar,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,69.0,Manjeet Chhillar,25,18,25,19,Mandeep Kumar Unsuccessful Raid
-59,1,92,2,37:43,137,1,6,26,Ajay Thakur,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,162.0,D. Suresh Kumar,25,19,26,19,Ajay Thakur Unsuccessful Raid
+59,1,92,2,37:43,137,1,6,26,Ajay Thakur,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,162.0,D. Suresh Kumar,25,18,26,19,Ajay Thakur Unsuccessful Raid
 59,1,93,2,37:54,126,6,1,142,Sandeep Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,26,19,26,19,Sandeep Narwal Empty Raid
 59,1,94,2,38:4,116,1,6,85,Rajesh Mondal,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,89.0,Ram Kumar Sah,26,19,27,19,Rajesh Mondal Unsuccessful Raid
 59,1,96,2,38:12,108,6,1,142,Sandeep Narwal,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,69.0,Manjeet Chhillar,27,19,27,20,Sandeep Narwal Unsuccessful Raid
@@ -6463,7 +6463,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 85,2,94,2,33:11,409,2,6,107,Shrikant Tewthia,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,92.0,Ravi Dalal,32,19,33,19,Shrikant Tewthia Unsuccessful Raid
 85,2,95,2,33:44,376,6,2,92,Ravi Dalal,False,EMPTY_RAID,0,0,0,0,False,False,,,33,19,33,19,Ravi Dalal Empty Raid
 85,2,96,2,34:11,349,2,6,217,Rohit Kumar Choudary,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,161.0,Girish Maruti Ernak,33,19,34,19,Rohit Kumar Choudary Unsuccessful Raid
-85,2,98,2,34:47,313,6,2,211,Deepak Narwal,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,34,19,35,20,Deepak Narwal raids successfully
+85,2,98,2,34:47,313,6,2,211,Deepak Narwal,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,34,20,35,20,Deepak Narwal raids successfully
 85,2,99,2,35:50,250,2,6,58,Kashiling Adake,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,35,20,35,21,Kashiling Adake raids successfully
 85,2,100,2,35:58,242,6,2,212,Amit Hooda,False,EMPTY_RAID,0,0,0,0,False,False,,,35,21,35,21,Amit Hooda Empty Raid
 85,2,101,2,36:22,218,2,6,107,Shrikant Tewthia,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,211.0,Deepak Narwal,35,21,36,21,Shrikant Tewthia Unsuccessful Raid
@@ -9372,7 +9372,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 115,2,60,2,26:34,806,7,6,67,Mahipal Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,7,25,7,25,Mahipal Narwal Empty Raid
 115,2,61,2,26:53,787,6,7,46,Gurvinder Singh,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,240.0,Ravi Kumar,7,25,8,25,Gurvinder Singh Unsuccessful Raid
 115,2,62,2,27:22,758,7,6,231,Amit Rathi,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,,,8,25,8,26,Amit Rathi Unsuccessful Raid
-115,2,64,2,28:20,700,6,7,212,Amit Hooda,False,EMPTY_RAID,0,0,0,0,False,False,,,8,26,8,27,Amit Hooda Empty Raid
+115,2,64,2,28:20,700,6,7,212,Amit Hooda,False,EMPTY_RAID,0,0,0,0,False,False,,,8,27,8,27,Amit Hooda Empty Raid
 115,2,65,2,28:47,673,7,6,67,Mahipal Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,8,27,8,27,Mahipal Narwal Empty Raid
 115,2,66,2,29:08,652,6,7,211,Deepak Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,8,27,8,27,Deepak Narwal Empty Raid
 115,2,67,2,29:35,625,7,6,240,Ravi Kumar,False,EMPTY_RAID,0,0,0,0,False,False,,,8,27,8,27,Ravi Kumar Empty Raid
@@ -10660,7 +10660,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 134,3,30,1,11:56,1684,6,5,309,Manpreet Singh,False,EMPTY_RAID,0,0,0,0,False,False,,,8,14,8,14,Manpreet Singh Empty Raid
 134,3,31,1,12:15,1665,5,6,29,Anup Kumar,False,EMPTY_RAID,0,0,0,0,False,False,,,8,14,8,14,Anup Kumar Empty Raid
 134,3,32,1,12:44,1636,6,5,197,Pardeep Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,8,14,8,14,Pardeep Narwal Empty Raid
-134,3,36,1,13:08,1612,5,6,94,Rishank Devadiga,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,142.0,Sandeep Narwal,8,14,9,15,Rishank Devadiga Unsuccessful Raid
+134,3,36,1,13:08,1612,5,6,94,Rishank Devadiga,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,142.0,Sandeep Narwal,9,14,9,15,Rishank Devadiga Unsuccessful Raid
 134,3,37,1,13:40,1580,6,5,85,Rajesh Mondal,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,71.0,Mohit Chhillar,9,15,10,15,Rajesh Mondal Unsuccessful Raid
 134,3,38,1,14:24,1536,5,6,88,Rakesh Kumar,False,EMPTY_RAID,0,0,0,0,False,False,,,10,15,10,15,Rakesh Kumar Empty Raid
 134,3,39,1,14:37,1523,6,5,142,Sandeep Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,10,15,10,15,Sandeep Narwal Empty Raid
@@ -10701,7 +10701,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 134,3,82,2,29:54,606,6,5,197,Pardeep Narwal,False,SUCCESSFUL_RAID,2,0,0,0,False,False,,,19,31,19,33,Pardeep Narwal raids successfully
 134,3,83,2,30:40,560,5,6,88,Rakesh Kumar,False,SUCCESSFUL_RAID,2,0,0,0,False,False,,,19,33,21,33,Rakesh Kumar raids successfully
 134,3,85,2,31:51,489,0,0,0,Non Raid Technical Points,False,EMPTY_RAID,0,0,0,0,False,False,,,21,33,21,34,Non Raid Technical Points
-134,3,87,2,31:53,487,6,5,46,Gurvinder Singh,False,EMPTY_RAID,0,0,0,0,False,False,,,21,34,21,35,Gurvinder Singh Empty Raid
+134,3,87,2,31:53,487,6,5,46,Gurvinder Singh,False,EMPTY_RAID,0,0,0,0,False,False,,,21,35,21,35,Gurvinder Singh Empty Raid
 134,3,88,2,32:19,461,5,6,88,Rakesh Kumar,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,162.0,D. Suresh Kumar,21,35,21,36,Rakesh Kumar Unsuccessful Raid
 134,3,89,2,32:54,426,6,5,142,Sandeep Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,21,36,21,36,Sandeep Narwal Empty Raid
 134,3,90,2,33:24,396,5,6,146,Surender Nada,False,EMPTY_RAID,0,0,0,0,False,False,,,21,36,21,36,Surender Nada Empty Raid
@@ -10724,7 +10724,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 135,3,1,1,00:01,2399,8,1,81,Rahul Chaudhari,False,EMPTY_RAID,0,0,0,0,False,False,,,0,0,0,0,Rahul Chaudhari Empty Raid
 135,3,3,1,00:19,2381,1,8,118,Surjeet Narwal,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,0,0,1,0,Surjeet Narwal raids successfully
 135,3,4,1,00:50,2350,8,1,155,Prashant Kumar Rai,False,UNSUCCESSFUL_RAID,1,0,0,1,False,False,275.0,Deepak Kumar,1,0,2,1,Prashant Kumar Rai Unsuccessful Raid
-135,3,6,1,01:42,2298,1,8,118,Surjeet Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,2,1,2,2,Surjeet Narwal Empty Raid
+135,3,6,1,01:42,2298,1,8,118,Surjeet Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,2,2,2,2,Surjeet Narwal Empty Raid
 135,3,7,1,01:50,2290,8,1,111,Sukesh Hegde,False,EMPTY_RAID,0,0,0,0,False,False,,,2,2,2,2,Sukesh Hegde Empty Raid
 135,3,8,1,02:15,2265,1,8,202,Ashish Sangwan,False,EMPTY_RAID,0,0,0,0,False,False,,,2,2,2,2,Ashish Sangwan Empty Raid
 135,3,9,1,02:43,2237,8,1,111,Sukesh Hegde,False,EMPTY_RAID,0,0,0,0,False,False,,,2,2,2,2,Sukesh Hegde Empty Raid
@@ -10751,7 +10751,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 135,3,32,1,13:56,1564,1,8,107,Shrikant Tewthia,False,SUPER_TACKLE,0,0,0,3,False,True,179.0,Vikas Kale,7,11,7,14,Shrikant Tewthia Unsuccessful Raid
 135,3,33,1,14:38,1522,8,1,81,Rahul Chaudhari,False,EMPTY_RAID,0,0,0,0,False,False,,,7,14,7,14,Rahul Chaudhari Empty Raid
 135,3,34,1,14:59,1501,1,8,231,Amit Rathi,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,7,14,8,14,Amit Rathi raids successfully
-135,3,36,1,16:08,1432,8,1,155,Prashant Kumar Rai,False,EMPTY_RAID,0,0,0,0,False,False,,,8,14,8,15,Prashant Kumar Rai Empty Raid
+135,3,36,1,16:08,1432,8,1,155,Prashant Kumar Rai,False,EMPTY_RAID,0,0,0,0,False,False,,,8,15,8,15,Prashant Kumar Rai Empty Raid
 135,3,37,1,16:17,1423,1,8,118,Surjeet Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,8,15,8,15,Surjeet Narwal Empty Raid
 135,3,38,1,16:45,1395,8,1,111,Sukesh Hegde,True,UNSUCCESSFUL_RAID,0,0,0,1,False,False,314.0,Somvir,8,15,9,15,Sukesh Hegde Unsuccessful Raid
 135,3,39,1,17:28,1352,1,8,118,Surjeet Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,9,15,9,15,Surjeet Narwal Empty Raid
@@ -10921,7 +10921,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 137,3,36,1,16:00,1440,3,2,86,Rajesh Narwal,False,SUCCESSFUL_RAID,2,0,0,0,False,False,,,9,8,11,8,Rajesh Narwal raids successfully
 137,3,39,1,16:45,1395,2,3,58,Kashiling Adake,False,SUCCESSFUL_RAID,2,0,0,0,False,False,,,11,8,11,10,Kashiling Adake raids successfully
 137,3,40,1,17:20,1360,3,2,86,Rajesh Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,11,10,11,10,Rajesh Narwal Empty Raid
-137,3,42,1,18:40,1280,2,3,58,Kashiling Adake,False,SUPER_RAID,3,0,0,0,True,False,,,11,10,11,14,Kashiling Adake raids successfully
+137,3,42,1,18:40,1280,2,3,58,Kashiling Adake,False,SUPER_RAID,3,0,0,0,True,False,,,11,11,11,14,Kashiling Adake raids successfully
 137,3,43,1,19:07,1253,3,2,190,Sonu Narwal,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,11,14,12,14,Sonu Narwal raids successfully
 137,3,44,1,19:27,1233,2,3,119,Surjeet Singh,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,12,14,12,15,Surjeet Singh raids successfully
 137,3,45,1,19:52,1208,3,2,159,Samarjeet Singh,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,12,15,13,15,Samarjeet Singh raids successfully
@@ -10929,7 +10929,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 137,3,47,1,20:31,1200,2,3,58,Kashiling Adake,False,SUCCESSFUL_RAID,2,0,0,0,False,False,,,13,15,13,17,Kashiling Adake raids successfully
 137,3,48,2,21:06,1134,3,2,96,Rohit Rana,False,UNSUCCESSFUL_RAID,1,0,0,3,False,False,157.0,Ravinder Pahal,13,17,14,20,Rohit Rana Unsuccessful Raid
 137,3,49,2,21:43,1097,2,3,119,Surjeet Singh,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,,,14,20,15,20,Surjeet Singh Unsuccessful Raid
-137,3,51,2,22:53,1027,3,2,190,Sonu Narwal,False,SUPER_RAID,3,0,0,0,True,False,,,15,20,19,20,Sonu Narwal raids successfully
+137,3,51,2,22:53,1027,3,2,190,Sonu Narwal,False,SUPER_RAID,3,0,0,0,True,False,,,16,20,19,20,Sonu Narwal raids successfully
 137,3,52,2,23:23,997,2,3,58,Kashiling Adake,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,159.0,Samarjeet Singh,19,20,20,20,Kashiling Adake Unsuccessful Raid
 137,3,53,2,24:01,959,3,2,86,Rajesh Narwal,False,SUPER_TACKLE,0,0,0,2,False,True,157.0,Ravinder Pahal,20,20,20,22,Rajesh Narwal Unsuccessful Raid
 137,3,55,2,24:34,926,2,3,157,Ravinder Pahal,False,EMPTY_RAID,0,0,0,0,False,False,,,20,22,20,22,Ravinder Pahal Empty Raid
@@ -11360,7 +11360,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 141,3,72,2,30:47,553,5,1,105,Shabeer Bappu,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,118.0,Surjeet Narwal,17,24,17,25,Shabeer Bappu Unsuccessful Raid
 141,3,75,2,31:19,521,1,5,318,Pawan Kumar,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,88.0,Rakesh Kumar,17,25,18,25,Pawan Kumar Unsuccessful Raid
 141,3,76,2,32:01,479,5,1,94,Rishank Devadiga,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,314.0,Somvir,18,25,18,26,Rishank Devadiga Unsuccessful Raid
-141,3,80,2,32:24,456,1,5,172,Vinoth Kumar,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,54.0,Jeeva Kumar,18,26,20,26,Vinoth Kumar Unsuccessful Raid
+141,3,80,2,32:24,456,1,5,172,Vinoth Kumar,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,54.0,Jeeva Kumar,19,26,20,26,Vinoth Kumar Unsuccessful Raid
 141,3,82,2,32:50,430,5,1,105,Shabeer Bappu,False,EMPTY_RAID,0,0,0,0,False,False,,,20,26,20,26,Shabeer Bappu Empty Raid
 141,3,83,2,33:27,393,1,5,118,Surjeet Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,20,26,20,26,Surjeet Narwal Empty Raid
 141,3,84,2,33:35,385,5,1,34,Bhupender Singh,False,EMPTY_RAID,0,0,0,0,False,False,,,20,26,20,26,Bhupender Singh Empty Raid
@@ -11665,7 +11665,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 145,3,25,1,09:29,1831,3,7,190,Sonu Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,5,13,5,13,Sonu Narwal Empty Raid
 145,3,26,1,09:51,1809,7,3,69,Manjeet Chhillar,False,EMPTY_RAID,0,0,0,0,False,False,,,5,13,5,13,Manjeet Chhillar Empty Raid
 145,3,27,1,10:20,1780,3,7,285,Anil Kashinath Patil,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,69.0,Manjeet Chhillar,5,13,6,13,Anil Kashinath Patil Unsuccessful Raid
-145,3,30,1,11:10,1730,7,3,26,Ajay Thakur,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,6,13,7,14,Ajay Thakur raids successfully
+145,3,30,1,11:10,1730,7,3,26,Ajay Thakur,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,6,14,7,14,Ajay Thakur raids successfully
 145,3,31,1,11:42,1698,3,7,86,Rajesh Narwal,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,7,14,7,15,Rajesh Narwal raids successfully
 145,3,32,1,12:01,1679,7,3,26,Ajay Thakur,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,86.0,Rajesh Narwal,7,15,7,16,Ajay Thakur Unsuccessful Raid
 145,3,34,1,12:33,1647,3,7,86,Rajesh Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,7,16,7,16,Rajesh Narwal Empty Raid
@@ -12113,7 +12113,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 150,3,61,2,25:35,865,4,6,12,Jang Kun Lee,False,EMPTY_RAID,0,0,0,0,False,False,,,20,14,20,14,Jang Kun Lee Empty Raid
 150,3,62,2,25:59,841,6,4,142,Sandeep Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,20,14,20,14,Sandeep Narwal Empty Raid
 150,3,63,2,26:34,806,4,6,106,Shrikant Jadhav,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,249.0,Hadi Oshtorak,20,14,21,14,Shrikant Jadhav Unsuccessful Raid
-150,3,66,2,27:05,775,6,4,142,Sandeep Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,21,14,21,15,Sandeep Narwal Empty Raid
+150,3,66,2,27:05,775,6,4,142,Sandeep Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,21,15,21,15,Sandeep Narwal Empty Raid
 150,3,67,2,27:35,745,4,6,12,Jang Kun Lee,False,EMPTY_RAID,0,0,0,0,False,False,,,21,15,21,15,Jang Kun Lee Empty Raid
 150,3,68,2,28:04,716,6,4,197,Pardeep Narwal,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,21,15,22,15,Pardeep Narwal raids successfully
 150,3,69,2,28:36,684,4,6,12,Jang Kun Lee,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,22,15,22,16,Jang Kun Lee raids successfully
@@ -12222,7 +12222,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 123,3,85,2,35:45,255,2,1,58,Kashiling Adake,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,314.0,Somvir,24,32,24,33,Kashiling Adake Unsuccessful Raid
 123,3,86,2,36:24,216,1,2,231,Amit Rathi,False,EMPTY_RAID,0,0,0,0,False,False,,,24,33,24,33,Amit Rathi Empty Raid
 123,3,87,2,36:47,193,2,1,119,Surjeet Singh,False,SUCCESSFUL_RAID,2,0,0,0,False,False,,,24,33,26,33,Surjeet Singh raids successfully
-123,3,89,2,38:39,81,1,2,118,Surjeet Narwal,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,26,33,27,34,Surjeet Narwal raids successfully
+123,3,89,2,38:39,81,1,2,118,Surjeet Narwal,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,27,33,27,34,Surjeet Narwal raids successfully
 123,3,90,2,38:57,63,2,1,119,Surjeet Singh,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,275.0,Deepak Kumar,27,34,27,35,Surjeet Singh Unsuccessful Raid
 123,3,91,2,39:05,55,1,2,231,Amit Rathi,False,EMPTY_RAID,0,0,0,0,False,False,,,27,35,27,35,Amit Rathi Empty Raid
 123,3,93,2,39:17,43,2,1,79,Pravin Niwale,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,27,35,28,35,Pravin Niwale raids successfully
@@ -12712,7 +12712,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 156,3,35,1,14:35,1525,6,5,67,Mahipal Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,6,16,6,16,Mahipal Narwal Empty Raid
 156,3,36,1,14:44,1516,5,6,94,Rishank Devadiga,False,SUCCESSFUL_RAID,2,0,0,0,False,False,,,6,16,6,18,Rishank Devadiga raids successfully
 156,3,37,1,15:02,1498,6,5,197,Pardeep Narwal,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,29.0,Anup Kumar,6,18,6,19,Pardeep Narwal Unsuccessful Raid
-156,3,40,1,15:29,1471,5,6,94,Rishank Devadiga,False,SUPER_RAID,3,0,0,0,True,False,,,6,19,7,22,Rishank Devadiga raids successfully
+156,3,40,1,15:29,1471,5,6,94,Rishank Devadiga,False,SUPER_RAID,3,0,0,0,True,False,,,7,19,7,22,Rishank Devadiga raids successfully
 156,3,43,1,15:52,1448,6,5,326,Rohit Kumar,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,7,22,8,22,Rohit Kumar raids successfully
 156,3,44,1,16:18,1422,5,6,88,Rakesh Kumar,False,EMPTY_RAID,0,0,0,0,False,False,,,8,22,8,22,Rakesh Kumar Empty Raid
 156,3,45,1,16:54,1386,6,5,326,Rohit Kumar,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,8,22,9,22,Rohit Kumar raids successfully
@@ -12899,7 +12899,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 158,3,54,2,21:23,1117,7,2,41,Deepak Niwas Hooda,False,EMPTY_RAID,0,0,0,0,False,False,,,16,8,16,8,Deepak Niwas Hooda Empty Raid
 158,3,55,2,21:50,1090,2,7,119,Surjeet Singh,False,EMPTY_RAID,0,0,0,0,False,False,,,16,8,16,8,Surjeet Singh Empty Raid
 158,3,56,2,22:17,1063,7,2,234,Surendra Singh,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,290.0,Sandeep Dhull,16,8,16,9,Surendra Singh Unsuccessful Raid
-158,3,58,2,22:36,1044,2,7,58,Kashiling Adake,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,51.0,Jasmer Singh Gulia,16,9,17,10,Kashiling Adake Unsuccessful Raid
+158,3,58,2,22:36,1044,2,7,58,Kashiling Adake,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,51.0,Jasmer Singh Gulia,16,10,17,10,Kashiling Adake Unsuccessful Raid
 158,3,59,2,23:07,1013,7,2,242,Tushar Patil,False,EMPTY_RAID,0,0,0,0,False,False,,,17,10,17,10,Tushar Patil Empty Raid
 158,3,60,2,23:24,996,2,7,119,Surjeet Singh,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,17,10,17,11,Surjeet Singh raids successfully
 158,3,61,2,23:44,976,7,2,242,Tushar Patil,False,EMPTY_RAID,0,0,0,0,False,False,,,17,11,17,11,Tushar Patil Empty Raid
@@ -13368,7 +13368,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 162,3,92,2,37:24,156,4,5,272,Umesh Mhatre,False,EMPTY_RAID,0,0,0,0,False,False,,,16,28,16,28,Umesh Mhatre Empty Raid
 162,3,93,2,37:34,146,5,4,29,Anup Kumar,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,16,28,16,29,Anup Kumar raids successfully
 162,3,94,2,38:09,111,4,5,272,Umesh Mhatre,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,71.0,Mohit Chhillar,16,29,16,30,Umesh Mhatre Unsuccessful Raid
-162,3,96,2,38:37,83,5,4,29,Anup Kumar,False,EMPTY_RAID,0,0,0,0,False,False,,,16,30,17,30,Anup Kumar Empty Raid
+162,3,96,2,38:37,83,5,4,29,Anup Kumar,False,EMPTY_RAID,0,0,0,0,False,False,,,17,30,17,30,Anup Kumar Empty Raid
 162,3,97,2,38:56,64,4,5,12,Jang Kun Lee,False,EMPTY_RAID,0,0,0,0,False,False,,,17,30,17,30,Jang Kun Lee Empty Raid
 162,3,98,2,39:22,38,5,4,29,Anup Kumar,False,EMPTY_RAID,0,0,0,0,False,False,,,17,30,17,30,Anup Kumar Empty Raid
 162,3,99,2,39:52,8,4,5,163,Mahendra Ganesh Rajput,False,EMPTY_RAID,0,0,0,0,False,False,,,17,30,11,13,Mahendra Ganesh Rajput Empty Raid
@@ -13633,7 +13633,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 165,3,81,2,33:53,367,1,5,318,Pawan Kumar,False,EMPTY_RAID,0,0,0,0,False,False,,,13,34,13,34,Pawan Kumar Empty Raid
 165,3,82,2,34:19,341,5,1,88,Rakesh Kumar,False,EMPTY_RAID,0,0,0,0,False,False,,,13,34,13,34,Rakesh Kumar Empty Raid
 165,3,84,2,34:44,316,1,5,172,Vinoth Kumar,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,71.0,Mohit Chhillar,13,34,13,35,Vinoth Kumar Unsuccessful Raid
-165,3,86,2,35:20,280,5,1,156,Pawan Kumar,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,317.0,Hardeep Duhan,13,35,15,35,Pawan Kumar Unsuccessful Raid
+165,3,86,2,35:20,280,5,1,156,Pawan Kumar,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,317.0,Hardeep Duhan,14,35,15,35,Pawan Kumar Unsuccessful Raid
 165,3,87,2,35:56,244,1,5,318,Pawan Kumar,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,15,35,16,35,Pawan Kumar raids successfully
 165,3,88,2,36:08,232,5,1,29,Anup Kumar,False,EMPTY_RAID,0,0,0,0,False,False,,,16,35,16,35,Anup Kumar Empty Raid
 165,3,90,2,36:39,201,1,5,318,Pawan Kumar,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,259.0,Fazel Atrachali,16,35,16,36,Pawan Kumar Unsuccessful Raid
@@ -14023,7 +14023,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 169,3,98,2,38:24,96,7,1,69,Manjeet Chhillar,False,EMPTY_RAID,0,0,0,0,False,False,,,25,37,25,37,Manjeet Chhillar Empty Raid
 169,3,99,2,38:45,75,1,7,107,Shrikant Tewthia,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,69.0,Manjeet Chhillar,25,37,25,38,Shrikant Tewthia Unsuccessful Raid
 169,3,100,2,39:01,59,7,1,69,Manjeet Chhillar,False,SUPER_RAID,4,0,0,0,True,False,,,25,38,25,42,Manjeet Chhillar raids successfully
-169,3,104,2,39:26,34,1,7,174,Deepak Kumar Dahiya,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,322.0,Surjeet,25,42,26,44,Deepak Kumar Dahiya Unsuccessful Raid
+169,3,104,2,39:26,34,1,7,174,Deepak Kumar Dahiya,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,322.0,Surjeet,26,43,26,44,Deepak Kumar Dahiya Unsuccessful Raid
 169,3,105,2,39:34,26,7,1,234,Surendra Singh,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,167.0,Preetam Chhillar,26,44,13,25,Surendra Singh Unsuccessful Raid
 170,3,1,1,00:01,2399,4,2,320,Nitin Tomar,False,EMPTY_RAID,0,0,0,0,False,False,,,0,0,0,0,Nitin Tomar Empty Raid
 170,3,2,1,00:24,2376,2,4,264,Selvamani K,False,EMPTY_RAID,0,0,0,0,False,False,,,0,0,0,0,Selvamani K Empty Raid
@@ -15334,7 +15334,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 127,3,58,2,26:21,819,8,2,81,Rahul Chaudhari,False,EMPTY_RAID,0,0,0,0,False,False,,,32,16,32,16,Rahul Chaudhari Empty Raid
 127,3,59,2,26:23,817,2,8,119,Surjeet Singh,False,EMPTY_RAID,0,0,0,0,False,False,,,32,16,32,16,Surjeet Singh Empty Raid
 127,3,60,2,26:46,794,8,2,81,Rahul Chaudhari,False,EMPTY_RAID,0,0,0,0,False,False,,,32,16,32,16,Rahul Chaudhari Empty Raid
-127,3,62,2,27:35,745,2,8,79,Pravin Niwale,False,EMPTY_RAID,0,0,0,0,False,False,,,32,16,32,17,Pravin Niwale Empty Raid
+127,3,62,2,27:35,745,2,8,79,Pravin Niwale,False,EMPTY_RAID,0,0,0,0,False,False,,,32,17,32,17,Pravin Niwale Empty Raid
 127,3,63,2,27:42,738,8,2,111,Sukesh Hegde,True,UNSUCCESSFUL_RAID,0,0,0,1,False,False,84.0,Rajaguru Subramanian,32,17,32,18,Sukesh Hegde Unsuccessful Raid
 127,3,64,2,28:21,699,2,8,79,Pravin Niwale,True,SUPER_TACKLE,0,0,0,2,False,True,42.0,Dharmaraj Cheralathan,32,18,34,18,Pravin Niwale Unsuccessful Raid
 127,3,65,2,29:21,639,8,2,42,Dharmaraj Cheralathan,False,EMPTY_RAID,0,0,0,0,False,False,,,34,18,34,18,Dharmaraj Cheralathan Empty Raid
@@ -16979,7 +16979,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 206,4,43,1,17:19,1361,4,7,75,Nitin Madane,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,8,17,9,17,Nitin Madane raids successfully
 206,4,44,1,18:02,1318,7,4,69,Manjeet Chhillar,False,SUCCESSFUL_RAID,2,0,0,0,False,False,,,9,17,9,19,Manjeet Chhillar raids successfully
 206,4,45,1,18:39,1281,4,7,370,Ravindra Ramesh Kumavat,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,69.0,Manjeet Chhillar,9,19,9,20,Ravindra Ramesh Kumavat Unsuccessful Raid
-206,4,47,1,19:09,1251,7,4,41,Deepak Niwas Hooda,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,9,20,10,21,Deepak Niwas Hooda raids successfully
+206,4,47,1,19:09,1251,7,4,41,Deepak Niwas Hooda,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,10,20,10,21,Deepak Niwas Hooda raids successfully
 206,4,48,1,19:42,1218,4,7,12,Jang Kun Lee,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,69.0,Manjeet Chhillar,10,21,10,22,Jang Kun Lee Unsuccessful Raid
 206,4,49,1,20:03,1200,7,4,69,Manjeet Chhillar,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,10,22,10,23,Manjeet Chhillar raids successfully
 206,4,50,1,20:21,1200,4,7,123,Vishal Mane,False,SUPER_TACKLE,0,0,0,3,False,True,69.0,Manjeet Chhillar,10,23,10,26,Vishal Mane Unsuccessful Raid
@@ -17865,7 +17865,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 215,4,66,1,27:07,1200,8,7,81,Rahul Chaudhari,False,EMPTY_RAID,0,0,0,0,False,False,,,23,20,23,20,Rahul Chaudhari Empty Raid
 215,4,67,1,27:43,1200,7,8,41,Deepak Niwas Hooda,False,EMPTY_RAID,0,0,0,0,False,False,,,23,20,23,20,Deepak Niwas Hooda Empty Raid
 215,4,68,1,28:05,1200,8,7,293,Nilesh Salunke,False,EMPTY_RAID,0,0,0,0,False,False,,,23,20,23,20,Nilesh Salunke Empty Raid
-215,4,70,1,29:21,1200,7,8,190,Sonu Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,23,20,23,21,Sonu Narwal Empty Raid
+215,4,70,1,29:21,1200,7,8,190,Sonu Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,23,21,23,21,Sonu Narwal Empty Raid
 215,4,71,1,29:25,1200,8,7,293,Nilesh Salunke,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,23,21,24,21,Nilesh Salunke raids successfully
 215,4,72,1,29:53,1200,7,8,41,Deepak Niwas Hooda,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,24,21,24,22,Deepak Niwas Hooda raids successfully
 215,4,73,1,30:24,1200,8,7,81,Rahul Chaudhari,False,EMPTY_RAID,0,0,0,0,False,False,,,24,22,24,22,Rahul Chaudhari Empty Raid
@@ -18740,7 +18740,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 224,4,66,1,29:01,1200,7,5,320,Nitin Tomar,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,29.0,Anup Kumar,19,23,20,23,Nitin Tomar Unsuccessful Raid
 224,4,67,1,29:17,1200,5,7,94,Rishank Devadiga,False,EMPTY_RAID,0,0,0,0,False,False,,,20,23,20,23,Rishank Devadiga Empty Raid
 224,4,68,1,29:53,1200,7,5,26,Ajay Thakur,False,EMPTY_RAID,0,0,0,0,False,False,,,20,23,20,23,Ajay Thakur Empty Raid
-224,4,70,1,30:46,1200,5,7,94,Rishank Devadiga,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,20,23,22,23,Rishank Devadiga raids successfully
+224,4,70,1,30:46,1200,5,7,94,Rishank Devadiga,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,21,23,22,23,Rishank Devadiga raids successfully
 224,4,71,1,30:57,1200,7,5,26,Ajay Thakur,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,29.0,Anup Kumar,22,23,23,23,Ajay Thakur Unsuccessful Raid
 224,4,72,1,31:28,1200,5,7,88,Rakesh Kumar,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,23,23,24,23,Rakesh Kumar raids successfully
 224,4,73,1,32:05,1200,7,5,41,Deepak Niwas Hooda,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,24,23,24,24,Deepak Niwas Hooda raids successfully
@@ -18987,7 +18987,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 227,4,64,1,28:03,1200,3,6,389,Ajay Kumar,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,15,15,16,15,Ajay Kumar raids successfully
 227,4,65,1,28:35,1200,6,3,252,Kuldeep Singh,False,EMPTY_RAID,0,0,0,0,False,False,,,16,15,16,15,Kuldeep Singh Empty Raid
 227,4,66,1,29:30,1200,3,6,52,Jasvir Singh,False,SUPER_RAID,4,0,0,0,True,False,,,16,15,20,15,Jasvir Singh raids successfully
-227,4,68,1,30:11,1200,6,3,119,Surjeet Singh,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,20,15,20,17,Surjeet Singh raids successfully
+227,4,68,1,30:11,1200,6,3,119,Surjeet Singh,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,20,16,20,17,Surjeet Singh raids successfully
 227,4,69,1,30:24,1200,3,6,86,Rajesh Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,20,17,20,17,Rajesh Narwal Empty Raid
 227,4,70,1,30:40,1200,6,3,197,Pardeep Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,20,17,20,17,Pardeep Narwal Empty Raid
 227,4,71,1,31:28,1200,3,6,389,Ajay Kumar,False,EMPTY_RAID,0,0,0,0,False,False,,,20,17,20,17,Ajay Kumar Empty Raid
@@ -19944,7 +19944,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 237,4,51,1,21:05,1200,2,5,211,Deepak Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,24,14,24,14,Deepak Narwal Empty Raid
 237,4,52,1,21:30,1200,5,2,29,Anup Kumar,False,EMPTY_RAID,0,0,0,0,False,False,,,24,14,24,14,Anup Kumar Empty Raid
 237,4,53,1,21:38,1200,2,5,155,Prashant Kumar Rai,False,UNSUCCESSFUL_RAID,1,0,0,1,False,False,29.0,Anup Kumar,24,14,25,15,Prashant Kumar Rai Unsuccessful Raid
-237,4,56,1,22:02,1200,5,2,94,Rishank Devadiga,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,25,15,26,16,Rishank Devadiga raids successfully
+237,4,56,1,22:02,1200,5,2,94,Rishank Devadiga,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,26,15,26,16,Rishank Devadiga raids successfully
 237,4,57,1,22:20,1200,2,5,211,Deepak Narwal,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,173.0,Suresu Kumar,26,16,26,17,Deepak Narwal Unsuccessful Raid
 237,4,58,1,22:44,1200,5,2,94,Rishank Devadiga,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,26,17,26,18,Rishank Devadiga raids successfully
 237,4,59,1,23:10,1200,2,5,272,Umesh Mhatre,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,26,18,27,18,Umesh Mhatre raids successfully
@@ -20048,7 +20048,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 239,4,66,1,29:19,1200,3,8,86,Rajesh Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,14,26,14,26,Rajesh Narwal Empty Raid
 239,4,68,1,29:54,1200,8,3,81,Rahul Chaudhari,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,14,26,15,26,Rahul Chaudhari raids successfully
 239,4,69,1,30:42,1200,3,8,86,Rajesh Narwal,False,SUPER_RAID,3,0,0,0,True,False,,,15,26,15,29,Rajesh Narwal raids successfully
-239,4,71,1,31:19,1200,8,3,81,Rahul Chaudhari,False,SUCCESSFUL_RAID,2,0,0,0,False,False,,,15,29,18,29,Rahul Chaudhari raids successfully
+239,4,71,1,31:19,1200,8,3,81,Rahul Chaudhari,False,SUCCESSFUL_RAID,2,0,0,0,False,False,,,16,29,18,29,Rahul Chaudhari raids successfully
 239,4,72,1,31:52,1200,3,8,52,Jasvir Singh,False,EMPTY_RAID,0,0,0,0,False,False,,,18,29,18,29,Jasvir Singh Empty Raid
 239,4,74,1,32:24,1200,8,3,81,Rahul Chaudhari,False,SUCCESSFUL_RAID,2,0,0,0,False,False,,,18,29,20,29,Rahul Chaudhari raids successfully
 239,4,75,1,32:46,1200,3,8,52,Jasvir Singh,False,EMPTY_RAID,0,0,0,0,False,False,,,20,29,20,29,Jasvir Singh Empty Raid
@@ -20140,7 +20140,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 238,4,82,1,29:16,1200,7,6,41,Deepak Niwas Hooda,False,EMPTY_RAID,0,0,0,0,False,False,,,22,18,22,18,Deepak Niwas Hooda Empty Raid
 238,4,83,1,29:26,1200,6,7,252,Kuldeep Singh,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,109.0,Somvir Shekhar,22,18,22,19,Kuldeep Singh Unsuccessful Raid
 238,4,85,1,30:24,1200,7,6,150,Parmod Narwal,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,22,19,22,20,Parmod Narwal raids successfully
-238,4,87,1,30:38,1200,6,7,252,Kuldeep Singh,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,69.0,Manjeet Chhillar,22,20,22,22,Kuldeep Singh Unsuccessful Raid
+238,4,87,1,30:38,1200,6,7,252,Kuldeep Singh,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,69.0,Manjeet Chhillar,22,21,22,22,Kuldeep Singh Unsuccessful Raid
 238,4,88,1,30:46,1200,7,6,41,Deepak Niwas Hooda,False,SUPER_RAID,3,0,0,0,True,False,,,22,22,22,25,Deepak Niwas Hooda raids successfully
 238,4,89,1,30:59,1200,6,7,197,Pardeep Narwal,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,22,25,23,25,Pardeep Narwal raids successfully
 238,4,90,1,31:20,1200,7,6,41,Deepak Niwas Hooda,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,23,25,23,26,Deepak Niwas Hooda raids successfully
@@ -20254,7 +20254,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 240,4,95,1,36:50,1200,8,7,81,Rahul Chaudhari,False,EMPTY_RAID,0,0,0,0,False,False,,,32,35,32,35,Rahul Chaudhari Empty Raid
 240,4,96,1,37:16,1200,7,8,41,Deepak Niwas Hooda,False,EMPTY_RAID,0,0,0,0,False,False,,,32,35,32,35,Deepak Niwas Hooda Empty Raid
 240,4,98,1,37:42,1200,8,7,142,Sandeep Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,32,35,32,35,Sandeep Narwal Empty Raid
-240,4,102,1,38:10,1200,7,8,41,Deepak Niwas Hooda,False,EMPTY_RAID,0,0,0,0,False,False,,,32,35,33,36,Deepak Niwas Hooda Empty Raid
+240,4,102,1,38:10,1200,7,8,41,Deepak Niwas Hooda,False,EMPTY_RAID,0,0,0,0,False,False,,,33,36,33,36,Deepak Niwas Hooda Empty Raid
 240,4,103,1,38:34,1200,8,7,81,Rahul Chaudhari,False,SUCCESSFUL_RAID,2,0,0,0,False,False,,,33,36,35,36,Rahul Chaudhari raids successfully
 240,4,105,1,38:55,1200,7,8,41,Deepak Niwas Hooda,False,SUPER_RAID,3,0,0,0,True,False,,,35,36,35,39,Deepak Niwas Hooda raids successfully
 240,4,106,1,39:27,1200,8,7,97,Rupesh Tomar,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,194.0,Joginder Narwal,35,39,35,40,Rupesh Tomar Unsuccessful Raid
@@ -20833,7 +20833,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 385,5,76,1,10:02,1802,7,29,795,Monu,False,EMPTY_RAID,0,0,0,0,False,False,,,15,16,15,16,Monu Empty Raid
 385,5,77,1,09:36,1776,29,7,722,D. Pradap,False,EMPTY_RAID,0,0,0,0,False,False,,,15,16,15,16,D. Pradap Empty Raid
 385,5,78,1,09:04,1744,7,29,41,Deepak Hooda,False,SUPER_RAID,5,0,0,0,True,False,,,15,16,15,21,Deepak Hooda raids successfully
-385,5,80,1,07:51,1671,29,7,219,K. Prapanjan,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,795.0,Monu,15,21,16,22,K. Prapanjan Unsuccessful Raid
+385,5,80,1,07:51,1671,29,7,219,K. Prapanjan,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,795.0,Monu,16,21,16,22,K. Prapanjan Unsuccessful Raid
 385,5,81,1,07:28,1648,7,29,41,Deepak Hooda,False,EMPTY_RAID,0,0,0,0,False,False,,,16,22,16,22,Deepak Hooda Empty Raid
 385,5,82,1,07:01,1621,29,7,26,Ajay Thakur,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,240.0,Ravi Kumar,16,22,16,23,Ajay Thakur Unsuccessful Raid
 385,5,83,1,06:26,1586,7,29,85,Rajesh Mondal,False,EMPTY_RAID,0,0,0,0,False,False,,,16,23,16,23,Rajesh Mondal Empty Raid
@@ -22994,7 +22994,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 407,5,76,1,09:08,1748,7,31,240,Ravi Kumar,False,EMPTY_RAID,0,0,0,0,False,False,,,10,29,10,29,Ravi Kumar Empty Raid
 407,5,78,1,08:27,1707,31,7,686,Rohit Gulia,False,UNSUCCESSFUL_RAID,1,0,0,1,False,False,,,10,29,11,30,Rohit Gulia Unsuccessful Raid
 407,5,79,1,08:23,1703,7,31,365,Akshay Jadhav,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,11,30,12,30,Akshay Jadhav raids successfully
-407,5,82,1,08:07,1687,31,7,111,Sukesh Hegde,False,EMPTY_RAID,0,0,0,0,False,False,,,12,30,13,30,Sukesh Hegde Empty Raid
+407,5,82,1,08:07,1687,31,7,111,Sukesh Hegde,False,EMPTY_RAID,0,0,0,0,False,False,,,13,30,13,30,Sukesh Hegde Empty Raid
 407,5,83,1,07:41,1661,7,31,85,Rajesh Mondal,False,EMPTY_RAID,0,0,0,0,False,False,,,13,30,13,30,Rajesh Mondal Empty Raid
 407,5,84,1,07:09,1629,31,7,111,Sukesh Hegde,False,EMPTY_RAID,0,0,0,0,False,False,,,13,30,13,30,Sukesh Hegde Empty Raid
 407,5,85,1,06:40,1600,7,31,365,Akshay Jadhav,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,757.0,Sachin,13,30,13,31,Akshay Jadhav Unsuccessful Raid
@@ -24341,7 +24341,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 421,5,90,1,03:56,1436,7,6,41,Deepak Hooda,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,745.0,Vijay,31,32,31,33,Deepak Hooda Unsuccessful Raid
 421,5,91,1,03:36,1416,6,7,197,Pardeep Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,31,33,31,33,Pardeep Narwal Empty Raid
 421,5,92,1,03:10,1390,7,6,142,Sandeep Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,31,33,31,33,Sandeep Narwal Empty Raid
-421,5,95,1,02:57,1377,6,7,197,Pardeep Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,31,33,32,34,Pardeep Narwal Empty Raid
+421,5,95,1,02:57,1377,6,7,197,Pardeep Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,32,34,32,34,Pardeep Narwal Empty Raid
 421,5,96,1,02:38,1358,7,6,771,Suresh Kumar,False,EMPTY_RAID,0,0,0,0,False,False,,,32,34,32,34,Suresh Kumar Empty Raid
 421,5,97,1,02:31,1351,6,7,197,Pardeep Narwal,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,32,34,32,35,Pardeep Narwal raids successfully
 421,5,98,1,02:04,1324,7,6,85,Rajesh Mondal,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,579.0,Jaideep,32,35,32,36,Rajesh Mondal Unsuccessful Raid
@@ -24694,7 +24694,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 299,5,82,1,06:00,1560,2,5,251,Meraj Sheykh,False,EMPTY_RAID,0,0,0,0,False,False,,,28,15,28,15,Meraj Sheykh Empty Raid
 299,5,83,1,05:33,1533,5,2,29,Anup Kumar,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,28,15,29,15,Anup Kumar raids successfully
 299,5,84,1,05:14,1514,2,5,251,Meraj Sheykh,False,UNSUCCESSFUL_RAID,1,0,0,3,False,False,733.0,Surinder Singh,29,15,32,16,Meraj Sheykh Unsuccessful Raid
-299,5,87,1,04:48,1488,5,2,75,Nitin Madane,False,EMPTY_RAID,0,0,0,0,False,False,,,32,16,32,17,Nitin Madane Empty Raid
+299,5,87,1,04:48,1488,5,2,75,Nitin Madane,False,EMPTY_RAID,0,0,0,0,False,False,,,32,17,32,17,Nitin Madane Empty Raid
 299,5,88,1,04:24,1464,2,5,251,Meraj Sheykh,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,32,17,32,18,Meraj Sheykh raids successfully
 299,5,90,1,03:58,1438,5,2,29,Anup Kumar,False,EMPTY_RAID,0,0,0,0,False,False,,,32,18,32,18,Anup Kumar Empty Raid
 299,5,91,1,03:27,1407,2,5,251,Meraj Sheykh,False,SUCCESSFUL_RAID,2,0,0,0,False,False,,,32,18,32,20,Meraj Sheykh raids successfully
@@ -24771,7 +24771,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 300,5,77,1,06:12,1572,1,30,389,Ajay Kumar,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,86.0,Rajesh Narwal,21,28,21,29,Ajay Kumar Unsuccessful Raid
 300,5,78,1,05:37,1537,30,1,86,Rajesh Narwal,False,EMPTY_RAID,0,0,0,0,False,False,,,21,29,21,29,Rajesh Narwal Empty Raid
 300,5,79,1,05:09,1509,1,30,326,Rohit Kumar,False,SUCCESSFUL_RAID,2,0,0,0,False,False,,,21,29,23,29,Rohit Kumar raids successfully
-300,5,81,1,04:27,1467,30,1,234,Surender Singh,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,46.0,Gurvinder Singh,23,29,25,29,Surender Singh Unsuccessful Raid
+300,5,81,1,04:27,1467,30,1,234,Surender Singh,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,46.0,Gurvinder Singh,24,29,25,29,Surender Singh Unsuccessful Raid
 300,5,83,1,04:10,1450,1,30,326,Rohit Kumar,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,54.0,Jeeva Kumar,25,29,25,30,Rohit Kumar Unsuccessful Raid
 300,5,84,1,03:37,1417,30,1,320,Nitin Tomar,False,EMPTY_RAID,0,0,0,0,False,False,,,25,30,25,30,Nitin Tomar Empty Raid
 300,5,85,1,03:04,1384,1,30,202,Ashish Kumar,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,25,30,26,30,Ashish Kumar raids successfully
@@ -25034,7 +25034,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 303,5,95,1,03:04,1384,28,31,124,Wazir Singh,False,EMPTY_RAID,0,0,0,0,False,False,,,19,28,19,28,Wazir Singh Empty Raid
 303,5,96,1,02:36,1356,31,28,259,Fazel Atrachali,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,146.0,Surender Nada,19,28,19,29,Fazel Atrachali Unsuccessful Raid
 303,5,97,1,02:21,1341,28,31,119,Surjeet Singh,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,368.0,Sunil Kumar,19,29,20,29,Surjeet Singh Unsuccessful Raid
-303,5,100,1,01:38,1298,31,28,163,Mahendra Rajput,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,146.0,Surender Nada,20,29,20,31,Mahendra Rajput Unsuccessful Raid
+303,5,100,1,01:38,1298,31,28,163,Mahendra Rajput,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,146.0,Surender Nada,20,30,20,31,Mahendra Rajput Unsuccessful Raid
 303,5,101,1,01:10,1270,28,31,124,Wazir Singh,False,EMPTY_RAID,0,0,0,0,False,False,,,20,31,20,31,Wazir Singh Empty Raid
 303,5,102,1,00:43,1243,31,28,757,Sachin,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,71.0,Mohit Chhillar,20,31,20,32,Sachin Unsuccessful Raid
 303,5,103,1,00:11,1211,28,31,366,Vikas Kandola,False,EMPTY_RAID,0,0,0,0,False,False,,,20,32,20,32,Vikas Kandola Empty Raid
@@ -27279,7 +27279,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 326,5,96,1,04:55,1495,4,30,211,Deepak Narwal,False,SUCCESSFUL_RAID,2,0,0,0,False,False,,,25,26,25,28,Deepak Narwal raids successfully
 326,5,97,1,04:26,1466,30,4,94,Rishank Devadiga,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,25,28,26,28,Rishank Devadiga raids successfully
 326,5,98,1,04:00,1440,4,30,211,Deepak Narwal,False,UNSUCCESSFUL_RAID,1,0,0,1,False,False,94.0,Rishank Devadiga,26,28,27,29,Deepak Narwal Unsuccessful Raid
-326,5,100,1,03:37,1417,30,4,320,Nitin Tomar,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,27,29,29,29,Nitin Tomar raids successfully
+326,5,100,1,03:37,1417,30,4,320,Nitin Tomar,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,28,29,29,29,Nitin Tomar raids successfully
 326,5,101,1,03:10,1390,4,30,34,Bhupender Singh,False,EMPTY_RAID,0,0,0,0,False,False,,,29,29,29,29,Bhupender Singh Empty Raid
 326,5,103,1,02:44,1364,30,4,320,Nitin Tomar,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,288.0,Rahul Kumar,29,29,29,30,Nitin Tomar Unsuccessful Raid
 326,5,104,1,02:17,1337,4,30,34,Bhupender Singh,False,EMPTY_RAID,0,0,0,0,False,False,,,29,30,29,30,Bhupender Singh Empty Raid
@@ -27985,7 +27985,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 334,5,48,1,17:20,2240,4,1,313,Virender,False,SUPER_RAID,4,0,0,0,True,False,,,12,10,16,10,Virender raids successfully
 334,5,49,1,17:02,2222,1,4,46,Gurvinder Singh,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,16,10,16,11,Gurvinder Singh raids successfully
 334,5,50,1,16:42,2202,4,1,12,Jang Kun Lee,False,SUPER_RAID,4,0,0,0,True,False,,,16,11,20,11,Jang Kun Lee raids successfully
-334,5,52,1,16:13,2173,1,4,326,Rohit Kumar,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,20,11,21,12,Rohit Kumar raids successfully
+334,5,52,1,16:13,2173,1,4,326,Rohit Kumar,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,21,11,21,12,Rohit Kumar raids successfully
 334,5,53,1,16:00,2160,4,1,313,Virender,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,769.0,Mahender Singh,21,12,21,13,Virender Unsuccessful Raid
 334,5,54,1,15:32,2132,1,4,326,Rohit Kumar,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,160.0,Ran Singh,21,13,22,13,Rohit Kumar Unsuccessful Raid
 334,5,55,1,14:42,2082,4,1,34,Bhupender Singh,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,22,13,23,13,Bhupender Singh raids successfully
@@ -28066,7 +28066,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 289,5,48,1,19:01,2341,8,6,293,Nilesh Salunke,False,EMPTY_RAID,0,0,0,0,False,False,,,14,15,14,15,Nilesh Salunke Empty Raid
 289,5,49,1,18:36,2316,6,8,580,Vishnu Uthaman,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,762.0,Vikas,14,15,15,15,Vishnu Uthaman Unsuccessful Raid
 289,5,50,1,17:53,2273,8,6,81,Rahul Chaudhari,False,EMPTY_RAID,0,0,0,0,False,False,,,15,15,15,15,Rahul Chaudhari Empty Raid
-289,5,53,1,17:00,2220,6,8,390,Jawahar Dagar,False,UNSUCCESSFUL_RAID,1,0,0,3,False,False,358.0,Vishal Bhardwaj,15,15,19,16,Jawahar Dagar Unsuccessful Raid
+289,5,53,1,17:00,2220,6,8,390,Jawahar Dagar,False,UNSUCCESSFUL_RAID,1,0,0,3,False,False,358.0,Vishal Bhardwaj,16,15,19,16,Jawahar Dagar Unsuccessful Raid
 289,5,54,1,16:06,2166,8,6,81,Rahul Chaudhari,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,19,16,20,16,Rahul Chaudhari raids successfully
 289,5,56,1,15:50,2150,6,8,197,Pardeep Narwal,False,UNSUCCESSFUL_RAID,1,0,0,1,False,False,96.0,Rohit Rana,20,16,21,17,Pardeep Narwal Unsuccessful Raid
 289,5,57,1,15:25,2125,8,6,81,Rahul Chaudhari,False,EMPTY_RAID,0,0,0,0,False,False,,,21,17,21,17,Rahul Chaudhari Empty Raid
@@ -28648,7 +28648,7 @@ match_id,season_id,raid_sequence_no,half,clock,clock_seconds_remaining,raiding_t
 340,5,99,1,00:54,1254,3,5,52,Jasvir Singh,False,EMPTY_RAID,0,0,0,0,False,False,,,32,32,32,32,Jasvir Singh Empty Raid
 340,5,100,1,00:32,1232,5,3,58,Kashiling Adake,False,SUCCESSFUL_RAID,2,0,0,0,False,False,,,32,32,34,32,Kashiling Adake raids successfully
 340,5,101,1,00:09,1209,3,5,52,Jasvir Singh,False,UNSUCCESSFUL_RAID,0,0,0,1,False,False,733.0,Surinder Singh,34,32,35,32,Jasvir Singh Unsuccessful Raid
-340,5,103,1,00:00,1200,5,3,29,Anup Kumar,False,EMPTY_RAID,0,0,0,0,False,False,,,35,32,36,32,Anup Kumar Empty Raid
+340,5,103,1,00:00,1200,5,3,29,Anup Kumar,False,EMPTY_RAID,0,0,0,0,False,False,,,36,32,36,32,Anup Kumar Empty Raid
 341,5,1,1,19:56,2396,4,6,143,Maninder Singh,False,EMPTY_RAID,0,0,0,0,False,False,,,0,0,0,0,Maninder Singh Empty Raid
 341,5,2,1,19:28,2368,6,4,197,Pardeep Narwal,False,SUCCESSFUL_RAID,1,0,0,0,False,False,,,0,0,0,1,Pardeep Narwal raids successfully
 341,5,3,1,18:56,2336,4,6,12,Jang Kun Lee,False,EMPTY_RAID,0,0,0,0,False,False,,,0,1,0,1,Jang Kun Lee Empty Raid
