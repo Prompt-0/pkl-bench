@@ -33,7 +33,7 @@
 \maketitle
 
 \begin{abstract}
-While sports analytics benchmarks such as SoccerNet and NBA Play-by-Play have accelerated machine learning in symmetric invasion and continuous-transition games, contact invasion sports governed by asymmetric pursuit-evasion dynamics remain underrepresented in computational literature. In this paper, we introduce \textbf{PKL-Bench}, the first comprehensive, research-grade benchmark dataset and evaluation harness for professional Kabaddi. Spanning all 10 complete seasons (2014--2024) of the Pro Kabaddi League (PKL). Derived from the \texttt{kabaddiPy} package \cite{lalwani2024kabaddipy} (which aggregates official feeds), PKL-Bench harmonizes 1,060 matches, 26,760 player boxscores, and 90,644 timestamped, discrete raid events into a standardized 5-tier relational schema distributed in both Apache Parquet and Frictionless CSV formats. We formulate Kabaddi as an asymmetric, discrete-time Markov Decision Process (MDP) exhibiting discrete structural phase transitions---including the bonus-line deactivation threshold ($N_{def} = 6$) and the super tackle regime ($N_{def} \le 3$). We establish a strict mathematical score conservation theorem, proving 100.0\% accounting adherence across all 1,060 matches, and implement an out-of-sample temporal evaluation protocol (Train: Seasons 1--8, Validation: Season 9, Test: Season 10) that prevents lookahead leakage. Finally, we provide standardized baseline implementations and leaderboards across four foundational tasks: discrete raid outcome prediction, dynamic in-game win probability modeling, pre-match spread forecasting, and context-adjusted player valuation. PKL-Bench is openly released under GPL-2.0 accompanied by a complete Gebru-compliant Datasheet for Datasets.
+While sports analytics benchmarks such as SoccerNet and NBA Play-by-Play have accelerated machine learning in symmetric invasion and continuous-transition games, contact invasion sports governed by asymmetric pursuit-evasion dynamics remain underrepresented in computational literature. In this paper, we introduce \textbf{PKL-Bench}, the first comprehensive, research-grade benchmark dataset and evaluation harness for professional Kabaddi. Spanning all 10 complete seasons (2014--2024) of the Pro Kabaddi League (PKL), derived from the \texttt{kabaddiPy} package \cite{lalwani2024kabaddipy} (which aggregates official feeds), PKL-Bench harmonizes 1,060 matches, 26,760 player boxscores, and 90,644 timestamped, discrete raid events into a standardized 5-tier relational schema distributed in both Apache Parquet and Frictionless CSV formats. We formulate Kabaddi as an asymmetric, discrete-time Markov Decision Process (MDP) exhibiting discrete structural phase transitions---including the bonus-line deactivation threshold ($N_{def} = 6$) and the super tackle regime ($N_{def} \le 3$). We establish a strict mathematical score conservation theorem, proving 100.0\% accounting adherence across all 1,060 matches, and implement an out-of-sample temporal evaluation protocol (Train: Seasons 1--8, Validation: Season 9, Test: Season 10) that prevents lookahead leakage. Finally, we provide standardized baseline implementations and leaderboards across four foundational tasks: discrete raid outcome prediction, dynamic in-game win probability modeling, pre-match spread forecasting, and context-adjusted player valuation. PKL-Bench is openly released under GPL-2.0 accompanied by a complete Gebru-compliant Datasheet for Datasets.
 \end{abstract}
 
 \section{Introduction}
@@ -121,7 +121,7 @@ Tier 2 & Matches & 1,060 & 0.06 MB & 0.22 MB \\
 Tier 3 & Player Match Boxscores & 26,760 & 0.29 MB & 2.55 MB \\
 Tier 4 & Play-by-Play Raid Events & 90,644 & 1.31 MB & 12.29 MB \\
 \midrule
-\textbf{Total} & \textbf{Complete Corpus} & \textbf{131,852} & \textbf{1.70 MB} & \textbf{15.10 MB} \\
+\textbf{Total} & \textbf{Complete Corpus} & \textbf{119,320} & \textbf{1.70 MB} & \textbf{15.10 MB} \\
 \bottomrule
 \end{tabular}%
 }
@@ -152,7 +152,7 @@ Random cross-validation creates severe data leakage in sports because player ros
     \item \textbf{Validation Set (Season 9, 2022)}: 137 matches (12.9\%), 11,642 raid events.
     \item \textbf{Test Set (Season 10, 2023--2024)}: 136 matches (12.8\%), 11,821 raid events.
 \end{itemize}
-Splits are mutually disjoint ($Train \cap Val = \emptyset$, $Train \cap Test = \emptyset$, $Val \cap Test = \emptyset$).
+Splits are mutually disjoint ($\text{Train} \cap \text{Val} = \emptyset$, $\text{Train} \cap \text{Test} = \emptyset$, $\text{Val} \cap \text{Test} = \emptyset$).
 
 \subsection{Task Definitions}
 \begin{itemize}
@@ -192,7 +192,7 @@ Table~\ref{tab:leaderboard} presents baseline benchmark results evaluated on the
 \midrule
 \textbf{Task 1: Raid Outcome} & Majority Class & Accuracy: 0.4770 & Macro-F1: 0.1292 & Log-Loss: 18.8520 \\
 & Multinomial Logistic & Accuracy: 0.5188 & Macro-F1: 0.2274 & Log-Loss: 1.0626 \\
-& \textbf{HistGradientBoosting} & \textbf{Accuracy: 0.5442} & \textbf{Macro-F1: 0.2484} & \textbf{Log-Loss: 1.1408} \\
+& \textbf{HistGradientBoosting} & \textbf{Accuracy: 0.4555} & \textbf{Macro-F1: 0.2484} & \textbf{Log-Loss: 1.1408} \\
 \midrule
 \textbf{Task 2: Win Probability} & Logistic Leverage & Brier: 0.2260 & ECE: 0.0979 & Log-Loss: 0.6432 \\
 & \textbf{Calibrated GBDT} & \textbf{Brier: 0.1810} & \textbf{ECE: 0.1259} & \textbf{Log-Loss: 0.5437} \\

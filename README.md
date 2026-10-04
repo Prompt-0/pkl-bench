@@ -77,11 +77,11 @@ All baselines are evaluated strictly on the **out-of-sample Season 10 test set**
 | :--- | :--- | :--- | :--- | :--- |
 | **Task 1: Raid Outcome Prediction** | Majority Class | Accuracy: 0.4770 | Macro-F1: 0.1292 | Log-Loss: 18.8520 |
 | | Multinomial Logistic | Accuracy: 0.5188 | Macro-F1: 0.2274 | Log-Loss: 1.0626 |
-| | **HistGradientBoosting** | **Accuracy: 0.4555** | **Macro-F1: 0.2484** | **Log-Loss: 0.9597** |
-| **Task 2: In-Game Win Probability** | Logistic Leverage | Brier: 0.2270 | ECE: 0.1882 | Log-Loss: 0.6446 |
-| | **Calibrated GBDT** | **Brier: 0.1991** | **ECE: 0.1561** | **Log-Loss: 0.5827** |
+| | **HistGradientBoosting** | **Accuracy: 0.4555** | **Macro-F1: 0.2484** | **Log-Loss: 1.1408** |
+| **Task 2: In-Game Win Probability** | Logistic Leverage | Brier: 0.2260 | ECE: 0.0979 | Log-Loss: 0.6432 |
+| | **Calibrated GBDT** | **Brier: 0.1810** | **ECE: 0.1259** | **Log-Loss: 0.5437** |
 | **Task 3: Pre-Match Outcome & Spread** | Random Guess | Accuracy: 0.5000 | Brier: 0.2500 | ROC-AUC: 0.5000 |
-| | **Dynamic Kabaddi Elo** | **Accuracy: 0.7059** | **Brier: 0.1968** | **ROC-AUC: 0.7707** (MAE: 9.23) |
+| | **Dynamic Kabaddi Elo** | **Accuracy: 0.7059** | **Brier: 0.1968** | **ROC-AUC: 0.7673** (MAE: 9.23) |
 | **Task 4: Player Valuation & Impact** | Raw Total Points | Naive Cumulative | Top Volume: Pardeep Narwal (1,690 pts) | Top Defender: Fazel Atrachali (486 pts) |
 | | **Expected Points Added (EPA)** | **State-Conditioned** | **Top Cumulative: Pardeep Narwal (+431.2 EPA)** | **Top Rate: Pawan Sehrawat (0.190 EPA/raid)** |
 
