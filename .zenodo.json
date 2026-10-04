@@ -6,9 +6,17 @@
       "name": "Dobhal, Ritesh",
       "affiliation": "University of Delhi, Delhi, India",
       "orcid": "0009-0009-2773-4972"
+    },
+    {
+      "name": "Lalwani, Bhaskar",
+      "affiliation": "Independent Researcher"
+    },
+    {
+      "name": "Mukherjee, Aniruddha",
+      "affiliation": "Independent Researcher"
     }
   ],
-  "license": "GPL-2.0-only",
+  "license": "CC-BY-NC-SA-4.0",
   "keywords": [
     "Kabaddi",
     "Sports Analytics",
