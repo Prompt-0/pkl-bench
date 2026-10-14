@@ -3,7 +3,7 @@ PYTEST ?= $(shell which uv >/dev/null 2>&1 && echo "uv run pytest" || echo "pyte
 PKL_BENCH ?= $(shell which uv >/dev/null 2>&1 && echo "uv run pkl-bench" || echo "pkl-bench")
 PIP ?= $(shell which uv >/dev/null 2>&1 && echo "uv pip" || echo "pip")
 
-.PHONY: install test validate benchmark plots paper clean help
+.PHONY: install test validate benchmark plots paper arxiv clean help
 
 help:
 	@echo "PKL-Bench Developer Commands:"
@@ -13,6 +13,7 @@ help:
 	@echo "  make benchmark  - Run official benchmark baselines"
 	@echo "  make plots      - Regenerate publication figures in paper/figures/"
 	@echo "  make paper      - Recompile research paper PDF via tectonic"
+	@echo "  make arxiv      - Build clean arXiv submission zip (paper + bbl + figures)"
 	@echo "  make clean      - Clean temporary and build artifacts"
 
 install:
@@ -31,7 +32,11 @@ plots:
 	$(PYTHON) scripts/generate_plots.py
 
 paper: plots
-	tectonic paper/pkl_bench_paper.tex
+	tectonic --keep-intermediates paper/pkl_bench_paper.tex
+
+arxiv: paper
+	python3 -c "import zipfile, os; z = zipfile.ZipFile('pkl_bench_arxiv_submission.zip', 'w', zipfile.ZIP_DEFLATED); z.write('paper/pkl_bench_paper.tex', 'pkl_bench_paper.tex'); z.write('paper/pkl_bench_paper.bbl', 'pkl_bench_paper.bbl'); z.write('paper/references.bib', 'references.bib'); [z.write(os.path.join('paper/figures', f), os.path.join('figures', f)) for f in sorted(os.listdir('paper/figures')) if f.endswith('.pdf')]; z.close()"
+	@echo "✓ pkl_bench_arxiv_submission.zip packaged successfully"
 
 clean:
-	rm -rf build/ dist/ *.egg-info .pytest_cache/ .mypy_cache/ .ruff_cache/ __pycache__ pkl_bench/__pycache__ tests/__pycache__ *.pyc
+	rm -rf build/ dist/ *.egg-info .pytest_cache/ .mypy_cache/ .ruff_cache/ __pycache__ pkl_bench/__pycache__ tests/__pycache__ *.pyc paper/*.aux paper/*.out paper/*.log

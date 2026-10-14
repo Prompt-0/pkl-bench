@@ -68,3 +68,9 @@ paper/*.xdv
 
 # Archives
 *.zip
+*.tar.gz
+*.tgz
+
+# Scratch & temporary dumps
+*_res.txt
+scratch/
