@@ -96,8 +96,8 @@ def run_match_winner_benchmark() -> Dict[str, Any]:
         s2 = row.team2_score
         actual_margin = s1 - s2
         t1_won = 1 if s1 > s2 else 0
-        
-        # In a real pipeline, we'd join venues. For this benchmark without venues.csv, 
+
+        # In a real pipeline, we'd join venues. For this benchmark without venues.csv,
         # assume neutral site for now unless we know otherwise (avoiding dead code error)
         # We will pass -1 for neutral
         p1, pred_margin = elo.predict_match(t1, t2, home_team_id=-1)

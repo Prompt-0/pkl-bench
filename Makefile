@@ -1,3 +1,8 @@
+PYTHON ?= $(shell which uv >/dev/null 2>&1 && echo "uv run python" || echo "python3")
+PYTEST ?= $(shell which uv >/dev/null 2>&1 && echo "uv run pytest" || echo "pytest")
+PKL_BENCH ?= $(shell which uv >/dev/null 2>&1 && echo "uv run pkl-bench" || echo "pkl-bench")
+PIP ?= $(shell which uv >/dev/null 2>&1 && echo "uv pip" || echo "pip")
+
 .PHONY: install test validate benchmark plots paper clean help
 
 help:
@@ -11,22 +16,22 @@ help:
 	@echo "  make clean      - Clean temporary and build artifacts"
 
 install:
-	pip install -e ".[dev]"
+	$(PIP) install -e ".[dev]"
 
 test:
-	pytest -v
+	$(PYTEST) -v
 
 validate:
-	pkl-bench validate
+	$(PKL_BENCH) validate
 
 benchmark:
-	pkl-bench benchmark --task all
+	$(PKL_BENCH) benchmark --task all
 
 plots:
-	python scripts/generate_plots.py
+	$(PYTHON) scripts/generate_plots.py
 
 paper: plots
 	tectonic paper/pkl_bench_paper.tex
 
 clean:
-	rm -rf build/ dist/ *.egg-info .pytest_cache/ __pycache__/ pkl_bench/__pycache__ tests/__pycache__
+	rm -rf build/ dist/ *.egg-info .pytest_cache/ .mypy_cache/ .ruff_cache/ __pycache__ pkl_bench/__pycache__ tests/__pycache__ *.pyc

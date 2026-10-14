@@ -7,13 +7,13 @@ from typing import Any, Dict, List, Optional, Union
 import numpy as np
 from sklearn.metrics import (
     accuracy_score,
+    brier_score_loss,
     classification_report,
     f1_score,
     log_loss,
 )
 
 
-from sklearn.metrics import brier_score_loss
 def brier_score(y_true: Union[np.ndarray, List[int]], y_prob: Union[np.ndarray, List[float]]) -> float:
     """
     Computes the Brier score for probabilistic binary classification.

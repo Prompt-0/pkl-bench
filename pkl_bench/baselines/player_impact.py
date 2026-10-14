@@ -77,7 +77,7 @@ def calculate_expected_points_added(df_raids: Optional[pd.DataFrame] = None, min
 
     # Calculate baseline expectation strictly on Train Split (Seasons 1-8) to prevent leakage
     train_df = df[df["season_id"] <= 8].copy()
-    
+
     # Calculate expected points based on historical train data
     state_means = train_df.groupby(["is_do_or_die", "half"])["raid_points"].mean().to_dict()
 

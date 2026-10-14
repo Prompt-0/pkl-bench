@@ -65,3 +65,6 @@ paper/*.fls
 paper/*.fdb_latexmk
 paper/*.synctex.gz
 paper/*.xdv
+
+# Archives
+*.zip
